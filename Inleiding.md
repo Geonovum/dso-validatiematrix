@@ -1,8 +1,8 @@
 # Inleiding
 
 Voor de borging van de digitale registratie, publicatie en ontsluiting van
-omgevingsdocumenten in
-de landelijke voorziening DSO moeten deze documenten voldoen aan diverse
+omgevingsdocumenten via de LVBB en
+de landelijke voorziening DSO moeten de omgevingsdocumenten voldoen aan diverse
 technische en functionele eisen.  Dit document is geen bron van nieuwe regels: de validatie- en conformiteitsregels 
 vinden hun oorsprong in de STOP/TPOD-standaarden of andere documenten
 en zijn expliciet geïdentificeerd om de validatiefunctionaliteit van
@@ -13,7 +13,7 @@ gepubliceerd en ontsloten op overheid.nl en in het DSO-LV. Dit document voorziet
 en geeft een geclassificeerde beschrijving van een geharmoniseerd overzicht van
 de validatie- en conformiteitsregels die in de keten van 'Plan tot Publicatie'
 nodig zijn voor correcte verwerking van een omgevingsdocument. (NJ: zie opmerking hiervoor) Hoewel alle
-regels nodig zijn voor een correcte werking van de keten, is het niet altijd zo
+validatieregels nodig zijn voor een correcte werking van de keten, is het niet altijd zo
 dat een omgevingsdocument dat niet aan alle regels voldoet door de
 keten wordt geweigerd. Welke validatieregels daadwerkelijk zijn geïmplementeerd is te vinden in de
 release notes van de verschillende ketenonderdelen.
