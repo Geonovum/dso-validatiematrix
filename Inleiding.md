@@ -3,16 +3,16 @@
 Voor de borging van de digitale registratie, publicatie en ontsluiting van
 omgevingsdocumenten via de LVBB en
 de landelijke voorziening DSO moeten de omgevingsdocumenten voldoen aan diverse
-technische en functionele eisen.  Dit document is geen bron van nieuwe regels: de validatie- en conformiteitsregels 
+technische en functionele eisen.  Dit document is geen bron van nieuwe regels: de validatieregels 
 vinden hun oorsprong in de STOP/TPOD-standaarden of andere documenten
 en zijn expliciet geïdentificeerd om de validatiefunctionaliteit van
-LVBB en OZON te kunnen ontwikkelen. (NJ: waarom noem je het in voorgaande zin validatie- en conformiteitsregels? in de rest van het document gaat het over validatieregels en de validatiematrix. Ik zou dat ook hier doen) Dit document voorziet ook in de behoefte van bevoegde gezagen en 
+LVBB en OZON te kunnen ontwikkelen. Dit document voorziet ook in de behoefte van bevoegde gezagen en 
 softwareontwikkelaars om inzicht te hebben in de eisen waaraan hun
 omgevingsdocumenten moeten voldoen om succesvol te kunnen worden geregistreerd,
 gepubliceerd en ontsloten op overheid.nl en in het DSO-LV. Dit document voorziet in deze behoefte
 en geeft een geclassificeerde beschrijving van een geharmoniseerd overzicht van
-de validatie- en conformiteitsregels die in de keten van 'Plan tot Publicatie'
-nodig zijn voor correcte verwerking van een omgevingsdocument. (NJ: zie opmerking hiervoor) Hoewel alle
+de validatieregels die in de keten van 'Plan tot Publicatie'
+nodig zijn voor correcte verwerking van een omgevingsdocument. Hoewel alle
 validatieregels nodig zijn voor een correcte werking van de keten, is het niet altijd zo
 dat een omgevingsdocument dat niet aan alle regels voldoet door de
 keten wordt geweigerd. Welke validatieregels daadwerkelijk zijn geïmplementeerd is te vinden in de

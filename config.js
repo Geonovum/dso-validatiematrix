@@ -50,8 +50,8 @@ var respecConfig =
   //specType: "IM",                   // Informatie Model
   //specType: "PR",                   // Praktijkrichtlijn
   //specType: "HR",                   // HandReiking
-  specType: "WA",                   // Werkafspraak
-  //specType: "BD",                   // Beheer Documentatie
+  //specType: "WA",                   // Werkafspraak
+  specType: "BD",                   // Beheer Documentatie
   //-- format is verplicht! -----------------------------------------------------------
   format: "markdown",                 // altijd "markdown" - JvG W3C aangepast, op 1 plek markdown aangeven    
   //-- publishDate is verplicht -------------------------------------------------------
@@ -87,7 +87,7 @@ var respecConfig =
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
   shortName: "validatiematrix",  	              // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
-  pubDomain: "ow", 	              // Energie transitie
+  pubDomain: "ow", 	              // Omgevingswet
   //pubDomain: "mim", 	            // Metamodel Informatie Modellering
   //pubDomain: "bor", 	            // Beheer Openbare Ruimte
   //pubDomain: "bro", 	            // Basisregistratie Ondergrond
