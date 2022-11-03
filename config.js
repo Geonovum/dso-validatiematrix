@@ -53,7 +53,7 @@ var respecConfig =
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2019-10-08",  	    // Format is "YYYY-MM-DD"
   //-- Repositorynaam op GitHub -------------------------------------------------------
-  github: "https://github.com/Geonovum/dso-validatiematrix",
+  //github: "https://github.com/Geonovum/dso-validatiematrix",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
   //issueBase: "https://github.com/Geonovum/dso-validatiematrix/issues",
   //-- edDraftURI: de URI van de werkversie van het document
