@@ -45,13 +45,8 @@ var respecConfig =
   //specStatus: "GN-VV",              // Vaststellings Versie
   //specStatus: "GN-DEF",             // Definitieve Versie
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
-  //specType: "NO",                   // Norm
-  //specType: "ST",                   // Standaard
-  //specType: "IM",                   // Informatie Model
-  //specType: "PR",                   // Praktijkrichtlijn
-  //specType: "HR",                   // HandReiking
-  //specType: "WA",                   // Werkafspraak
-  specType: "BD",                   // Beheer Documentatie
+  //-- voor toegestane types zie: https://github.com/Geonovum/respec/wiki/specType
+  specType: "AL",                   // Algemeen
   //-- format is verplicht! -----------------------------------------------------------
   format: "markdown",                 // altijd "markdown" - JvG W3C aangepast, op 1 plek markdown aangeven    
   //-- publishDate is verplicht -------------------------------------------------------
