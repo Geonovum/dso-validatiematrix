@@ -55,7 +55,7 @@ var respecConfig =
   //-- Repositorynaam op GitHub -------------------------------------------------------
   github: "https://github.com/Geonovum/dso-validatiematrix",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
-  issueBase: "https://github.com/Geonovum/dso-validatiematrix/issues",
+  //issueBase: "https://github.com/Geonovum/dso-validatiematrix/issues",
   //-- edDraftURI: de URI van de werkversie van het document
   //edDraftURI: "https://github/geonovum/<naam van de repository>",
   //-- de namen van de Editor(s) ------------------------------------------------------
@@ -63,7 +63,7 @@ var respecConfig =
   editors: 
  [
     {
-      name:       "Wilko Quak",
+      name:       "TPOD-Team",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }, 
@@ -73,7 +73,7 @@ var respecConfig =
   authors: 
   [
     {
-      name:       "Team TPOD",
+      name:       "TPOD-Team",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }, 
