@@ -14,69 +14,69 @@ De validatiematrix bevat de volgende validatieregels:
 
 | identificatie | ernst | omschrijving|
 |:--------------|:------|:------------|
-|BHKV1004|Blokkerend|Voor een ontwerpbesluit MAG GEEN tijdstempel worden meegeleverd|
-|BHKV1005|Blokkerend|Een Besluit (tekst:BesluitCompact of tekst:BesluitKlassiek) MOET een identificatie hebben die aangeeft dat het een Besluit betreft (data:soortWork = /join/id/stop/work_003)|
-|BHKV1009|Blokkerend|De eId van een BeoogdeRegeling MOET voorkomen in het Besluit (bij BesluitCompact in het besluit-deel; dus NIET in de WijzigBijlage; bij BesluitKlassiek in RegelingKlassiek ) danwel in de Rectificatie(in BesluitMutatie)|
+|BHKV1004|Blokkerend|Voor een ontwerpbesluit MAG GEEN tijdstempel worden meegeleverd.|
+|BHKV1005|Blokkerend|Een Besluit (tekst:BesluitCompact of tekst:BesluitKlassiek) MOET een identificatie hebben die aangeeft dat het een Besluit betreft (data:soortWork = /join/id/stop/work_003).|
+|BHKV1009|Blokkerend|De eId van een BeoogdeRegeling MOET voorkomen in het Besluit (bij BesluitCompact in het besluit-deel; dus NIET in de WijzigBijlage; bij BesluitKlassiek in RegelingKlassiek ) danwel in de Rectificatie(in BesluitMutatie).|
 |BHKV1010|Blokkerend|Elke eId van een Tijdstempel MOET genoemd worden in het Besluit (bij BesluitCompact in het besluit-deel; dus NIET in de WijzigBijlage; bij BesluitKlassiek in RegelingKlassiek ) danwel in de Rectificatie(in BesluitMutatie).|
 |BHKV1011|Blokkerend|Elke eId van een Intrekking van een Regeling MOET genoemd worden in het Besluit (bij BesluitCompact in het besluit-deel; dus NIET in de WijzigBijlage; bij BesluitKlassiek in RegelingKlassiek ) danwel in de Rectificatie(in BesluitMutatie).|
 |BHKV1014|Blokkerend|Het element data:heeftBestanden MOET in aan de LVBB aangeleverde (G)IOs naar precies één bestand verwijzen.|
-|BHKV1015|Blokkerend|heeftGeboorteregeling MOET aanwezig zijn INDIEN soortWork=/join/id/stop/work_010 èn formaatinformatieobject=/join/id/stop/informatieobject/gio_002|
-|BHKV1016|Blokkerend|De identificatie van een InformatieObject MOET als soort werk '/join/id/stop/work_010' zijn|
-|BHKV1017|Blokkerend|De officiele titel van een informatieobject MOET gelijk zijn aan het FRBRWork|
-|BHKV1018|Blokkerend|De collectie gebruikt in de AKN identifier van een informatieobject MOET overeenkomen met zijn data:publicatieinstructie|
+|BHKV1015|Blokkerend|heeftGeboorteregeling MOET aanwezig zijn INDIEN soortWork=/join/id/stop/work_010 èn formaatinformatieobject=/join/id/stop/informatieobject/gio_002.|
+|BHKV1016|Blokkerend|De identificatie van een InformatieObject MOET als soort werk '/join/id/stop/work_010' zijn.|
+|BHKV1017|Blokkerend|De officiele titel van een informatieobject MOET gelijk zijn aan het FRBRWork.|
+|BHKV1018|Blokkerend|De collectie gebruikt in de AKN identifier van een informatieobject MOET overeenkomen met zijn data:publicatieinstructie.|
 |BHKV1030|Blokkerend|INDIEN een GIO één of meer locatiegroepen bevat MOET voor de GIO symbolisatie worden aangeleverd met verbeeldingsinformatie voor elke locatiegroep in de GIO.|
 |BHKV1031|Blokkerend|INDIEN een GIO kwalitatieve normwaarden bevat MOET symbolisatie voor deze GIO worden aangeleverd met verbeeldingsinformatie voor elke kwalitatieve normwaarde in de GIO.|
 |BHKV1032|Blokkerend|INDIEN een GIO kwantitatieve normwaarden bevat MOET symbolisatie voor deze GIO worden aangeleverd zodat voor elke kwantitatieve normwaarde in de GIO verbeeldingsinformatie beschikbaar is.|
-|BHKV1033|Blokkerend|De inhoud van alle voorkomens van consolideerbare informatieobjecten in data:informatieobjectRef MOETEN ook voorkomen als data:BeoogdInformatieobject|
+|BHKV1033|Blokkerend|De inhoud van alle voorkomens van consolideerbare informatieobjecten in data:informatieobjectRef MOETEN ook voorkomen als data:BeoogdInformatieobject.|
 |BHKV1036|Blokkerend|De eId en de Instrumentversie van elk BeoogdInformatieobject bij een besluit MOET d.m.v. een corresponderende ExtIORef (attributen eId en ref komen overeen) genoemd worden in de regeling(mutatie).|
 |BHKV1044|Blokkerend|Een @wordt-versie in een besluit MOET gelijk zijn aan precies één meegeleverde FRBRExpression-identificatie in de lvbba:RegelingVersieInformatie.|
 |BHKV1046|Blokkerend|Procedurestap Publicatie MAG NIET aangeleverd worden.|
 |BHKV1047|Blokkerend|Bij een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen: VaststellingOndertekening|
 |BHKV1048|Blokkerend|Een definitief besluit MOET de procedurestap Ondertekening hebben.|
 |BHKV1049|Blokkerend|Bij een ontwerpbesluit MOGEN ALLEEN de volgende procedurestappen voorkomen:VaststellingOndertekening|
-|BHKV1057|Blokkerend|Bij een kennisgeving MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde BezwaartermijnEinde BeroepstermijnBegin InzagetermijnEinde Inzagetermijn|
+|BHKV1057|Blokkerend|Bij een kennisgeving MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde BezwaartermijnEinde BeroepstermijnBegin InzagetermijnEinde Inzagetermijn.|
 |BHKV1058|Blokkerend|De FRBRExpression-identificatie van lvbba:RegelingVersieInformatie MOET 1) bij een regelingmutatie voorkomen als @wordt in een tekst:RegelingMutatie; of 2) bij een initiele regeling als @wordt in het besluit (Bij BesluitCompact in tekst:RegelingCompact; tekst:RegelingTijdelijkdeel of tekst:RegelingVrijetekst en bij BesluitKlassiek in tekst:RegelingKlassiek).|
 |BHKV1059|Blokkerend|Bij een Besluit(of Rectificatie) behorende informatieobjecten MOETEN direct meegeleverd worden bij betreffend Besluit danwel Rectificatie.|
 |BHKV1060|Blokkerend|Met een Besluit of Rectificatie meegeleverd informatieobject MOET behoren bij betreffend Besluit danwel Rectificatie.|
 |BHKV1063|Blokkerend|De eId van een data:Intrekking van een informatieobject MOET verwijzen naar de plaats in de RegelingMutatie waar de tekst:ExtIORef wordt verwijderd. (Dat is de eId van de tekst:ExtIORef 1) binnen een wijzig- of verwijder-actie van een bovenliggend element; 2) binnen een tekst:verwijder; of 3) binnen een tekst:verwijderdeTekst.)|
-|BHKV1064|Blokkerend|De module se:FeatureTypeStyle MAG ALLEEN bij een Geo-Informatieobject(GIO) aangeleverd worden|
-|BHKV1065|Blokkerend|De module gio:JuridischeBorgingVan MAG ALLEEN bij een Geo-Informatieobject(GIO) aangeleverd worden|
-|BHKV9999|Blokkerend|Interne fout|
-|GEOMETRY.03.1|Blokkerend|geometrie is afwezig |
-|GEOMETRY.03.2|Blokkerend|geometrie is ongeldig (zie functionele documentatie op: https://aandeslagmetdeomgevingswet.nl/ontwikkelaarsportaal/api-register/api/geo-validatieservice/)|
-|GEOMETRY.03.5|Blokkerend|geometrie niet conform crs configuratie |
-|GEOMETRY.03.6|Blokkerend|geometrie niet conform gmlType configuratie |
-|GEOMETRY.03.7|Blokkerend|geometrie niet conform geostandaard configuratie |
+|BHKV1064|Blokkerend|De module se:FeatureTypeStyle MAG ALLEEN bij een Geo-Informatieobject(GIO) aangeleverd worden.|
+|BHKV1065|Blokkerend|De module gio:JuridischeBorgingVan MAG ALLEEN bij een Geo-Informatieobject(GIO) aangeleverd worden.|
+|BHKV9999|Blokkerend|Interne fout.|
+|GEOMETRY.03.1|Blokkerend|geometrie is afwezig.|
+|GEOMETRY.03.2|Blokkerend|geometrie is ongeldig (zie functionele documentatie op: https://aandeslagmetdeomgevingswet.nl/ontwikkelaarsportaal/api-register/api/geo-validatieservice/).|
+|GEOMETRY.03.5|Blokkerend|geometrie niet conform crs configuratie.|
+|GEOMETRY.03.6|Blokkerend|geometrie niet conform gmlType configuratie.|
+|GEOMETRY.03.7|Blokkerend|geometrie niet conform geostandaard configuratie.|
 |LVBB0002|Blokkerend|Het locatie opdracht-zipbestand MOET bij een validatieVerzoek/publicatieVerzoek aanwezig zijn in het bericht.|
 |LVBB0003|Blokkerend|Het opdracht-zipbestand MOET bij een validatieGBVerzoek/publicatieGBVerzoek aanwezig zijn op de aangegeven locatie.|
 |LVBB1001|Blokkerend|Opdracht.zip MOET een geldige zip zijn.|
 |LVBB1002|Blokkerend|Bestand opdracht.xml MOET aanwezig zijn in het aangeleverde zip-bestand.|
 |LVBB1003|Blokkerend|Bestand manifest.xml MOET aanwezig zijn in het aangeleverde zip-bestand.|
 |LVBB1004|Blokkerend|De bestandsnaam MAG geen ongeldige karakters bevatten.|
-|LVBB1006|Blokkerend|Een aangeleverd opdracht.xml moet voldoen aan de eisen van het schema van de STOP-standaard|
-|LVBB1008|Blokkerend|Een aangeleverd manifest.xml moet voldoen aan de eisen van het schema van de STOP-standaard|
-|LVBB1009|Blokkerend|Alle bestanden, die genoemd zijn in manifest.xml moeten aanwezig zijn in de aangeleverde zip|
-|LVBB1010|Blokkerend|Alle bestanden, die aanwezig zijn in de aangeleverde zip, moeten genoemd zijn in manifest.xml|
-|LVBB1012|Blokkerend|De combinatie OIN id en leveringId moet uniek zijn|
-|LVBB1013|Blokkerend|Plaatjes mogen geen transparantie hebben|
-|LVBB1015|Blokkerend|Een aangeleverd manifest-ow.xml moet voldoen aan de eisen van het schema van de TPOD-standaard|
-|LVBB1016|Blokkerend|Alle bestanden, die genoemd zijn in manifest-ow.xml moeten aanwezig zijn in de aangeleverde zip|
-|LVBB1017|Blokkerend|Het bestandsformaat van de afbeelding moet een formaat zijn, dat ondersteund wordt|
-|LVBB1018|Blokkerend|Het gespecificeerde contenttype van een afbeelding moet overeen komen met het werkelijke contenttype|
-|LVBB1019|Blokkerend|Het gespecificeerde contenttype moet voorkomen in de lijst met toegestane mimetypes|
-|LVBB1020|Blokkerend|Het aangeleverde contenttype moet ingevuld zijn|
-|LVBB1021|Blokkerend|Het gespecificeerde contenttype moet overeen komen met het werkelijke contenttype|
+|LVBB1006|Blokkerend|Een aangeleverd opdracht.xml moet voldoen aan de eisen van het schema van de STOP-standaard.|
+|LVBB1008|Blokkerend|Een aangeleverd manifest.xml moet voldoen aan de eisen van het schema van de STOP-standaard.|
+|LVBB1009|Blokkerend|Alle bestanden, die genoemd zijn in manifest.xml moeten aanwezig zijn in de aangeleverde zip.|
+|LVBB1010|Blokkerend|Alle bestanden, die aanwezig zijn in de aangeleverde zip, moeten genoemd zijn in manifest.xml.|
+|LVBB1012|Blokkerend|De combinatie OIN id en leveringId moet uniek zijn.|
+|LVBB1013|Blokkerend|Plaatjes mogen geen transparantie hebben.|
+|LVBB1015|Blokkerend|Een aangeleverd manifest-ow.xml moet voldoen aan de eisen van het schema van de TPOD-standaard.|
+|LVBB1016|Blokkerend|Alle bestanden, die genoemd zijn in manifest-ow.xml moeten aanwezig zijn in de aangeleverde zip.|
+|LVBB1017|Blokkerend|Het bestandsformaat van de afbeelding moet een formaat zijn, dat ondersteund wordt.|
+|LVBB1018|Blokkerend|Het gespecificeerde contenttype van een afbeelding moet overeen komen met het werkelijke contenttype.|
+|LVBB1019|Blokkerend|Het gespecificeerde contenttype moet voorkomen in de lijst met toegestane mimetypes.|
+|LVBB1020|Blokkerend|Het aangeleverde contenttype moet ingevuld zijn.|
+|LVBB1021|Blokkerend|Het gespecificeerde contenttype moet overeen komen met het werkelijke contenttype.|
 |LVBB1025|Blokkerend|In het manifest-OW mag het objecttype Geometrie niet voorkomen.|
-|LVBB1026|Blokkerend|In het manifest-OW mag een bestandsnaam niet eindigen op '.gml'|
+|LVBB1026|Blokkerend|In het manifest-OW mag een bestandsnaam niet eindigen op '.gml'.|
 |LVBB1027|Blokkerend|Bestand manifest-ow.xml MOET aanwezig zijn in het aangeleverde zip-bestand bij:- <validatieOpdracht> van een besluit;- <publicatieOpdracht> van een besluit;- <validatieDirecteMutatieOpdracht>;- <directeMutatieOpdracht>;- <valideerRegelingVersie>;- <registreerRegelingVersie>;- <valideerDoorleverenRegelingVersie>;- <doorleverenRegelingVersie>|
 |LVBB1028|Blokkerend|Bestand manifest-ow.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij:- "validatieOpdracht" van een kennisgeving;- "publicatieOpdracht" van een kennisgeving;- "breekPublicatieAfOpdracht";- "valideerGio";- "publiceerGio";- "valideerCio";- "publiceerCio"|
-|LVBB1032|Blokkerend|Een aangeleverd manifest-ow.xml (of bij een interne opdracht aangeleverd manifest-bhkv.xml) moet voldoen aan de eisen van het schema van de STOP-standaard|
-|LVBB1033|Blokkerend|Alle bestanden, die genoemd zijn in manifest-bhkv.xml moeten aanwezig zijn in de aangeleverde zip|
+|LVBB1032|Blokkerend|Een aangeleverd manifest-ow.xml (of bij een interne opdracht aangeleverd manifest-bhkv.xml) moet voldoen aan de eisen van het schema van de STOP-standaard.|
+|LVBB1033|Blokkerend|Alle bestanden, die genoemd zijn in manifest-bhkv.xml moeten aanwezig zijn in de aangeleverde zip.|
 |LVBB1035|Blokkerend|In het manifest-bhkv mag alleen het objecttype Geometrie voorkomen.|
-|LVBB1036|Blokkerend|In het manifest-bhkv moet een bestandsnaam eindigen op '.gml'|
+|LVBB1036|Blokkerend|In het manifest-bhkv moet een bestandsnaam eindigen op '.gml'.|
 |LVBB1037|Blokkerend|Bestand manifest-bhkv.xml MOET aanwezig zijn in het aangeleverde zip-bestand bij:- "valideerRegelingVersie";- "registreerRegelingVersie";- "valideerDoorleverenRegelingVersie";- "doorleverenRegelingVersie"|
 |LVBB1038|Blokkerend|Bestand manifest-bhkv.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij:- "validatieOpdracht" van een besluit;- "publicatieOpdracht" van een besluit;- "validatieOpdracht" van een kennisgeving;- "publicatieOpdracht" van een kennisgeving;- "validatieDirecteMutatieOpdracht"- "directeMutatieOpdracht"- "breekPublicatieAfOpdracht";- "valideerGio";- "publiceerGio";- "valideerCio";- "publiceerCio"|
-|LVBB1039|Blokkerend|Alle bestanden, die aanwezig zijn in de aangeleverde zip, moeten genoemd zijn in manifest-bhkv.xml|
+|LVBB1039|Blokkerend|Alle bestanden, die aanwezig zijn in de aangeleverde zip, moeten genoemd zijn in manifest-bhkv.xml.|
 |LVBB1040|Blokkerend|Opdracht.zip MAG NIET  groter zijn dan 1 GB|
 |LVBB1041|Blokkerend|Een individueel bestand (uitgepakt) in de aangeleverde opdracht.zip MAG NIET groter zijn dan 100 MB|
 |LVBB1501|Blokkerend|De  datumBekendmaking binnen de opdracht MOET een datum in juiste formaat (JJJJ-MM-DD) zijn en mag niet in het verleden liggen.|
@@ -693,22 +693,22 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP3118|Blokkerend|Als Rule:Filter:PropertyIsBetween; PropertyIsNotEqualTo; PropertyIsLessThan; PropertyIsGreaterThan; PropertyIsLessThanOrEqualTo of PropertyIsGreaterThanOrEqualTo is; dan MOET de SemanticTypeIdentifier gelijk zijn aan geo:kwantitatieveNormwaarde (evt. met een andere namespace prefix voor https://standaarden.overheid.nl/stop/imop/geo/).|
 |STOP3120|Blokkerend|Als Rule:Filter:And is; dan MOETEN de operanden PropertyIsLessThan en PropertyIsGreaterThanOrEqualTo bevatten.|
 |STOP3126|Blokkerend|De Description:Title MAG NIET leeg zijn (dit is de legenda-regel).|
-|STOP3135|Blokkerend|De PointSymbolizer:Graphic:Mark:Fill MAG GEEN se:GraphicFill bevatten|
-|STOP3138|Blokkerend|De PointSymbolizer MOET een van de vormen hebben: se:Graphicse:Markse:Fillse:GraphicFillse:SvgParameter|
-|STOP3139|Blokkerend|Het name" attribute van de Stroke:SvgParameter MOET zijn stroke; stroke-width; stroke-dasharray; stroke-linecap; stroke-opacity; of stroke-linejoin."|
-|STOP3140|Blokkerend|SvgParameter met name" attribute "stroke" MOET aan de reguliere expressie ^#[0-9a-f]{6}$ voldoen. (string van 7 karakters; met als eerste karakters een # en de volgende zes karakters een hexadecimale waarde.)"|
-|STOP3141|Blokkerend|SvgParameter met name" attribute "stroke-width" MOET aan de reguliere expressie ^[0-9]+(.[0-9])?[0-9]?$ voldoen. (positief getal met 0; 1 of 2 decimalen)"|
-|STOP3142|Blokkerend|SvgParameter met name" attribute "stroke-width" MOET aan de reguliere expressie ^([0-9]+ ?)*$ voldoen. (string met één of meer positief gehele getal gescheiden door een spatie)"|
-|STOP3143|Blokkerend|SvgParameter met name" attribute "stroke-linecap" MOET "butt" bevatten."|
-|STOP3144|Blokkerend|SvgParameter met met name attribute stroke-opacity" MOET aan de reguliere expressie  ^0((.[0-9])?[0-9]?)|1((.0)?0?)$ voldoen. (string met een positief decimaal getal tussen 0.0 en 1.0 (beide inclusief) met 0;1 of 2 decimalen)"|
-|STOP3145|Blokkerend|SvgParameter met name" attribute "stroke-linejoin" MOET "round" bevatten."|
-|STOP3146|Blokkerend|Het name" attribute van de Fill:SvgParameter MOET fill of fill-opacity zijn."|
-|STOP3147|Blokkerend|SvgParameter met name" attribute "fill" MOET aan de reguliere expressie ^#[0-9a-f]{6}$ voldoen. (string van 7 karakters; met als eerste karakters een # en de volgende zes karakters een hexadecimale waarde.)"|
-|STOP3148|Blokkerend|SvgParameter met met name attribute fill-opacity" MOET aan de reguliere expressie ^0((.[0-9])?[0-9]?)|1((.0)?0?)$ voldoen. (string met een positief decimaal getal tussen 0 en 1 (beide inclusief) met 0;1 of 2 decimalen)"|
-|STOP3157|Blokkerend|De PointSymbolizer:Graphic:Mark:WellKnownName MOET zijn:cross (of cross_fill); square; circle; star of triangle|
-|STOP3163|Blokkerend|De Graphic:Size MOET aan de reguliere expressie ^[0-9]+$ voldoen. (een positief geheel getal)|
+|STOP3135|Blokkerend|De PointSymbolizer:Graphic:Mark:Fill MAG GEEN se:GraphicFill bevatten.|
+|STOP3138|Blokkerend|De PointSymbolizer MOET een van de vormen hebben: se:Graphicse:Markse:Fillse:GraphicFillse:SvgParameter.|
+|STOP3139|Blokkerend|Het name" attribute van de Stroke:SvgParameter MOET zijn stroke; stroke-width; stroke-dasharray; stroke-linecap; stroke-opacity; of stroke-linejoin.".|
+|STOP3140|Blokkerend|SvgParameter met name" attribute "stroke" MOET aan de reguliere expressie ^#[0-9a-f]{6}$ voldoen. (string van 7 karakters; met als eerste karakters een # en de volgende zes karakters een hexadecimale waarde.)".|
+|STOP3141|Blokkerend|SvgParameter met name" attribute "stroke-width" MOET aan de reguliere expressie ^[0-9]+(.[0-9])?[0-9]?$ voldoen. (positief getal met 0; 1 of 2 decimalen)".|
+|STOP3142|Blokkerend|SvgParameter met name" attribute "stroke-width" MOET aan de reguliere expressie ^([0-9]+ ?)*$ voldoen. (string met één of meer positief gehele getal gescheiden door een spatie)".|
+|STOP3143|Blokkerend|SvgParameter met name" attribute "stroke-linecap" MOET "butt" bevatten.".|
+|STOP3144|Blokkerend|SvgParameter met met name attribute stroke-opacity" MOET aan de reguliere expressie  ^0((.[0-9])?[0-9]?)|1((.0)?0?)$ voldoen. (string met een positief decimaal getal tussen 0.0 en 1.0 (beide inclusief) met 0;1 of 2 decimalen)".|
+|STOP3145|Blokkerend|SvgParameter met name" attribute "stroke-linejoin" MOET "round" bevatten.".|
+|STOP3146|Blokkerend|Het name" attribute van de Fill:SvgParameter MOET fill of fill-opacity zijn.".|
+|STOP3147|Blokkerend|SvgParameter met name" attribute "fill" MOET aan de reguliere expressie ^#[0-9a-f]{6}$ voldoen. (string van 7 karakters; met als eerste karakters een # en de volgende zes karakters een hexadecimale waarde.)".|
+|STOP3148|Blokkerend|SvgParameter met met name attribute fill-opacity" MOET aan de reguliere expressie ^0((.[0-9])?[0-9]?)|1((.0)?0?)$ voldoen. (string met een positief decimaal getal tussen 0 en 1 (beide inclusief) met 0;1 of 2 decimalen)".|
+|STOP3157|Blokkerend|De PointSymbolizer:Graphic:Mark:WellKnownName MOET zijn:cross (of cross_fill); square; circle; star of triangle.|
+|STOP3163|Blokkerend|De Graphic:Size MOET aan de reguliere expressie ^[0-9]+$ voldoen. (een positief geheel getal).|
 |STOP3170|Blokkerend|Als de PolygonSymbolizer:Fill een GraphicFill:Graphic bevat; DAN MOET deze alleen se:ExternalGraphic bevatten.|
-|STOP3173|Blokkerend|Een PolygonSymbolizer:Fill:GraphicFill:Graphic:ExternalGraphic:InlineContent met attribute encoding=base64" MOET aan de reguliere expressie ^[A-Z0-9a-z/+ =]*$ voldoen. (hoofd- en kleine letters; cijfers; plus-teken; /-teken)"|
+|STOP3173|Blokkerend|Een PolygonSymbolizer:Fill:GraphicFill:Graphic:ExternalGraphic:InlineContent met attribute encoding=base64" MOET aan de reguliere expressie ^[A-Z0-9a-z/+ =]*$ voldoen. (hoofd- en kleine letters; cijfers; plus-teken; /-teken)".|
 |STOP3174|Blokkerend|ExternalGraphic:Format MOET de waarde image/png hebben.|
 |STOP3175|Blokkerend|De module se:FeatureTypeStyle(symbolisatie) MAG ALLEEN bij een Geo-informatieobject(GIO) aangeleverd worden.|
 |STOP3200|Blokkerend|De module gio:JuridischeBorgingVan MAG ALLEEN bij een Geo-informatieobject(GIO) aangeleverd worden.|
@@ -716,7 +716,7 @@ De validatiematrix bevat de volgende validatieregels:
 |TPOD0420|Waarschuwing|Hoofdstukken moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter.|
 |TPOD0460|Waarschuwing|Een Titel moet worden geduid met de label Titel.|
 |TPOD0470|Waarschuwing|De nummering van Titels moet beginnen met het nummer (en evt. letter) van het Hoofdstuk waarin de Titel voorkomt.|
-|TPOD0480|Waarschuwing|Titels moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter|
+|TPOD0480|Waarschuwing|Titels moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter.|
 |TPOD0490|Waarschuwing|Achter het laatste cijfer van een titelnummer mag geen punt worden opgenomen.|
 |TPOD0510|Waarschuwing|Een Afdeling moet worden geduid met de label Afdeling.|
 |TPOD0520|Waarschuwing|Als tussen Hoofdstuk en Afdeling Titel voorkomt dan moet de nummering van Afdelingen beginnen met het samengestelde nummer van de Titel (en evt. letter) waarin de Afdeling voorkomt, gevolgd door een punt.|
@@ -729,11 +729,11 @@ De validatiematrix bevat de volgende validatieregels:
 |TPOD0600|Waarschuwing|Achter het cijfer van een Paragraafnummer mag geen punt worden opgenomen.|
 |TPOD0620|Waarschuwing|Een Subparagraaf moet worden geduid met de label Subparagraaf.|
 |TPOD0630|Waarschuwing|De nummering van Subparagrafen begint met het samengestelde nummer (en evt. letter) van de Paragraaf waarin de Subparagraaf voorkomt, gevolgd door een punt.|
-|TPOD0640|Waarschuwing|Subparagrafen moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter|
+|TPOD0640|Waarschuwing|Subparagrafen moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter.|
 |TPOD0650|Waarschuwing|Achter het laatste cijfer van een Subparagraafnummer mag geen punt worden opgenomen.|
 |TPOD0670|Waarschuwing|Een Subsubparagraaf moet worden geduid met de label Subsubparagraaf.|
 |TPOD0680|Waarschuwing|De nummering van Subsubparagrafen begint met het samengestelde nummer (en evt. letter) van de Subparagraaf waarin de Subsubparagraaf voorkomt, gevolgd door een punt.|
-|TPOD0690|Waarschuwing|Subsubparagrafen moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter|
+|TPOD0690|Waarschuwing|Subsubparagrafen moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter.|
 |TPOD0700|Waarschuwing|Achter het laatste cijfer van een Subsubparagraafnummer mag geen punt worden opgenomen.|
 |TPOD0741|Waarschuwing|De nummering van Artikelen begint met het nummer van het Hoofdstuk (en evt. letter) waarin het Artikel voorkomt, gevolgd door een punt, daarna oplopende nummering van de Artikelen in Arabische cijfers inclusief indien nodig een letter.|
 |TPOD0750|Waarschuwing|Achter het cijfer van een Artikelnummer mag geen punt worden opgenomen.|
@@ -747,26 +747,26 @@ De validatiematrix bevat de volgende validatieregels:
 |TPOD0841|Waarschuwing|Het teken voor een Lijstitem mag zelf bepaald worden door het bevoegd gezag, ook als een lijst binnen een lid wordt gebruikt.|
 |TPOD0850|Waarschuwing|De onderdelen van de Lijst op het derde niveau moeten worden aangegeven met Romeinse cijfers.|
 |TPOD0851|Waarschuwing|Het teken voor een Lijstitem mag zelf bepaald worden door het bevoegd gezag, ook als een lijst binnen een lid wordt gebruikt.|
-|TPOD0880|Waarschuwing|Hoofdstuk 1 heeft het Opschrift Algemene bepalingen|
+|TPOD0880|Waarschuwing|Hoofdstuk 1 heeft het Opschrift Algemene bepalingen.|
 |TPOD0980|Waarschuwing|Hoofdstuk 1 moet een artikel 'begripsbepalingen' bevatten.|
 |TPOD1000|Waarschuwing|Een Begrip moet bestaan uit één term en één definitie.|
 |TPOD1010|Waarschuwing|Begrippen moeten in alfabetische volgorde worden gesorteerd.|
-|TPOD1020|Waarschuwing|Begrippen mogen niet worden genummerd. (Het LiNummer mag niet gebruikt worden binnen een Begrippenlijst.)|
-|TPOD1070|Waarschuwing|Meet- en rekenbepalingen mogen niet worden genummerd. (Het LiNummer mag niet gebruikt worden binnen een Begrippenlijst.)|
+|TPOD1020|Waarschuwing|Begrippen mogen niet worden genummerd. (Het LiNummer mag niet gebruikt worden binnen een Begrippenlijst.).|
+|TPOD1070|Waarschuwing|Meet- en rekenbepalingen mogen niet worden genummerd. (Het LiNummer mag niet gebruikt worden binnen een Begrippenlijst.).|
 |TPOD1110|Blokkerend|IMOW-objecttypen kunnen alleen worden toegepast op het Lichaam van een Regeling, niet op Bijlagen of Toelichtingen.|
 |TPOD1310|Waarschuwing|Locatie heeft het attribuut hoogte, indien het attribuut hoogte gevuld wordt dient hier een waarde uit de waardelijst eenheid gekozen te worden.|
-|TPOD1650|Blokkerend|Het attribuut 'normwaarde' moet bestaan uit één van de drie mogelijke attributen; 'kwalitatieveWaarde' óf 'kwantitatieveWaarde' of 'waardeInRegeltekst'|
+|TPOD1650|Blokkerend|Het attribuut 'normwaarde' moet bestaan uit één van de drie mogelijke attributen; 'kwalitatieveWaarde' óf 'kwantitatieveWaarde' of 'waardeInRegeltekst'.|
 |TPOD1730|Waarschuwing|Gerelateerde activiteiten moeten bestaan indien er naar verwezen wordt.|
 |TPOD1740|Waarschuwing|Bovenliggende activiteiten moeten bestaan indien er naar verwezen wordt.|
-|TPOD1830|Waarschuwing|Binnen het object ‘Gebiedsaanwijzing’ is de waarde ‘functie’ van attribuut ‘type’ (datatype TypeGebiedsaanwijzing) niet toegestaan. (voor AMvB/MR)|
-|TPOD1840|Waarschuwing|Binnen het object ‘Gebiedsaanwijzing’ is de waarde ‘beperkingengebied’ van attribuut ‘type’ (datatype TypeGebiedsaanwijzing) niet toegestaan. (voor AMvB/MR) |
+|TPOD1830|Waarschuwing|Binnen het object ‘Gebiedsaanwijzing’ is de waarde ‘functie’ van attribuut ‘type’ (datatype TypeGebiedsaanwijzing) niet toegestaan. (voor AMvB/MR).|
+|TPOD1840|Waarschuwing|Binnen het object ‘Gebiedsaanwijzing’ is de waarde ‘beperkingengebied’ van attribuut ‘type’ (datatype TypeGebiedsaanwijzing) niet toegestaan. (voor AMvB/MR) .|
 |TPOD1890|Blokkerend|De identificatie van ieder OwObject moet overeenkomen met het type OwObject.|
 |TPOD1960|Blokkerend|Iedere verwijzing naar een gmlObject vanuit een Lijn moet verwijzen naar een object van type GM_LineString of GM_MultiLinestring.|
 |TPOD1970|Blokkerend|Iedere verwijzing naar een gmlObject vanuit een Punt moet verwijzen naar een object van type GM_Point of GM_MultiPoint.|
 |TPOD1980|Blokkerend|Iedere verwijzing naar een gmlObject vanuit een Gebied moet verwijzen naar een object van type GM_Surface of GM_MultiSurface.|
 |TPOD1990|Waarschuwing|Ieder OwObject, behalve Activiteit heeft minstens een OwObject dat ernaar verwijst.|
-|TPOD2000|Blokkerend|het wId van de Regeltekst in OW moet verwijzen naar een bestaande wId van een Artikel of Lid in OP|
-|TPOD2040|Blokkerend|Het wId van de Divisie of Divisietekst in OW moet verwijzen naar een bestaande wId van een Divisie in OP|
+|TPOD2000|Blokkerend|het wId van de Regeltekst in OW moet verwijzen naar een bestaande wId van een Artikel of Lid in OP.|
+|TPOD2040|Blokkerend|Het wId van de Divisie of Divisietekst in OW moet verwijzen naar een bestaande wId van een Divisie in OP.|
 |TPOD2060|Blokkerend|Indien het Artikel is onderverdeeld in Leden, dan dient er geannoteerd te worden op het Lid (en mag er niet geannoteerd worden op het Artikel).|
 |TPOD2080|Blokkerend|Een instructieregel moet ofwel een "InstructieregelInstrument", ofwel een "InstructieregelTaakuitoefening" hebben.|
 |TPOD2090|Blokkerend|Binnen een Omgevingsnorm of Omgevingswaarde moeten alle normwaarden van hetzelfde type zijn: kwalitatief, kwantitatief, of waardeInRegeltekst.|
@@ -775,41 +775,41 @@ De validatiematrix bevat de volgende validatieregels:
 |TPOD2140|Blokkerend|Het WorkIDRegeling van het manifest-ow moet verwijzen naar een bestaande data:FRBRWork van een Regeling in OP.|
 |TPOD2150|Blokkerend|Het DoelID van het manifest-ow moet verwijzen naar een bestaand doel dat aanwezig is in de bijbehorende Regeling in OP.|
 |TPOD2190|Blokkerend|In het manifest-OW mag het objecttype Geometrie niet voorkomen.|
-|TPOD2200|Blokkerend|In het manifest-OW mag een bestandsnaam niet eindigen op '.gml'|
-|TPOD2210|Blokkerend|De combinatie van Doel en Regeling uit het manifest-OW moet ook als combinatie bestaan in OP en verwijzen naar 1 regelingversie|
-|TPOD2220|Blokkerend|De door Ozon (met het Referentierapport) aangegeven geometrie(ën) MOET(EN) in de LVBB (eerder) aangeleverd en geregistreerd zijn|
-|TPOD2230|Blokkerend|De aangeleverde geometrie(ën) MOET(EN) aanwezig zijn als OW-Locatie|
-|TPOD2400|Blokkerend|Het OW-object: Regeltekst mag niet voorkomen bij Regelingen met een Vrijetekststructuur(Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie)|
-|TPOD2401|Blokkerend|Het OW-object: RegelVoorIedereen mag niet voorkomen bij Regelingen met een Vrijetekststructuur(Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie)|
-|TPOD2402|Blokkerend|Het OW-object: Instructieregel mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Omgevingsverordening, en Voorbeschermingsregels op de Omgevingsverordening|
-|TPOD2403|Blokkerend|Het OW-object: Omgevingswaarderegel mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Omgevingsplan en Voorbeschermingsregels|
-|TPOD2404|Blokkerend|Het OW-object: Divisie mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2405|Blokkerend|Het OW-object: Divisietekst mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2406|Blokkerend|Het OW-object: Tekstdeel mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2407|Blokkerend|Het OW-object: Hoofdlijn mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2408|Blokkerend|De OW-objecten: Activiteit en ActiviteitLocatieaanduiding mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, en Toegangsbeperkingsbesluit|
-|TPOD2409|Blokkerend|Het OW-object: Omgevingswaarde mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Omgevingsplan en Voorbeschermingsregels|
-|TPOD2410|Blokkerend|Het OW-object: Omgevingsnorm mag niet voorkomen bij Regelingen met een Vrijetekststructuur(Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie)|
-|TPOD2411|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Beperkingengebied mag alleen voorkomen bij Regelingen van het type: Omgevingsverordening, Waterschapsverordening, Omgevingsplan en Voorbeschermingsregels|
-|TPOD2412|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Bodem mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, N2000 Aanwijzingsbesluit, Toegangsbeperkingsbesluit|
-|TPOD2413|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Bouw mag alleen voorkomen bij Regelingen van het type: Omgevingsplan|
-|TPOD2414|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Defensie mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2415|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Energievoorziening mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2416|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Erfgoed mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2417|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Externe veiligheid mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2418|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Functie mag alleen voorkomen bij Regelingen van het type: Omgevingsverordening, Omgevingsplan, Voorbeschermingsregels|
-|TPOD2419|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Geluid mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2420|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Geur mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2421|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Landschap mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2422|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Leiding mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2423|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Lucht mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2424|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Mijnbouw mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2425|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Natuur mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie|
-|TPOD2426|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Recreatie mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2427|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Ruimtelijk gebruik mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2428|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Verkeer mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2429|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Water en watersysteem mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit|
-|TPOD2430|Blokkerend|Het OW-object: Kaart mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie|
-|TPOD2431|Blokkerend|Het OW-object: Kaartlaag mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie|
-|TPOD2432|Blokkerend|Het OW-object: SymbolisatieItem mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie|
-|TPOD2433|Blokkerend|Het OW-object: Pons mag alleen voorkomen bij Regelingen van het type: Omgevingsplan|
+|TPOD2200|Blokkerend|In het manifest-OW mag een bestandsnaam niet eindigen op '.gml'.|
+|TPOD2210|Blokkerend|De combinatie van Doel en Regeling uit het manifest-OW moet ook als combinatie bestaan in OP en verwijzen naar 1 regelingversie.|
+|TPOD2220|Blokkerend|De door Ozon (met het Referentierapport) aangegeven geometrie(ën) MOET(EN) in de LVBB (eerder) aangeleverd en geregistreerd zijn.|
+|TPOD2230|Blokkerend|De aangeleverde geometrie(ën) MOET(EN) aanwezig zijn als OW-Locatie.|
+|TPOD2400|Blokkerend|Het OW-object: Regeltekst mag niet voorkomen bij Regelingen met een Vrijetekststructuur(Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie).|
+|TPOD2401|Blokkerend|Het OW-object: RegelVoorIedereen mag niet voorkomen bij Regelingen met een Vrijetekststructuur(Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie).|
+|TPOD2402|Blokkerend|Het OW-object: Instructieregel mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Omgevingsverordening, en Voorbeschermingsregels op de Omgevingsverordening.|
+|TPOD2403|Blokkerend|Het OW-object: Omgevingswaarderegel mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Omgevingsplan en Voorbeschermingsregels.|
+|TPOD2404|Blokkerend|Het OW-object: Divisie mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2405|Blokkerend|Het OW-object: Divisietekst mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2406|Blokkerend|Het OW-object: Tekstdeel mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2407|Blokkerend|Het OW-object: Hoofdlijn mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2408|Blokkerend|De OW-objecten: Activiteit en ActiviteitLocatieaanduiding mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, en Toegangsbeperkingsbesluit.|
+|TPOD2409|Blokkerend|Het OW-object: Omgevingswaarde mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Omgevingsplan en Voorbeschermingsregels.|
+|TPOD2410|Blokkerend|Het OW-object: Omgevingsnorm mag niet voorkomen bij Regelingen met een Vrijetekststructuur(Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie).|
+|TPOD2411|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Beperkingengebied mag alleen voorkomen bij Regelingen van het type: Omgevingsverordening, Waterschapsverordening, Omgevingsplan en Voorbeschermingsregels.|
+|TPOD2412|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Bodem mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, N2000 Aanwijzingsbesluit, Toegangsbeperkingsbesluit.|
+|TPOD2413|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Bouw mag alleen voorkomen bij Regelingen van het type: Omgevingsplan.|
+|TPOD2414|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Defensie mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2415|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Energievoorziening mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2416|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Erfgoed mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2417|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Externe veiligheid mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2418|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Functie mag alleen voorkomen bij Regelingen van het type: Omgevingsverordening, Omgevingsplan, Voorbeschermingsregels.|
+|TPOD2419|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Geluid mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2420|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Geur mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2421|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Landschap mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2422|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Leiding mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2423|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Lucht mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2424|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Mijnbouw mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2425|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Natuur mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie.|
+|TPOD2426|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Recreatie mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2427|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Ruimtelijk gebruik mag niet voorkomen bij Regelingen van het type: Waterschapsverordening, Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2428|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Verkeer mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2429|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Water en watersysteem mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2430|Blokkerend|Het OW-object: Kaart mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie.|
+|TPOD2431|Blokkerend|Het OW-object: Kaartlaag mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie.|
+|TPOD2432|Blokkerend|Het OW-object: SymbolisatieItem mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie.|
+|TPOD2433|Blokkerend|Het OW-object: Pons mag alleen voorkomen bij Regelingen van het type: Omgevingsplan.|
