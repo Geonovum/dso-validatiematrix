@@ -6,7 +6,7 @@ de landelijke voorziening DSO moeten de omgevingsdocumenten voldoen aan diverse
 technische en functionele eisen.  Dit document is geen bron van nieuwe regels: de validatieregels 
 vinden hun oorsprong in de STOP/TPOD-standaarden of andere documenten
 en zijn expliciet geïdentificeerd om de validatiefunctionaliteit van
-LVBB en OZON te kunnen ontwikkelen. Dit document voorziet ook in de behoefte van bevoegde gezagen en 
+LVBB en OZON te kunnen ontwikkelen. Dit document is zelf geen standaard maar een hulpmiddel bij de standaard waarin alle regels overzichtelijk bij elkaar staan en voorziet daarmee in de behoefte van bevoegde gezagen en 
 softwareontwikkelaars om inzicht te hebben in de eisen waaraan hun
 omgevingsdocumenten moeten voldoen om succesvol te kunnen worden geregistreerd,
 gepubliceerd en ontsloten op overheid.nl en in het DSO-LV. Dit document voorziet in deze behoefte

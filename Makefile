@@ -1,6 +1,6 @@
-all: Validatiematrix.md
+all: 04-Validatiematrix.md
 clean:
-	rm -f Validatiematrix.md
+	rm -f 04-Validatiematrix.md
 
-Validatiematrix.md: Validatiematrix2markdown.py Validatiematrix.xlsx
-	python3 ./Validatiematrix2markdown.py Validatiematrix.xlsx > Validatiematrix.md
+04-Validatiematrix.md: Validatiematrix2markdown.py Validatiematrix.xlsx
+	python3 ./Validatiematrix2markdown.py Validatiematrix.xlsx > 04-Validatiematrix.md
