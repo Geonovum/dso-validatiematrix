@@ -16,6 +16,6 @@ nodig zijn voor correcte verwerking van een omgevingsdocument. Hoewel alle
 validatieregels nodig zijn voor een correcte werking van de keten, is het niet altijd zo
 dat een omgevingsdocument dat niet aan alle regels voldoet door de
 keten wordt geweigerd. Welke validatieregels daadwerkelijk zijn geïmplementeerd is te vinden in de
-release notes van de verschillende ketenonderdelen.
+release notes van de verschillende ketenonderdelen. De identificaties van de validatieregegel kunnen gebruikt worden om naar een validatieregel te verwijzen.
 
 De rest van dit document is als volgt gestructureerd. In het hoofdstuk [Uitgangspunten](#uitgangspunten) zijn de uitgangspunten voor het samenstellen van de validatiematrix beschreven. Het hoofdstuk [Wijzigingsprotocol](#wijzigingsprotocol) beschrijft het wijzigingsprotocol behorend bij de validatieregels. De daadwerkelijke validatieregels zijn te vinden in [Validatiematrix](#de-validatiematrix). Een wijzigingsoverzicht van dit document is te vinden in [Wijzigingsoverzicht](#wijzigingsoverzicht).

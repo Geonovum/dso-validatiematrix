@@ -13,14 +13,7 @@ De validatiematrix is eerder beschikbaar gesteld in de vorm van een spreadsheet.
 | geïmplementeerd |  Geeft aan of de validatie geïmplementeerd is in de keten. Omdat dit afhangt van de omgeving waarin gewerkt wordt is dit veld niet goed bij te houden bij de validatieregel zelf en wordt hiervoor verwezen naar de release notes van het betreffende systeem. |
 | meldingstekst | foutmelding die getoond wordt door de validatieregel. |
 
-
-
 ## Wijzigingen in versie 2.0
-
-De validatieregels in dit document passen bij de volgende standaarden:
- - Informatiemodel Omgevingswet (IMOW) Versie 2.0.1
- - STOP standaard Versie TODO
- - TODO Andere brondocumenten.
 
 | aanleiding | Omschrijving |
 |------------|--------------|
