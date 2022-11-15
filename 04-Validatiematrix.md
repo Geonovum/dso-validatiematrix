@@ -1,6 +1,10 @@
 
 # De validatiematrix
 
+De volgende versie van de standaarden zijn gebruikt voor het samenstellen van de validatiematrix:
+ - Informatiemodel Omgevingswet (IMOW) Versie 2.0.1.
+ - STOP standaard Versie 1.3.0.
+
 Betekenis van de kolommen:
 
 | kolom         | omschrijving |
@@ -80,62 +84,62 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1040|Blokkerend|Opdracht.zip MAG NIET  groter zijn dan 1 GB|
 |LVBB1041|Blokkerend|Een individueel bestand (uitgepakt) in de aangeleverde opdracht.zip MAG NIET groter zijn dan 100 MB|
 |LVBB1501|Blokkerend|De  datumBekendmaking binnen de opdracht MOET een datum in juiste formaat (JJJJ-MM-DD) zijn en mag niet in het verleden liggen.|
-|LVBB1502|Blokkerend|De AKN in de opdracht (indien aanwezig) moet als derde veld 'bill' hebben|
-|LVBB1505|Blokkerend|De opdracht moet de datum bekendmaking bevatten|
-|LVBB1506|Blokkerend|Het publicatiebestand, waarvan de naam in de opdracht is vermeld, moet aanwezig zijn|
-|LVBB1507|Blokkerend|Alle bestanden voorkomend in het manifest moeten door de regisseur zijn klaargezet en omgekeerd|
-|LVBB1509|Blokkerend|Het opdracht bestand moet in de database aanwezig zijn met de afgeproken naam|
-|LVBB1510|Blokkerend|De opdracht MOET een id-bevoegd-gezag bevatten|
-|LVBB1511|Blokkerend|De opdracht MOET een id-aanleveraar bevatten|
-|LVBB1512|Blokkerend|Geen machtiging aanwezig voor aanleveraar namens bevoegd-gezag op aanleverdatum|
-|LVBB1515|Blokkerend|De (soort) aanlevering MOET een besluit of kennisgeving zijn met een geldige schemaversie|
-|LVBB1517|Blokkerend|Bij aanlevering van een GIO zonder besluit MOET  het 4e veld van de AKN-Id van de Regelingversie de waarde "act" bevatten|
-|LVBB1518|Blokkerend|Bij aanlevering van een GIO zonder besluit MOET  het 4e veld van de JOIN-Id van de GIO de waarde "regdata" bevatten|
-|LVBB1550|Blokkerend|Het opdracht bestand moet bij afbreken aanwezig zijn voor opgegeven oin en idlevering|
-|LVBB1551|Blokkerend|Bij Afbreken moet de opgegeven AKN bestaan|
-|LVBB1553|Blokkerend|Bij Afbreken moet de datum bekendmaking van het af te breken besluit in de toekomst liggen|
+|LVBB1502|Blokkerend|De AKN in de opdracht (indien aanwezig) moet als derde veld 'bill' hebben.|
+|LVBB1505|Blokkerend|De opdracht moet de datum bekendmaking bevatten.|
+|LVBB1506|Blokkerend|Het publicatiebestand, waarvan de naam in de opdracht is vermeld, moet aanwezig zijn.|
+|LVBB1507|Blokkerend|Alle bestanden voorkomend in het manifest moeten door de regisseur zijn klaargezet en omgekeerd.|
+|LVBB1509|Blokkerend|Het opdracht bestand moet in de database aanwezig zijn met de afgeproken naam.|
+|LVBB1510|Blokkerend|De opdracht MOET een id-bevoegd-gezag bevatten.|
+|LVBB1511|Blokkerend|De opdracht MOET een id-aanleveraar bevatten.|
+|LVBB1512|Blokkerend|Geen machtiging aanwezig voor aanleveraar namens bevoegd-gezag op aanleverdatum.|
+|LVBB1515|Blokkerend|De (soort) aanlevering MOET een besluit of kennisgeving zijn met een geldige schemaversie.|
+|LVBB1517|Blokkerend|Bij aanlevering van een GIO zonder besluit MOET  het 4e veld van de AKN-Id van de Regelingversie de waarde "act" bevatten.|
+|LVBB1518|Blokkerend|Bij aanlevering van een GIO zonder besluit MOET  het 4e veld van de JOIN-Id van de GIO de waarde "regdata" bevatten.|
+|LVBB1550|Blokkerend|Het opdracht bestand moet bij afbreken aanwezig zijn voor opgegeven oin en idlevering.|
+|LVBB1551|Blokkerend|Bij Afbreken moet de opgegeven AKN bestaan.|
+|LVBB1553|Blokkerend|Bij Afbreken moet de datum bekendmaking van het af te breken besluit in de toekomst liggen.|
 |LVBB1554|Blokkerend|Publicatie dat afgebroken moet worden moet niet al in afwachting zijn om afgebroken te worden.|
-|LVBB1555|Blokkerend|Publicatie dat afgebroken moet worden mag niet gepubliceerd zijn|
-|LVBB1556|Blokkerend|Besluit dat afgebroken moet worden mag geen regelingversie bepalen die al gepubliceerd is|
-|LVBB1557|Blokkerend|Besluit dat afgebroken moet worden mag geen informatie-object hebben die al gepubliceerd is|
-|LVBB1558|Blokkerend|Besluit dat afgebroken moet worden mag geen regelingversie bepalen die gebruikt als was-versie voor een mutatie in een ander besluit|
-|LVBB1559|Blokkerend|Bestand met consolidatie-procedurestappen bij besluit wacht om afgebroken te worden|
-|LVBB1560|Blokkerend|Voor een af te breken besluit MAG NIET een kennisgeving naar dit besluit verwijzen|
+|LVBB1555|Blokkerend|Publicatie dat afgebroken moet worden mag niet gepubliceerd zijn.|
+|LVBB1556|Blokkerend|Besluit dat afgebroken moet worden mag geen regelingversie bepalen die al gepubliceerd is.|
+|LVBB1557|Blokkerend|Besluit dat afgebroken moet worden mag geen informatie-object hebben die al gepubliceerd is.|
+|LVBB1558|Blokkerend|Besluit dat afgebroken moet worden mag geen regelingversie bepalen die gebruikt als was-versie voor een mutatie in een ander besluit.|
+|LVBB1559|Blokkerend|Bestand met consolidatie-procedurestappen bij besluit wacht om afgebroken te worden.|
+|LVBB1560|Blokkerend|Voor een af te breken besluit MAG NIET een kennisgeving naar dit besluit verwijzen.|
 |LVBB1561|Blokkerend|Een besluit MAG NIET afgebroken worden, indiena) bij dit besluit minimaal 1 Informatie-Object wordt vastgesteld, dat een geo-id bevat; enb) dit besluit het enige besluit is, dat een Informatie-Object vaststelt, dat deze geo-id bevat; enc) vanuit een regelingversie, die vastgesteld is door een ander besluit, wordt verwezen naar deze geo-id.|
-|LVBB1562|Blokkerend|Voor een af te breken publicatie MOET er een besluit aanwezig zijn bij een regelingversie, tenzij de regelingversie via een consolidatie is aangeboden|
-|LVBB1563|Blokkerend|Indien ingevuld, MOET voor een af te breken besluit de 'datum juridisch-werkend-vanaf' van de regelingversie een datum in de toekomst zijn|
-|LVBB1564|Blokkerend|Indien ingevuld, MOET voor een af te breken besluit de 'datum juridisch-werkend-vanaf' van het InformatieObject een datum in de toekomst zijn|
-|LVBB1565|Blokkerend|Besluit dat afgebroken moet worden MAG GEEN informatie-object hebben dat als basis voor muteren voor een informatie-object in een ander besluit dient|
-|LVBB1566|Blokkerend|Besluit dat afgebroken moet worden MAG GEEN regeling bevatten die ingetrokken is door een ander besluit|
-|LVBB1567|Blokkerend|Besluit dat afgebroken moet worden MAG GEEN regeling bevatten die als hoofdregeling dient voor een regeling tijdelijk deel dat vastgesteld is in een ander besluit|
+|LVBB1562|Blokkerend|Voor een af te breken publicatie MOET er een besluit aanwezig zijn bij een regelingversie, tenzij de regelingversie via een consolidatie is aangeboden.|
+|LVBB1563|Blokkerend|Indien ingevuld, MOET voor een af te breken besluit de 'datum juridisch-werkend-vanaf' van de regelingversie een datum in de toekomst zijn.|
+|LVBB1564|Blokkerend|Indien ingevuld, MOET voor een af te breken besluit de 'datum juridisch-werkend-vanaf' van het InformatieObject een datum in de toekomst zijn.|
+|LVBB1565|Blokkerend|Besluit dat afgebroken moet worden MAG GEEN informatie-object hebben dat als basis voor muteren voor een informatie-object in een ander besluit dient.|
+|LVBB1566|Blokkerend|Besluit dat afgebroken moet worden MAG GEEN regeling bevatten die ingetrokken is door een ander besluit.|
+|LVBB1567|Blokkerend|Besluit dat afgebroken moet worden MAG GEEN regeling bevatten die als hoofdregeling dient voor een regeling tijdelijk deel dat vastgesteld is in een ander besluit.|
 |LVBB1568|Blokkerend|De id-bevoegd-gezag (OIN) van de afbreekopdracht MOET gelijk zijn aan de id-bevoegd-gezag (OIN) van de af te breken opdracht.|
 |LVBB1571|Blokkerend|Voor het verwerken van een aanlevering MOET de status van een opgestart proces (met gegeven status identifier) bekend zijn|
-|LVBB1572|Blokkerend|Voor het valideren van een aanlevering MOET een af te melden validatierapport bekend zijn|
-|LVBB1573|Blokkerend|Voor het valideren van een aanlevering MAG een eerder afgemeld validatierapport NIET opnieuw afgemeld worden|
+|LVBB1572|Blokkerend|Voor het valideren van een aanlevering MOET een af te melden validatierapport bekend zijn.|
+|LVBB1573|Blokkerend|Voor het valideren van een aanlevering MAG een eerder afgemeld validatierapport NIET opnieuw afgemeld worden.|
 |LVBB1574|Blokkerend|De juridisch werkend vanaf datum MOET op of na datum bekendmaking van het besluit liggen.|
-|LVBB1600|Blokkerend|Een Directe Mutatie op een Regelingversie MAG ALLEEN wanneer het Besluit, dat deze Regelingversie heeft vastgesteld, al gepubliceerd is|
+|LVBB1600|Blokkerend|Een Directe Mutatie op een Regelingversie MAG ALLEEN wanneer het Besluit, dat deze Regelingversie heeft vastgesteld, al gepubliceerd is.|
 |LVBB1601|Blokkerend|Bij een directe mutatie MAG NIET meer dan 1 aanlevering element in het manifest-ow voorkomen (hiermee kan een regelingversie/doel combinatie maar 1 keer voorkomen).|
-|LVBB2002|Blokkerend|Is er validatieplan aanwezig voor ConformProfiel|
-|LVBB2003|Blokkerend|Een aangeleverd document moet voldoen aan de eisen van het IMOP-schema van de STOP-standaard|
+|LVBB2002|Blokkerend|Is er validatieplan aanwezig voor ConformProfiel.|
+|LVBB2003|Blokkerend|Een aangeleverd document moet voldoen aan de eisen van het IMOP-schema van de STOP-standaard.|
 |LVBB2004|Blokkerend|Is er een conformprofiel voor de regelingversie?|
-|LVBB2008|Blokkerend|Daar waar een AKN- of JOIN-identificatie wordt verwacht moet deze beginnen met akn of join|
-|LVBB2009|Blokkerend|Voor een AKN-identificatie (werk/expressie) moet het tweede deel een geldig land zijn (ln, aw, cw, sx)|
-|LVBB2010|Blokkerend|Voor een AKN-identificatie (werk/expressie) moet het derde deel een geldig type zijn (bill, act, doc, officialGazette)|
+|LVBB2008|Blokkerend|Daar waar een AKN- of JOIN-identificatie wordt verwacht moet deze beginnen met akn of join.|
+|LVBB2009|Blokkerend|Voor een AKN-identificatie (werk/expressie) moet het tweede deel een geldig land zijn (ln, aw, cw, sx).|
+|LVBB2010|Blokkerend|Voor een AKN-identificatie (werk/expressie) moet het derde deel een geldig type zijn (bill, act, doc, officialGazette).|
 |LVBB2011|Blokkerend|Voor een JOIN-identificatie (werk/expressie) moet het tweede deel geljk zijn aan 'id' of 'set'.|
-|LVBB2012|Blokkerend|Voor een JOIN-identificatie (werk/expressie) moet het derde deel een geldig type zijn (regdata, pubdata, infodata, proces, stop)|
-|LVBB2013|Blokkerend|Voor een AKN- of JOIN identificatie (werk/expressie) moet het vijfde deel een jaartal zijn of een geldige datum zijn|
-|LVBB2015|Blokkerend|Als voor een JOIN-identificatie (expressie) het eerste deel na de '@' een jaartal is dan moet dat gelijk zijn of groter dan het jaartal in het werk deel (vijfde deel)|
-|LVBB2016|Blokkerend|Voor een AKN- of JOIN-identificatie (expressie) moet deel voorafgaand aan de '@' een geldige taal zijn ('nld','eng','fry','pap','mul','und')|
-|LVBB2017|Blokkerend|Een AKN- of JOIN-identificatie mag geen punt bevatten|
-|LVBB2019|Blokkerend|Een AKN- of JOIN-identificatie MOET uit 7 delen bestaan tussen eerste '/' en '@'|
-|LVBB2020|Blokkerend|Het zevende deel van een AKN- of JOIN-identificatie MAG ALLEEN (hoofd)letters, cijfers en scheidingstekens (_ of -) ertussen bevatten|
-|LVBB2021|Blokkerend|Het zevende deel van een AKN- of JOIN-identificatie MAG NIET meer dan 128 tekens bevatten|
-|LVBB2022|Blokkerend|Het deel van de akn, dat volgt op 'officialGazette', MOET gelijk zijn aan de indicatie van een publicatie (stb, stcrt, trb, gmb, prb, bgr, wsb)|
-|LVBB2501|Blokkerend|Domeinmanifest bestaat niet|
-|LVBB2502|Blokkerend|Domeinmanifest moet doel hebben|
-|LVBB2503|Blokkerend|Doel in domeinmanifest moet bestaan|
-|LVBB2504|Blokkerend|De bestanden genoemd in het domeinmanifest moeten meegeleverd zijn|
-|LVBB2505|Blokkerend|Het doel moet gekoppeld zijn aan regelingversies, die horen bij de regeling die in het domeinmanifest staat|
+|LVBB2012|Blokkerend|Voor een JOIN-identificatie (werk/expressie) moet het derde deel een geldig type zijn (regdata, pubdata, infodata, proces, stop).|
+|LVBB2013|Blokkerend|Voor een AKN- of JOIN identificatie (werk/expressie) moet het vijfde deel een jaartal zijn of een geldige datum zijn.|
+|LVBB2015|Blokkerend|Als voor een JOIN-identificatie (expressie) het eerste deel na de '@' een jaartal is dan moet dat gelijk zijn of groter dan het jaartal in het werk deel (vijfde deel).|
+|LVBB2016|Blokkerend|Voor een AKN- of JOIN-identificatie (expressie) moet deel voorafgaand aan de '@' een geldige taal zijn ('nld','eng','fry','pap','mul','und').|
+|LVBB2017|Blokkerend|Een AKN- of JOIN-identificatie mag geen punt bevatten.|
+|LVBB2019|Blokkerend|Een AKN- of JOIN-identificatie MOET uit 7 delen bestaan tussen eerste '/' en '@'.|
+|LVBB2020|Blokkerend|Het zevende deel van een AKN- of JOIN-identificatie MAG ALLEEN (hoofd)letters, cijfers en scheidingstekens (_ of -) ertussen bevatten.|
+|LVBB2021|Blokkerend|Het zevende deel van een AKN- of JOIN-identificatie MAG NIET meer dan 128 tekens bevatten.|
+|LVBB2022|Blokkerend|Het deel van de akn, dat volgt op 'officialGazette', MOET gelijk zijn aan de indicatie van een publicatie (stb, stcrt, trb, gmb, prb, bgr, wsb).|
+|LVBB2501|Blokkerend|Domeinmanifest bestaat niet.|
+|LVBB2502|Blokkerend|Domeinmanifest moet doel hebben.|
+|LVBB2503|Blokkerend|Doel in domeinmanifest moet bestaan.|
+|LVBB2504|Blokkerend|De bestanden genoemd in het domeinmanifest moeten meegeleverd zijn.|
+|LVBB2505|Blokkerend|Het doel moet gekoppeld zijn aan regelingversies, die horen bij de regeling die in het domeinmanifest staat.|
 |LVBB2511|Blokkerend|Bestand 'manifest-bhkv.xml' MOET aanwezig zijn|
 |LVBB2512|Blokkerend|Bestand 'manifest-bhkv.xml' MOET doel hebben|
 |LVBB2513|Blokkerend|Doel in bestand 'manifest-bhkv.xml' MOET bestaan|
@@ -355,6 +359,7 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON0101|Blokkerend|Een Normwaarde moet verwijzen naar een locatie die bestaat.|
 |OZON0102|Blokkerend|Een Regeltekst moet verwijzen naar één of meer Juridische Regels.|
 |OZON0103|Blokkerend|(TPOD2180) Per Regeling moet er een Regelingsgebied zijn aangeleverd.|
+|OZON0104|Blokkerend|Per Regeling mag er maximaal één Pons zijn.|
 |OZON0107|Blokkerend|Het beëindigen van een OW-object mag alleen als de inhoud exact overeenkomt met de laatst aangeleverde OW-informatie.|
 |OZON0108|Blokkerend|Het aanleveren van een OW-object mag alleen indien de gegevens aangepast zijn t.o.v. de vorige versie van het OW-object.|
 |OZON0109|Blokkerend|OW-informatie waar naar verwezen wordt vanuit andere OW-informatie moet bestaan.|
@@ -376,7 +381,11 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON0126|Blokkerend|Een vastgesteld ow-object mag geen procedurestatus hebben.|
 |OZON0127|Blokkerend|Een ontwerp ow-object moet een procedurestatus met de waarde 'ontwerp' hebben.|
 |OZON0128|Blokkerend|Ontwerp symbolisatie-items worden nog niet ondersteund (tijdelijke validatie)|
+|OZON0129|Blokkerend|(TPOD1960) Iedere verwijzing naar een geometrie vanuit een Lijn moet een lijn-geometrie zijn.|
+|OZON0130|Blokkerend|(TPOD1970) Iedere verwijzing naar een geometrie vanuit een Punt moet een punt-geometrie zijn.|
+|OZON0131|Blokkerend|(TPOD1980) Iedere verwijzing naar een geometrie vanuit een Gebied moet een gebied-geometrie zijn.|
 |OZON0200|Blokkerend|Elk type gebiedsaanwijzing in CIMOW is aanwezig in de waardelijst 'gebiedsaanwijzingstypen'|
+|OZON0201|Blokkerend|Een gebiedsaanwijzing mag niet wijzigen van type|
 |OZON0204|Blokkerend|Als een Tekstdeel verwijst naar een locatie, dan moet deze bestaan.|
 |OZON0206|Blokkerend|(RTRG0019) Maximaal één activiteit van een gemeente mag verwijzen naar een bovenliggende activiteit niet van een gemeente.|
 |OZON0207|Blokkerend|(RTRG0020) Maximaal één activiteit van een provincie mag verwijzen naar een bovenliggende activiteit niet van een provincie|
@@ -421,8 +430,20 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON0372|Blokkerend|Een gebiedengroep mag niet twee keer verwijzen naar hetzelfde gebied.|
 |OZON0373|Blokkerend|Een lijnengroep mag niet twee keer verwijzen naar dezelfde lijn.|
 |OZON0374|Blokkerend|Een puntengroep mag niet twee keer verwijzen naar dezelfde punt.   |
+|OZON0375|Blokkerend|Een kaart mag niet twee keer verwijzen naar dezelfde kaartlaag.|
+|OZON0376|Blokkerend|Een kaartlaag mag niet twee keer verwijzen naar dezelfde activiteitlocatieaanduiding.|
+|OZON0377|Blokkerend|Een kaartlaag mag niet twee keer verwijzen naar dezelfde omgevingsnorm.|
+|OZON0378|Blokkerend|Een kaartlaag mag niet wee keer verwijzen naar dezelfde gebiedsaanwijzing.|
+|OZON0379|Blokkerend|Een regelvooriedereen mag niet twee keer verwijzen naar hetzelfde thema.|
+|OZON0380|Blokkerend|Een instructieregel mag niet twee keer verwijzen naar hetzelfde thema.|
+|OZON0381|Blokkerend|Een omgevingswaarderegel mag niet twee keer verwijzen naar hetzelfde thema.|
+|OZON0382|Blokkerend|Een instructieregel mag niet twee keer verwijzen naar hetzelfde instrument.|
+|OZON0383|Blokkerend|Een instructieregel mag niet twee keer verwijzen naar dezelfde taakuitoefening. |
+|OZON0384|Blokkerend|Een norm mag niet twee keer verwijzen naar dezelfde normwaarde.|
+|OZON0385|Blokkerend|Een normwaarde mag niet twee keer verwijzen naar dezelfde locatie.|
 |OZON1019|Blokkerend|Het bevoegd gezag moet het juiste format hebben: het moet eindigen met het type bevoegd gezag (ministerie, provincie, gemeente, waterschap), een /, en de organisatiecode, bijvoorbeeld ‘/gemeente/gm0037’. |
 |OZON1020|Blokkerend|Het soort regeling moet overeenkomen met de waardelijst soortregeling (uit OP-waardelijsten).|
+|OZON1021|Blokkerend|Alle regelingen (behalve intrekkingen) moeten een AnnotatieBijToestand bevatten.|
 |OZON1024|Blokkerend|Een levering moet 1 of 2 toestanden bevatten.|
 |OZON1025|Blokkerend|Als een levering een regelingversie intrekt, dan moet deze bekend zijn bij Ozon.|
 |OZON1026|Blokkerend|Een initiele levering dient nog niet bekend te zijn bij Ozon.|
@@ -434,7 +455,9 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON1033|Blokkerend|Intrekken/Vervangen van een RegelingVersie is niet toegestaan wanneer er een Tijdelijk Deel naar verwijst.|
 |OZON1034|Blokkerend|Een ontwerp Ow-object mag niet bestaan in Ozon.|
 |OZON1036|Blokkerend|Een regeling die een tijdelijk deel is, mag zelf geen tijdelijk deel hebben.|
+|OZON1037|Blokkerend|Een regeling die een tijdelijk deel is, mag zelf geen pons hebben.|
 |OZON1038|Blokkerend|Een ontwerpregeling kan niet geladen worden als er al een andere ontwerpregeling bestaat met hetzelfde expressionId of dezelfde ontwerpbesluitIdentificatie.|
+|OZON1039|Blokkerend|Een ontwerpregeling moet procedurestappen hebben die voorkomen in de waardelijst procedurestappen_ontwerp|
 |OZON1040|Blokkerend|Een actualisatie van procedureverloop moet verwijzen naar een ontwerpregeling die bekend is in Ozon.|
 |OZON1041|Blokkerend|Een ontwerpregeling moet een regelingsgebied hebben of gekoppeld kunnen worden aan een vastgesteld document. |
 |OZON1042|Blokkerend|Een intrekking van een Regeling moet ook bijbehorend regelingsgebied, regelteksten, divisies/divisieteksten, en ponsen beëindigen.|
@@ -456,6 +479,11 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON4008|Blokkerend|Bij een levering met meerdere regelingen, mag ieder owObject maar in één regeling gebruikt worden.                                                |
 |OZON4009|Blokkerend|Bij een levering met meerdere regelingen, mag iedere geo maar in één regeling gebruikt worden.                  |
 |OZON4010|Blokkerend|Intrekken-vervangen (scenario 0) mag niet worden gebruikt in combinatie met meerdere regelingen.|
+|OZON5001|Blokkerend|(TPOD1890) Het objecttype in de identificatie van het OwObject moet overeenkomen met het objecttype van het OwObject|
+|OZON5002|Blokkerend|(TPOD2080) Een instructieregel moet ofwel een 'InstructieregelInstrument', ofwel een 'InstructieregelTaakuitoefening' hebben|
+|OZON5003|Blokkerend|(TPOD2090) De normwaarden binnen een norm moeten hetzelfde type hebben.|
+|OZON5004|Blokkerend|(TPOD2100) Als een norm een Eenheid heeft, dan moeten de normwaarden van het type kwantitatief zijn.|
+|OZON5005|Blokkerend|(TPOD2110) Een Tekstdeel met een locatie moet ook een idealisatie hebben.|
 |RTRG0016|Blokkerend|Als een activiteit van een gemeente verwijst naar een bovenliggende activiteit niet van een gemeente, dan moet deze verwijzen naar de activiteit: 'activiteit in omgevingsplan'|
 |RTRG0017|Blokkerend|Als een activiteit van een provincie verwijst naar een bovenliggende activiteit niet van een provincie, dan moet deze verwijzen naar de activiteit: 'activiteit in omgevingsverordening'|
 |RTRG0018|Blokkerend|Als een activiteit van een waterschap verwijst naar een bovenliggende activiteit niet van een waterschap, dan moet deze verwijzen naar de activiteit: 'activiteit in waterschapsverordening'|
@@ -602,13 +630,13 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP1313|Blokkerend|Een stap die het begin van een schorsingsperiode aangeeft MOET ofwel als eerste voorkomen; ofwel nadat een eerdere schorsingsperiode is afgesloten.SchorsingsperiodeStart: SchorsingEind: Schorsing opgeheven|
 |STOP1315|Blokkerend|Een stap die het einde van een schorsingsperiode aangeeft MOET volgen op een stap die het begin van de schorsingsperiode aangeeft.|
 |STOP1319|Blokkerend|Sommige stappen MOETEN in het procedureverloop vermeld worden omdat de informatie anders niet compleet is:Stap 'Einde inzagetermijn' MOET vermeld worden als 'Begin inzagetermijn' is opgenomen.Stap 'Einde beroepstermijn' MOET vermeld worden als 'Beroep(en) ingesteld' is opgenomen.Stap 'Ondertekening' MOET vermeld worden als 'Beroep(en) ingesteld' is opgenomenStap 'Ondertekening' MOET vermeld worden als 'Einde beroepstermijn' is opgenomenStap 'Ondertekening' MOET vermeld worden als 'Einde bezwaar' is opgenomenAls deze stappen niet vermeld zijn is het niet mogelijk afgeleide informatie te bepalen op manieren die in de standaard beschreven staan; zoals de relevantie van het besluit en/of gerelateerde kennisgevingen op een moment in de tijd; of de status van een besluit.|
-|STOP1320|Blokkerend|Bij een kennisgeving van een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde bezwaartermijnEinde beroepstermijn|
-|STOP1321|Blokkerend|Bij een kennisgeving ontwerp besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Begin inzagetermijnEinde inzagetermijn|
+|STOP1320|Blokkerend|Bij een kennisgeving van een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde bezwaartermijnEinde beroepstermijn.|
+|STOP1321|Blokkerend|Bij een kennisgeving ontwerp besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Begin inzagetermijnEinde inzagetermijn.|
 |STOP1400|Blokkerend|Een procedureverloopmutatie MAG NIET leiden tot een ongeldig procedureverloop (Het resulterende procedureverloop moet voldoen aan de beschrijving en dus aan de procedureverloop-bedrijfsregels).|
 |STOP1500|Blokkerend|De tekst:Wat van tekst:VoegToe; tekst:Verwijder; tekst:Vervang of tekst:VervangKop MAG NIET gebruikt worden binnen tekst:Tekstrevisie.|
 |STOP2001|Blokkerend|Een ontwerpbesluit treedt niet in werking en kent geen geldigheid.|
 |STOP2002|Blokkerend|Als FRBRWork begint met '/akn/nl/bill/' dan moet het soortwork '/join/id/stop/work_003' (generiek besluit) zijn.|
-|STOP2003|Blokkerend|Als FRBRWork begint met '/akn/nl/act/' dan moet het soortwork een van de volgende zijn:'/join/id/stop/work_019' (regeling)'/join/id/stop/work_006' (geconsolideerde regeling)'/join/id/stop/work_021' (tijdelijk regelingdeel)'/join/id/stop/work_019' (consolidatie van tijdelijk regelingdeel)|
+|STOP2003|Blokkerend|Als FRBRWork begint met '/akn/nl/act/' dan moet het soortwork een van de volgende zijn:'/join/id/stop/work_019' (regeling)'/join/id/stop/work_006' (geconsolideerde regeling)'/join/id/stop/work_021' (tijdelijk regelingdeel)'/join/id/stop/work_019' (consolidatie van tijdelijk regelingdeel).|
 |STOP2004|Blokkerend|De identificatie van een tijdelijk regelingdeel (data:ExpressionIdentificatie bevat data:isTijdelijkDeelVan) MOET als soortWork '/join/id/stop/work_021' (tijdelijk regelingdeel) hebben.|
 |STOP2006|Blokkerend|Elke data:wId (tekst) of JOIN-id (informatieobject) waar in een tekst:ArtikelgewijzeToelichting toelichting op wordt gegeven én die wordt genoemd in de data:Toelichtingsrelatie MOET voorkomen in de juridische tekst van de regeling of het besluit; of moet als IO bij het besluit horen (dus voorkomen in de BesluitMetadata; ook na een rectificatie).|
 |STOP2009|Blokkerend|De data:wId waar een data:Toelichtingsrelatie naar verwijst; MOET voorkomen in de tekst:ArtikelgewijzeToelichting bij de regeling of het besluit.|
@@ -619,8 +647,8 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP2022|Blokkerend|De ConsolidatieInformatie van een ingetrokken Informatieobject verwijst naar de plaats in de regelingtekst waar die versie; juridisch gezien; ophoudt te bestaan (wijzigen of verwijderen van tekst:ExtIORef).|
 |STOP2023|Blokkerend|Elk consolideerbaar informatieobject MOET een geboorteregeling hebben.|
 |STOP2024|Blokkerend|Als FRBRWork begint met '/join/id/' dan moet het soortwork een van de volgende zijn: '/join/id/stop/work_010' (informatieobject)'/join/id/stop/work_005' (geconsolideerd informatieobject)|
-|STOP2025|Blokkerend|data:officieleTitel van een informatieobject MOET gelijk zijn aan het data:FRBRWork|
-|STOP2026|Blokkerend|De collectie(regdata; pubdata of infodata) gebruikt in de JOIN identifier van een informatieobject MOET overeenkomen met zijn data:publicatieinstructie|
+|STOP2025|Blokkerend|data:officieleTitel van een informatieobject MOET gelijk zijn aan het data:FRBRWork.|
+|STOP2026|Blokkerend|De collectie(regdata; pubdata of infodata) gebruikt in de JOIN identifier van een informatieobject MOET overeenkomen met zijn data:publicatieinstructie.|
 |STOP2030|Blokkerend|Een met een besluit of rectificatie meegeleverde consolideerbare informatieobject-versie MOET als inhoud van tekst:ExtIoRef genoemd worden in de Regeling of Regelingmutatie.|
 |STOP2031|Blokkerend|Externe verwijzingen (imop-tekst:ExtRef en imop-tekst:ExtIORef) in een ontwerpbesluit mogen alleen verwijzen naar met het ontwerpbesluit meegeleverde informatieobjecten; ofnaar eerder bekend gemaakte ontwerp- of definitieve besluiten en bijbehorende informatieobjecten.|
 |STOP2032|Blokkerend|Externe verwijzingen (imop-tekst:ExtRef en imop-tekst:ExtIORef) in een definitief besluit mogen alleen verwijzen naar met het besluit meegeleverde informatieobjecten; ofnaar eerder bekend gemaakte definitieve besluiten en bijbehorende informatieobjecten.|
@@ -643,10 +671,10 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP2065|Blokkerend|De doelen van de versies in data:gemaaktOpBasisVan MOGEN NIET gelijk zijn.|
 |STOP2066|Blokkerend|De doelen van de Ver- en OntvlochtenVersies in data:gemaaktOpBasisVan MOGEN NIET voorkomen als doel van de BeoogdeRegeling of het BeoogdInformatieobject.|
 |STOP2067|Blokkerend|Het doel van de Basisversie MOET bestaan. (En bij aanlevering aan de LVBB; al bekend zijn bij de LVBB)|
-|STOP2068|Blokkerend|De ConsolidatieInformatie van een Revisie mag geen eId te bevatten|
-|STOP2069|Blokkerend|De ConsolidatieInformatie van een Revisie mag geen Tijdstempels bevatten|
-|STOP2070|Blokkerend|De ConsolidatieInformatie van een Revisie mag geen Intrekkingen bevatten|
-|STOP2071|Blokkerend|De ConsolidatieInformatie van een Revisie mag geen Terugtrekkingen bevatten|
+|STOP2068|Blokkerend|De ConsolidatieInformatie van een Revisie mag geen eId te bevatten.|
+|STOP2069|Blokkerend|De ConsolidatieInformatie van een Revisie mag geen Tijdstempels bevatten.|
+|STOP2070|Blokkerend|De ConsolidatieInformatie van een Revisie mag geen Intrekkingen bevatten.|
+|STOP2071|Blokkerend|De ConsolidatieInformatie van een Revisie mag geen Terugtrekkingen bevatten.|
 |STOP3000|Blokkerend|Als er 1 locatie is in een GIO waar een waarde groepID is ingevuld MOET de groepID bij alle locaties zijn ingevuld.|
 |STOP3001|Blokkerend|Als een locatie een groepID heeft; dan MOET deze voorkomen in het lijstje groepen.|
 |STOP3003|Blokkerend|Twee groepIDs in het lijstje groepen mogen niet dezelfde waarde hebben.|
