@@ -35,9 +35,9 @@ De validatiematrix bevat de volgende validatieregels:
 |BHKV1036|Blokkerend|De eId en de Instrumentversie van elk BeoogdInformatieobject bij een besluit MOET d.m.v. een corresponderende ExtIORef (attributen eId en ref komen overeen) genoemd worden in de regeling(mutatie).|
 |BHKV1044|Blokkerend|Een @wordt-versie in een besluit MOET gelijk zijn aan precies één meegeleverde FRBRExpression-identificatie in de lvbba:RegelingVersieInformatie.|
 |BHKV1046|Blokkerend|Procedurestap Publicatie MAG NIET aangeleverd worden.|
-|BHKV1047|Blokkerend|Bij een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen: VaststellingOndertekening|
+|BHKV1047|Blokkerend|Bij een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:  Vaststelling Ondertekening|
 |BHKV1048|Blokkerend|Een definitief besluit MOET de procedurestap Ondertekening hebben.|
-|BHKV1049|Blokkerend|Bij een ontwerpbesluit MOGEN ALLEEN de volgende procedurestappen voorkomen:VaststellingOndertekening|
+|BHKV1049|Blokkerend|Bij een ontwerpbesluit MOGEN ALLEEN de volgende procedurestappen voorkomen: Vaststelling Ondertekening|
 |BHKV1057|Blokkerend|Bij een kennisgeving MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde BezwaartermijnEinde BeroepstermijnBegin InzagetermijnEinde Inzagetermijn.|
 |BHKV1058|Blokkerend|De FRBRExpression-identificatie van lvbba:RegelingVersieInformatie MOET 1) bij een regelingmutatie voorkomen als @wordt in een tekst:RegelingMutatie; of 2) bij een initiele regeling als @wordt in het besluit (Bij BesluitCompact in tekst:RegelingCompact; tekst:RegelingTijdelijkdeel of tekst:RegelingVrijetekst en bij BesluitKlassiek in tekst:RegelingKlassiek).|
 |BHKV1059|Blokkerend|Bij een Besluit(of Rectificatie) behorende informatieobjecten MOETEN direct meegeleverd worden bij betreffend Besluit danwel Rectificatie.|
@@ -72,14 +72,14 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1021|Blokkerend|Het gespecificeerde contenttype moet overeen komen met het werkelijke contenttype.|
 |LVBB1025|Blokkerend|In het manifest-OW mag het objecttype Geometrie niet voorkomen.|
 |LVBB1026|Blokkerend|In het manifest-OW mag een bestandsnaam niet eindigen op '.gml'.|
-|LVBB1027|Blokkerend|Bestand manifest-ow.xml MOET aanwezig zijn in het aangeleverde zip-bestand bij:- <validatieOpdracht> van een besluit;- <publicatieOpdracht> van een besluit;- <validatieDirecteMutatieOpdracht>;- <directeMutatieOpdracht>;- <valideerRegelingVersie>;- <registreerRegelingVersie>;- <valideerDoorleverenRegelingVersie>;- <doorleverenRegelingVersie>|
-|LVBB1028|Blokkerend|Bestand manifest-ow.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij:- "validatieOpdracht" van een kennisgeving;- "publicatieOpdracht" van een kennisgeving;- "breekPublicatieAfOpdracht";- "valideerGio";- "publiceerGio";- "valideerCio";- "publiceerCio"|
+|LVBB1027|Blokkerend|Bestand manifest-ow.xml MOET aanwezig zijn in het aangeleverde zip-bestand bij: - <validatieOpdracht> van een besluit; - <publicatieOpdracht> van een besluit; - <validatieDirecteMutatieOpdracht>; - <directeMutatieOpdracht>; - <valideerRegelingVersie>; - <registreerRegelingVersie>; - <valideerDoorleverenRegelingVersie>; - <doorleverenRegelingVersie>|
+|LVBB1028|Blokkerend|Bestand manifest-ow.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij: - "validatieOpdracht" van een kennisgeving; - "publicatieOpdracht" van een kennisgeving; - "breekPublicatieAfOpdracht"; - "valideerGio"; - "publiceerGio"; - "valideerCio"; - "publiceerCio"|
 |LVBB1032|Blokkerend|Een aangeleverd manifest-ow.xml (of bij een interne opdracht aangeleverd manifest-bhkv.xml) moet voldoen aan de eisen van het schema van de STOP-standaard.|
 |LVBB1033|Blokkerend|Alle bestanden, die genoemd zijn in manifest-bhkv.xml moeten aanwezig zijn in de aangeleverde zip.|
 |LVBB1035|Blokkerend|In het manifest-bhkv mag alleen het objecttype Geometrie voorkomen.|
 |LVBB1036|Blokkerend|In het manifest-bhkv moet een bestandsnaam eindigen op '.gml'.|
-|LVBB1037|Blokkerend|Bestand manifest-bhkv.xml MOET aanwezig zijn in het aangeleverde zip-bestand bij:- "valideerRegelingVersie";- "registreerRegelingVersie";- "valideerDoorleverenRegelingVersie";- "doorleverenRegelingVersie"|
-|LVBB1038|Blokkerend|Bestand manifest-bhkv.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij:- "validatieOpdracht" van een besluit;- "publicatieOpdracht" van een besluit;- "validatieOpdracht" van een kennisgeving;- "publicatieOpdracht" van een kennisgeving;- "validatieDirecteMutatieOpdracht"- "directeMutatieOpdracht"- "breekPublicatieAfOpdracht";- "valideerGio";- "publiceerGio";- "valideerCio";- "publiceerCio"|
+|LVBB1037|Blokkerend|Bestand manifest-bhkv.xml MOET aanwezig zijn in het aangeleverde zip-bestand bij: - "valideerRegelingVersie"; - "registreerRegelingVersie"; - "valideerDoorleverenRegelingVersie"; - "doorleverenRegelingVersie"|
+|LVBB1038|Blokkerend|Bestand manifest-bhkv.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij: - "validatieOpdracht" van een besluit; - "publicatieOpdracht" van een besluit; - "validatieOpdracht" van een kennisgeving; - "publicatieOpdracht" van een kennisgeving; - "validatieDirecteMutatieOpdracht" - "directeMutatieOpdracht" - "breekPublicatieAfOpdracht"; - "valideerGio"; - "publiceerGio"; - "valideerCio"; - "publiceerCio"|
 |LVBB1039|Blokkerend|Alle bestanden, die aanwezig zijn in de aangeleverde zip, moeten genoemd zijn in manifest-bhkv.xml.|
 |LVBB1040|Blokkerend|Opdracht.zip MAG NIET  groter zijn dan 1 GB|
 |LVBB1041|Blokkerend|Een individueel bestand (uitgepakt) in de aangeleverde opdracht.zip MAG NIET groter zijn dan 100 MB|
@@ -105,7 +105,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1558|Blokkerend|Besluit dat afgebroken moet worden mag geen regelingversie bepalen die gebruikt als was-versie voor een mutatie in een ander besluit.|
 |LVBB1559|Blokkerend|Bestand met consolidatie-procedurestappen bij besluit wacht om afgebroken te worden.|
 |LVBB1560|Blokkerend|Voor een af te breken besluit MAG NIET een kennisgeving naar dit besluit verwijzen.|
-|LVBB1561|Blokkerend|Een besluit MAG NIET afgebroken worden, indiena) bij dit besluit minimaal 1 Informatie-Object wordt vastgesteld, dat een geo-id bevat; enb) dit besluit het enige besluit is, dat een Informatie-Object vaststelt, dat deze geo-id bevat; enc) vanuit een regelingversie, die vastgesteld is door een ander besluit, wordt verwezen naar deze geo-id.|
+|LVBB1561|Blokkerend|Een besluit MAG NIET afgebroken worden, indien a) bij dit besluit minimaal 1 Informatie-Object wordt vastgesteld, dat een geo-id bevat; en b) dit besluit het enige besluit is, dat een Informatie-Object vaststelt, dat deze geo-id bevat; en c) vanuit een regelingversie, die vastgesteld is door een ander besluit, wordt verwezen naar deze geo-id.|
 |LVBB1562|Blokkerend|Voor een af te breken publicatie MOET er een besluit aanwezig zijn bij een regelingversie, tenzij de regelingversie via een consolidatie is aangeboden.|
 |LVBB1563|Blokkerend|Indien ingevuld, MOET voor een af te breken besluit de 'datum juridisch-werkend-vanaf' van de regelingversie een datum in de toekomst zijn.|
 |LVBB1564|Blokkerend|Indien ingevuld, MOET voor een af te breken besluit de 'datum juridisch-werkend-vanaf' van het InformatieObject een datum in de toekomst zijn.|
@@ -118,7 +118,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1573|Blokkerend|Voor het valideren van een aanlevering MAG een eerder afgemeld validatierapport NIET opnieuw afgemeld worden.|
 |LVBB1574|Blokkerend|De juridisch werkend vanaf datum MOET op of na datum bekendmaking van het besluit liggen.|
 |LVBB1600|Blokkerend|Een Directe Mutatie op een Regelingversie MAG ALLEEN wanneer het Besluit, dat deze Regelingversie heeft vastgesteld, al gepubliceerd is.|
-|LVBB1601|Blokkerend|Bij een directe mutatie MAG NIET meer dan 1 aanlevering element in het manifest-ow voorkomen (hiermee kan een regelingversie/doel combinatie maar 1 keer voorkomen).|
+|LVBB1601|Blokkerend|Bij een directe mutatie MAG NIET meer dan 1 aanlevering element in het manifest-ow voorkomen (hiermee kan een regelingversie/doel combinatie maar 1 keer voorkomen). |
 |LVBB2002|Blokkerend|Is er validatieplan aanwezig voor ConformProfiel.|
 |LVBB2003|Blokkerend|Een aangeleverd document moet voldoen aan de eisen van het IMOP-schema van de STOP-standaard.|
 |LVBB2004|Blokkerend|Is er een conformprofiel voor de regelingversie?|
@@ -155,7 +155,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB3010|Blokkerend|Elk aangeleverd gml document moet voldoen aan de eisen van het schema van de BasisGeometrie-standaard|
 |LVBB3011|Blokkerend|Elk GML-element MOET complete coördinaten bevatten|
 |LVBB3012|Blokkerend|Elk GML-element MOET een ingevulde <gml:posList> bevatten|
-|LVBB3150|Blokkerend|Een InformatieObject dat consolideerbaar is MOET een geboorteregeling bevatten OFEen InformatieObject dat niet consolideerbaar is MAG NIET een  geboorteregeling bevatten|
+|LVBB3150|Blokkerend|Een InformatieObject dat consolideerbaar is MOET een geboorteregeling bevatten  OF Een InformatieObject dat niet consolideerbaar is MAG NIET een  geboorteregeling bevatten|
 |LVBB3151|Blokkerend|Van een versie van een te consolideren IO, die onderdeel is van een besluit, MOET de expressie als tekst:ExtIoRef worden genoemd in òf de regelingtekst(mutatie) van het besluit òf de besluittekst.|
 |LVBB3501|Blokkerend|Elk InformatieObject in een aangeleverd document moet voldoen aan de eisen van het IO-schema van de STOP-standaard|
 |LVBB3502|Blokkerend|Het derde deel van de JOIN identificatie van een InformatieObject moet gelijk zijn aan pubdata|
@@ -209,10 +209,10 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4207|Blokkerend|De datum geldig-vanaf van een regelingversie moet voor de datum geldig-tot liggen (als beide datums gevuld zijn)|
 |LVBB4209|Blokkerend|Als de wordt-versie een datum geldig-vanaf heeft dan moet de was-versie ook een datum geldig-vanaf hebben.|
 |LVBB4210|Blokkerend|De datum geldig-vanaf van een regelingversie moet voor de datum geldig-tot liggen (als beide datums gevuld zijn)|
-|LVBB4602|Blokkerend|Externe verwijzingen (imop-tekst:ExtIORef) in een ontwerpbesluit mogen alleen verwijzen naar met het ontwerpbesluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte ontwerp- of definitieve besluiten en bijbehorende informatieobjecten.Hierbij wordt bij een ExtIoRef die op werk-niveau wordt aangeleverd gecontroleerd op de eerste expressie binnen dit werk.|
-|LVBB4603|Blokkerend|Externe verwijzingen (imop-tekst:ExtIORef) in een definitief besluit mogen alleen verwijzen naar met het besluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte definitieve besluiten en bijbehorende informatieobjecten.Hierbij wordt bij een ExtIoRef die op werk-niveau wordt aangeleverd gecontroleerd op de eerste expressie binnen dit werk.|
-|LVBB4703|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking kennisgeving[zoals benoemd in de opdracht.xml]|
-|LVBB4704|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking van gerelateerd besluit[zoals benoemd onder 'mededelingOver']|
+|LVBB4602|Blokkerend|Externe verwijzingen (imop-tekst:ExtIORef) in een ontwerpbesluit mogen alleen verwijzen naar met het ontwerpbesluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte ontwerp- of definitieve besluiten en bijbehorende informatieobjecten.  Hierbij wordt bij een ExtIoRef die op werk-niveau wordt aangeleverd gecontroleerd op de eerste expressie binnen dit werk.|
+|LVBB4603|Blokkerend|Externe verwijzingen (imop-tekst:ExtIORef) in een definitief besluit mogen alleen verwijzen naar met het besluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte definitieve besluiten en bijbehorende informatieobjecten.  Hierbij wordt bij een ExtIoRef die op werk-niveau wordt aangeleverd gecontroleerd op de eerste expressie binnen dit werk.|
+|LVBB4703|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking kennisgeving [zoals benoemd in de opdracht.xml]|
+|LVBB4704|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking van gerelateerd besluit [zoals benoemd onder 'mededelingOver']|
 |LVBB4705|Blokkerend|Besluit met akn-id %1 horende bij deze kennisgeving heeft nog geen publicatie akn-identifier|
 |LVBB4707|Blokkerend|Derde veld waarde akn bij kennisgeving moet gelijk zijn aan 'doc'|
 |LVBB4708|Blokkerend|Derde veld waarde 'mededeling-over' in kennisgeving moet gelijk zijn aan 'bill'|
@@ -236,7 +236,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4760|Blokkerend|Bij een kennisgeving ontwerp besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Begin inzagetermijnEinde inzagetermijn|
 |LVBB4761|Blokkerend|Bij een kennisgeving van een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde bezwaartermijnEinde beroepstermijn|
 |LVBB4762|Blokkerend|Bij een aanlevering van een kennisgeving MOET procedureverloopmutatie een waarde bevatten anders dan "vervangStappen" of "verwijderStappen"|
-|LVBB5002|Blokkerend|Indien een element verwijderd of vervangen moet worden, MOET dit element met aangegeven wId bestaan bij aangegeven regelingversieOF:Indien een element toegevoegd moet worden, MAG dit element met aangegeven wId NIET bestaan bij desbetreffend element in desbetreffende regelingversie, waaraan dit element moet worden toegevoegd|
+|LVBB5002|Blokkerend|Indien een element verwijderd of vervangen moet worden, MOET dit element met aangegeven wId bestaan bij aangegeven regelingversie OF: Indien een element toegevoegd moet worden, MAG dit element met aangegeven wId NIET bestaan bij desbetreffend element in desbetreffende regelingversie, waaraan dit element moet worden toegevoegd|
 |LVBB5003|Blokkerend|De inhoud van het attribuut 'wat' van een vervang opdracht voor een regelingversie moet gelijk zijn aan het wId van het te vervangen element|
 |LVBB5005|Blokkerend|De wordt-versie moet gevuld zijn|
 |LVBB5006|Blokkerend|De was-versie moet gevuld zijn bij niet-initiele mutaties|
@@ -629,7 +629,7 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP1312|Blokkerend|Een stap die het einde van een beroepsperiode aangeeft MOET volgen op een stap die het begin van de beroepsperiode aangeeft.|
 |STOP1313|Blokkerend|Een stap die het begin van een schorsingsperiode aangeeft MOET ofwel als eerste voorkomen; ofwel nadat een eerdere schorsingsperiode is afgesloten.SchorsingsperiodeStart: SchorsingEind: Schorsing opgeheven|
 |STOP1315|Blokkerend|Een stap die het einde van een schorsingsperiode aangeeft MOET volgen op een stap die het begin van de schorsingsperiode aangeeft.|
-|STOP1319|Blokkerend|Sommige stappen MOETEN in het procedureverloop vermeld worden omdat de informatie anders niet compleet is:Stap 'Einde inzagetermijn' MOET vermeld worden als 'Begin inzagetermijn' is opgenomen.Stap 'Einde beroepstermijn' MOET vermeld worden als 'Beroep(en) ingesteld' is opgenomen.Stap 'Ondertekening' MOET vermeld worden als 'Beroep(en) ingesteld' is opgenomenStap 'Ondertekening' MOET vermeld worden als 'Einde beroepstermijn' is opgenomenStap 'Ondertekening' MOET vermeld worden als 'Einde bezwaar' is opgenomenAls deze stappen niet vermeld zijn is het niet mogelijk afgeleide informatie te bepalen op manieren die in de standaard beschreven staan; zoals de relevantie van het besluit en/of gerelateerde kennisgevingen op een moment in de tijd; of de status van een besluit.|
+|STOP1319|Blokkerend|Sommige stappen MOETEN in het procedureverloop vermeld worden omdat de informatie anders niet compleet is:Stap 'Einde inzagetermijn' MOET vermeld worden als 'Begin inzagetermijn' is opgenomen.Stap 'Einde beroepstermijn' MOET vermeld worden als 'Beroep(en) ingesteld' is opgenomen.Stap 'Ondertekening' MOET vermeld worden als 'Beroep(en) ingesteld' is opgenomenStap 'Ondertekening' MOET vermeld worden als 'Einde beroepstermijn' is opgenomen Stap 'Ondertekening' MOET vermeld worden als 'Einde bezwaar' is opgenomenAls deze stappen niet vermeld zijn is het niet mogelijk afgeleide informatie te bepalen op manieren die in de standaard beschreven staan; zoals de relevantie van het besluit en/of gerelateerde kennisgevingen op een moment in de tijd; of de status van een besluit.|
 |STOP1320|Blokkerend|Bij een kennisgeving van een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde bezwaartermijnEinde beroepstermijn.|
 |STOP1321|Blokkerend|Bij een kennisgeving ontwerp besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Begin inzagetermijnEinde inzagetermijn.|
 |STOP1400|Blokkerend|Een procedureverloopmutatie MAG NIET leiden tot een ongeldig procedureverloop (Het resulterende procedureverloop moet voldoen aan de beschrijving en dus aan de procedureverloop-bedrijfsregels).|
@@ -807,17 +807,17 @@ De validatiematrix bevat de volgende validatieregels:
 |TPOD2210|Blokkerend|De combinatie van Doel en Regeling uit het manifest-OW moet ook als combinatie bestaan in OP en verwijzen naar 1 regelingversie.|
 |TPOD2220|Blokkerend|De door Ozon (met het Referentierapport) aangegeven geometrie(ën) MOET(EN) in de LVBB (eerder) aangeleverd en geregistreerd zijn.|
 |TPOD2230|Blokkerend|De aangeleverde geometrie(ën) MOET(EN) aanwezig zijn als OW-Locatie.|
-|TPOD2400|Blokkerend|Het OW-object: Regeltekst mag niet voorkomen bij Regelingen met een Vrijetekststructuur(Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie).|
-|TPOD2401|Blokkerend|Het OW-object: RegelVoorIedereen mag niet voorkomen bij Regelingen met een Vrijetekststructuur(Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie).|
+|TPOD2400|Blokkerend|Het OW-object: Regeltekst mag niet voorkomen bij Regelingen met een Vrijetekststructuur (Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie).|
+|TPOD2401|Blokkerend|Het OW-object: RegelVoorIedereen mag niet voorkomen bij Regelingen met een Vrijetekststructuur (Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie).|
 |TPOD2402|Blokkerend|Het OW-object: Instructieregel mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Omgevingsverordening, en Voorbeschermingsregels op de Omgevingsverordening.|
 |TPOD2403|Blokkerend|Het OW-object: Omgevingswaarderegel mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Omgevingsplan en Voorbeschermingsregels.|
-|TPOD2404|Blokkerend|Het OW-object: Divisie mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
-|TPOD2405|Blokkerend|Het OW-object: Divisietekst mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
-|TPOD2406|Blokkerend|Het OW-object: Tekstdeel mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
-|TPOD2407|Blokkerend|Het OW-object: Hoofdlijn mag niet voorkomen bij Regelingen met een Artikelstructuur(Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2404|Blokkerend|Het OW-object: Divisie mag niet voorkomen bij Regelingen met een Artikelstructuur (Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2405|Blokkerend|Het OW-object: Divisietekst mag niet voorkomen bij Regelingen met een Artikelstructuur (Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2406|Blokkerend|Het OW-object: Tekstdeel mag niet voorkomen bij Regelingen met een Artikelstructuur (Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
+|TPOD2407|Blokkerend|Het OW-object: Hoofdlijn mag niet voorkomen bij Regelingen met een Artikelstructuur (Regelingen met een Artikelstructuur zijn: AMvB/ MR, Omgevingsverordening, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, Reactieve interventie, Aanwijzingsbesluit N2000, Toegangsbeperkingsbesluit.|
 |TPOD2408|Blokkerend|De OW-objecten: Activiteit en ActiviteitLocatieaanduiding mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Waterschapsverordening, Omgevingsplan, Voorbeschermingsregels, en Toegangsbeperkingsbesluit.|
 |TPOD2409|Blokkerend|Het OW-object: Omgevingswaarde mag alleen voorkomen bij Regelingen van het type: AMvB, MR, Omgevingsplan en Voorbeschermingsregels.|
-|TPOD2410|Blokkerend|Het OW-object: Omgevingsnorm mag niet voorkomen bij Regelingen met een Vrijetekststructuur(Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie).|
+|TPOD2410|Blokkerend|Het OW-object: Omgevingsnorm mag niet voorkomen bij Regelingen met een Vrijetekststructuur (Regelingen met een Vrijetekststructuur zijn: Omgevingsvisie, Projectbesluit, Programma, Instructie).|
 |TPOD2411|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Beperkingengebied mag alleen voorkomen bij Regelingen van het type: Omgevingsverordening, Waterschapsverordening, Omgevingsplan en Voorbeschermingsregels.|
 |TPOD2412|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Bodem mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie, N2000 Aanwijzingsbesluit, Toegangsbeperkingsbesluit.|
 |TPOD2413|Blokkerend|Het OW-object: Gebiedsaanwijzing van het type: Bouw mag alleen voorkomen bij Regelingen van het type: Omgevingsplan.|
