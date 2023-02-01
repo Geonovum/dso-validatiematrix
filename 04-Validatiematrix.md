@@ -509,7 +509,7 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP0020|Blokkerend|Een eId binnen een 'main' AKN-component MOET uniek zijn.|
 |STOP0021|Blokkerend|Een wId binnen een 'main' AKN-component MOET uniek zijn.|
 |STOP0022|Blokkerend|Een eId MOET voldoen aan de AKN-naamgevingsconventie.|
-|STOP0023|Blokkerend|Een wId MOET voldoen aan de AKN-naamgevingsconventie|
+|STOP0023|Blokkerend|Een wId MOET voldoen aan de AKN-naamgevingsconventie.|
 |STOP0024|Blokkerend|Een initiële regeling MOET een attribuut @componentnaam hebben met correcte naamgeving.|
 |STOP0025|Blokkerend|Een initiële regeling MOET een attribuut @wordt hebben met de AKN-identificatie.|
 |STOP0026|Blokkerend|Een componentnaam binnen een besluit MOET uniek zijn.|
@@ -532,12 +532,12 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP0050|Blokkerend|Een externe referentie MOET de juiste notatie gebruiken|
 |STOP0051|Blokkerend|Een element OpmerkingVersie MAG alleen in een RegelingKlassiek of een Rectificatie daarvan worden gebruikt.|
 |STOP0053|Blokkerend|De scope van een interne verwijzing moet overeenkomen met de naam van het doelelement.|
-|STOP0055|Blokkerend|Het element Gereserveerd dat geen onderdeel is van een RegelingMutatie mag niet worden gevolgd door inhoud of structuur op hetzelfde niveau|
+|STOP0055|Blokkerend|Het element Gereserveerd dat geen onderdeel is van een RegelingMutatie mag niet worden gevolgd door inhoud of structuur op hetzelfde niveau.|
 |STOP0058|Blokkerend|Een structuur-element MOET altijd ten minste één element na de Kop bevatten.|
 |STOP0060|Blokkerend|Een Divisietekst MOET altijd één element anders dan een Kop bevatten.|
 |STOP0061|Blokkerend|Een Kennisgeving MAG NIET onderverdeeld zijn in Divisies; maar mag alleen gestructureerd worden met DivisieTeksten.|
-|STOP0062|Blokkerend|Indien een structuur-element vervallen is dan moeten ook alle onderliggende delen (structuur en tekst) vervallen zijn|
-|STOP0063|Blokkerend|tekst:Inhoud mag uitsluitend een @wijzigactie hebben gecombineerd met één van de kindelementen:tekst:Vervallen tekst:Gereserveerdtekst:Lid|
+|STOP0062|Blokkerend|Indien een structuur-element vervallen is dan moeten ook alle onderliggende delen (structuur en tekst) vervallen zijn.|
+|STOP0063|Blokkerend|tekst:Inhoud mag uitsluitend een @wijzigactie hebben gecombineerd met één van de kindelementen:tekst:Vervallen tekst:Gereserveerdtekst:Lid.|
 |STOP0064|Blokkerend|Als het element Contact een attribuut @adres heeft; moet de inhoud van het attribuut een adres zijn dat is geformatteerd volgens de specificaties van de waarde van attribuut @soort.|
 |STOP0065|Blokkerend|Een wijzigactie voor Sluiting mag uitsluitend in een Vervang binnen BesluitMutatie worden gebruikt.|
 |STOP0066|Blokkerend|Voor een mutatie MOET de waarde van de attributen @was en @wordt beginnen met dezelde akn identificatie van het work.|
@@ -558,40 +558,40 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP1000|Blokkerend|Een AKN- of JOIN-identificatie mag geen punt bevatten.|
 |STOP1001|Blokkerend|Het deel vóór de taalcode/@" van de FRBRExpression moet gelijk aan zijn FRBRWork"|
 |STOP1002|Blokkerend|Voor een AKN-identificatie (werk/expressie) moet het tweede deel een landcode uit de lijst nl; aw; cw; sx zijn.|
-|STOP1003|Blokkerend|Voor een JOIN-identificatie (work) moet het tweede deel gelijk zijn aan 'id'|
-|STOP1004|Blokkerend|Voor een JOIN-identificatie moet het derde deel een geldig type zijn (regdata; pubdata; infodata)|
-|STOP1006|Blokkerend|Voor een AKN- of JOIN identificatie (werk/expressie) moet het vijfde deel een jaartal zijn of een geldige datum zijn|
-|STOP1007|Blokkerend|Voor een JOIN-identificatie (expressie) moet het eerste deel na de '@' een jaartal of een geldige datum zijn|
-|STOP1008|Blokkerend|JOIN-identificatie (expressie) MOET als eerste deel na de '@' een jaartal of een geldige datum hebben groter/gelijk aan jaartal in werk|
-|STOP1009|Blokkerend|Voor een AKN- of JOIN-identificatie (expressie) moet deel voorafgaand aan de '@' een geldige taal zijn ('nld';'eng';'fry';'pap';'mul';'und')|
+|STOP1003|Blokkerend|Voor een JOIN-identificatie (work) moet het tweede deel gelijk zijn aan 'id'.|
+|STOP1004|Blokkerend|Voor een JOIN-identificatie moet het derde deel een geldig type zijn (regdata; pubdata; infodata).|
+|STOP1006|Blokkerend|Voor een AKN- of JOIN identificatie (werk/expressie) moet het vijfde deel een jaartal zijn of een geldige datum zijn.|
+|STOP1007|Blokkerend|Voor een JOIN-identificatie (expressie) moet het eerste deel na de '@' een jaartal of een geldige datum zijn.|
+|STOP1008|Blokkerend|JOIN-identificatie (expressie) MOET als eerste deel na de '@' een jaartal of een geldige datum hebben groter/gelijk aan jaartal in werk.|
+|STOP1009|Blokkerend|Voor een AKN- of JOIN-identificatie (expressie) moet deel voorafgaand aan de '@' een geldige taal zijn ('nld';'eng';'fry';'pap';'mul';'und').|
 |STOP1010|Blokkerend|Vierde deel van de AKN / JOIN voor werken en expressies van een besluit; een regeling of een informatieobject moet gelijk zijn aan:een brp-code voor regeling; besluit of informatieobject;een code (bijvoorbeeld 'gemeente' of 'provincie') voor een geconsolideerde regeling of informatieobject.|
-|STOP1011|Blokkerend|De AKN van een officiele publicatie moet als derde veld 'officialGazette' hebben|
-|STOP1012|Blokkerend|De AKN van de door het bevoegd gezag aangeleverde regeling moet als derde veld 'act' hebben|
-|STOP1013|Blokkerend|De AKN van het door het bevoegd gezag aangeleverd besluit moet als derde veld 'bill' hebben|
-|STOP1014|Blokkerend|De AKN- of JOIN-identificatie MOET beginnen met /akn" of "/join""|
-|STOP1015|Blokkerend|De officieleTitel van InformatieObjectMetatada MOET starten met /join/id/|
+|STOP1011|Blokkerend|De AKN van een officiele publicatie moet als derde veld 'officialGazette' hebben.|
+|STOP1012|Blokkerend|De AKN van de door het bevoegd gezag aangeleverde regeling moet als derde veld 'act' hebben.|
+|STOP1013|Blokkerend|De AKN van het door het bevoegd gezag aangeleverd besluit moet als derde veld 'bill' hebben.|
+|STOP1014|Blokkerend|De AKN- of JOIN-identificatie MOET beginnen met /akn" of "/join"".|
+|STOP1015|Blokkerend|De officieleTitel van InformatieObjectMetatada MOET starten met /join/id/.|
 |STOP1016|Blokkerend|Versienummer van regeling moet voldoen aan de STOP-specificaties.|
-|STOP1017|Blokkerend|De AKN van een officiele publicatie moet als vierde veld een bladcode hebben|
-|STOP1018|Blokkerend|De waarde van data:informatieobjectRef MOET uniek zijn binnen één data:informatieobjectRefs|
+|STOP1017|Blokkerend|De AKN van een officiele publicatie moet als vierde veld een bladcode hebben.|
+|STOP1018|Blokkerend|De waarde van data:informatieobjectRef MOET uniek zijn binnen één data:informatieobjectRefs.|
 |STOP1019|Blokkerend|Binnen dezelfde container data:rechtsgebieden mag een unieke waarde maar één keer worden gebruikt.|
-|STOP1020|Blokkerend|Een alternatieve titel MAG niet gelijk zijn aan de citeertitel|
-|STOP1021|Blokkerend|Het patroon in data:uri moet overeenkomen met data:soortRefURL: correcte http(s)-referentieAKN: correcte AKNJCI: correcte JCI)|
+|STOP1020|Blokkerend|Een alternatieve titel MAG niet gelijk zijn aan de citeertitel.|
+|STOP1021|Blokkerend|Het patroon in data:uri moet overeenkomen met data:soortRefURL: correcte http(s)-referentieAKN: correcte AKNJCI: correcte JCI).|
 |STOP1022|Blokkerend|Een alternatieve titel MOET uniek zijn binnen alle alternatieve titels.|
 |STOP1023|Blokkerend|De opvolgingsrelatie data:opvolgerVan MOET uniek zijn binnen de container data:opvolging.|
-|STOP1024|Blokkerend|Een opvolgingsrelatie data:opvolgerVan MOET naar een work van een Regeling of een Informatieobject verwijzen|
-|STOP1026|Blokkerend|De instrumentversie van een BeoogdeRegeling moet een expressionID (/akn/nl/act) zijn|
+|STOP1024|Blokkerend|Een opvolgingsrelatie data:opvolgerVan MOET naar een work van een Regeling of een Informatieobject verwijzen.|
+|STOP1026|Blokkerend|De instrumentversie van een BeoogdeRegeling moet een expressionID (/akn/nl/act) zijn.|
 |STOP1027|Blokkerend|De instrumentversie van een BeoogdInformatieobject moet een /join/id/regdata zijn.|
 |STOP1028|Blokkerend|Het instrument binnen een Intrekking moet een akn- of join-identificatie hebben ('/akn/nl/act/[...]' of '/join/id/regdata/[...]').|
-|STOP1029|Blokkerend|Een doel kan maar één datum inwerkingtreding hebben|
+|STOP1029|Blokkerend|Een doel kan maar één datum inwerkingtreding hebben.|
 |STOP1030|Blokkerend|Binnen dezelfde container data:overheidsdomeinen mag een unieke waarde maar één keer worden gebruikt.|
 |STOP1031|Blokkerend|Binnen dezelfde container data:onderwerpen mag een unieke waarde maar één keer worden gebruikt.|
 |STOP1032|Blokkerend|Een officiële publicatie van een besluit MOET een datum ondertekening hebben.|
 |STOP1033|Blokkerend|Een officiële publicatie van een kennisgeving MAG GEEN datum ondertekening hebben.|
 |STOP1034|Blokkerend|Voor decentrale overheden (gemeente; provincie; waterschap) MOET soort bestuursorgaan" zijn ingevuld"|
-|STOP1035|Blokkerend|Het ingevulde soort bestuursorgaan" MOET passen bij de waarde in eindverantwoordelijke"|
-|STOP1037|Blokkerend|De AKN-identificatie van een kennisgeving moet als derde veld 'doc' hebben|
-|STOP1038|Blokkerend|Een doel identificatie moet zijn opgebouwd als /join/id/proces/[organisatie]/[datum of jaar]/[naam]"|
-|STOP1044|Blokkerend|De AKN-identificatie van een rectificatie MOET als derde deel doc hebben|
+|STOP1035|Blokkerend|Het ingevulde soort bestuursorgaan" MOET passen bij de waarde in eindverantwoordelijke".|
+|STOP1037|Blokkerend|De AKN-identificatie van een kennisgeving moet als derde veld 'doc' hebben.|
+|STOP1038|Blokkerend|Een doel identificatie moet zijn opgebouwd als /join/id/proces/[organisatie]/[datum of jaar]/[naam]".|
+|STOP1044|Blokkerend|De AKN-identificatie van een rectificatie MOET als derde deel doc hebben.|
 |STOP1058|Blokkerend|Een GIO MOET bij aanlevering altijd precies één GML-bestand (*.gml)hebben.|
 |STOP1060|Blokkerend|Een verwijzing naar een geboorteregeling MOET naar een work van een Regeling die begint met /akn/nl/act/... verwijzen.|
 |STOP1071|Blokkerend|Een componentverwijzing in akn of join moet beginnen met een '!'.|

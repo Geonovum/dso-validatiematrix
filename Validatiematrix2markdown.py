@@ -12,7 +12,7 @@ from datetime import datetime
 import openpyxl
 import sys
 
-outfile = open('04-Validatiematrix.md2','w')
+outfile = open('04-Validatiematrix.md','w')
 
 print("""
 # De validatiematrix
