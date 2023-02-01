@@ -12,6 +12,8 @@ from datetime import datetime
 import openpyxl
 import sys
 
+outfile = open('04-Validatiematrix.md2','w')
+
 print("""
 # De validatiematrix
 
@@ -31,9 +33,9 @@ Betekenis van de kolommen:
 De validatiematrix bevat de volgende validatieregels:
 
 | identificatie | ernst | omschrijving|
-|:--------------|:------|:------------|""")
+|:--------------|:------|:------------|""",file=outfile)
 
-wb = openpyxl.load_workbook(sys.argv[1])
+wb = openpyxl.load_workbook('Validatiematrix.xlsx')
 sheet = wb['Validatieregels']
 for row in sheet.iter_rows():
     if row[1].value == 'Id' :
@@ -44,4 +46,5 @@ for row in sheet.iter_rows():
     if ernst != 'Blokkerend' and ernst != 'Waarschuwing':
         print("ERROR: ernst moet 'Blokkerend' pf 'Waarschuwing' zijn voor: " + id, file=sys.stderr)
     regel = row[2].value.replace('\n',' ') 
-    print('|' + id + '|' + ernst + '|' + regel + '|')
+    print('|' + id + '|' + ernst + '|' + regel + '|',file=outfile)
+outfile.close()
