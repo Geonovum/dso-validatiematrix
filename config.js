@@ -119,11 +119,11 @@ var respecConfig =
   maxTocLevel: 1,                           // Aantal niveau's ToC, default is 0
   //-- LOGO: Hier kan je een ander logo opgeven indien nodig
   logos: [{
-    src: "https://tools.geostandaarden.nl/respec/style/logos/OmgevingswetLogo.svg",
+    src: "https://tools.geostandaarden.nl/respec/style/logos/ow.svg",
     alt: "Standaarden Omgevingswet",
     id: "TopLogo",
-    height: 67,
-    width: 300,
+    height: 44,
+    width: 240,
     url: "https://www.geonovum.nl/geo-standaarden/omgevingswet/STOPTPOD"
   }],
 };
