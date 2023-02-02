@@ -119,7 +119,7 @@ var respecConfig =
   maxTocLevel: 1,                           // Aantal niveau's ToC, default is 0
   //-- LOGO: Hier kan je een ander logo opgeven indien nodig
   logos: [{
-    src: "https://tools.geostandaarden.nl/respec/style/logos/OmgevingswetLogo.svg",
+    src: "https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg",
     alt: "Standaarden Omgevingswet",
     id: "TopLogo",
     height: 67,
