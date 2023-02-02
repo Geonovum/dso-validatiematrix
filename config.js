@@ -122,7 +122,7 @@ var respecConfig =
     src: "https://tools.geostandaarden.nl/respec/style/logos/ow.svg",
     alt: "Standaarden Omgevingswet",
     id: "TopLogo",
-    //height: 44,
+    height: 44,
     width: 240,
     url: "https://www.geonovum.nl/geo-standaarden/omgevingswet/STOPTPOD"
   }],
