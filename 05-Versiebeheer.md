@@ -27,4 +27,4 @@ De validatiematrix is eerder beschikbaar gesteld in de vorm van een spreadsheet.
 |WELT-205    | **Nieuw:** OZON0104 |
 |WELT-234   | **Nieuw:** OZON0375 OZON0376 OZON0377 OZON0378 OZON0379 OZON0380 OZON0381 OZON0382 OZON0383 OZON0384 OZON0385 OZON1021 OZON1037 OZON1039 OZON5001 OZON5002 OZON5003 OZON5004 OZON5005 |
 
-Meldingen met een WELT codering zijn terug te vinden via de [meldingen pagina](https://www.geonovum.nl/geo-standaarden/meldingen) van Geonovum.
+WELT coderingingen zijn terug te vinden via de [meldingen pagina](https://www.geonovum.nl/geo-standaarden/meldingen) van Geonovum.
