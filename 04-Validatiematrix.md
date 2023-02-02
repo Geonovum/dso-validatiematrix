@@ -2,7 +2,7 @@
 # De validatiematrix
 
 De volgende versie van de standaarden zijn gebruikt voor het samenstellen van de validatiematrix:
- - Informatiemodel Omgevingswet (IMOW) Versie 2.0.1.
+ - Informatiemodel Omgevingswet (IMOW) Versie 2.0.2.
  - STOP standaard Versie 1.3.0.
 
 Betekenis van de kolommen:
@@ -72,7 +72,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1021|Blokkerend|Het gespecificeerde contenttype moet overeen komen met het werkelijke contenttype.|
 |LVBB1025|Blokkerend|In het manifest-OW mag het objecttype Geometrie niet voorkomen.|
 |LVBB1026|Blokkerend|In het manifest-OW mag een bestandsnaam niet eindigen op '.gml'.|
-|LVBB1027|Blokkerend|Bestand manifest-ow.xml MOET aanwezig zijn in het aangeleverde zip-bestand bij: - <validatieOpdracht> van een besluit; - <publicatieOpdracht> van een besluit; - <validatieDirecteMutatieOpdracht>; - <directeMutatieOpdracht>; - <valideerRegelingVersie>; - <registreerRegelingVersie>; - <valideerDoorleverenRegelingVersie>; - <doorleverenRegelingVersie>|
+|LVBB1027|Blokkerend|Bestand manifest-ow.xml MOET aanwezig zijn in het aangeleverde zip-bestand bij: - &lt;validatieOpdracht&gt; van een besluit; - &lt;publicatieOpdracht&gt; van een besluit; - &lt;validatieDirecteMutatieOpdracht&gt;; - &lt;directeMutatieOpdracht&gt;; - &lt;valideerRegelingVersie&gt;; - &lt;registreerRegelingVersie&gt;; - &lt;valideerDoorleverenRegelingVersie&gt;; - &lt;doorleverenRegelingVersie&gt;|
 |LVBB1028|Blokkerend|Bestand manifest-ow.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij: - "validatieOpdracht" van een kennisgeving; - "publicatieOpdracht" van een kennisgeving; - "breekPublicatieAfOpdracht"; - "valideerGio"; - "publiceerGio"; - "valideerCio"; - "publiceerCio"|
 |LVBB1032|Blokkerend|Een aangeleverd manifest-ow.xml (of bij een interne opdracht aangeleverd manifest-bhkv.xml) moet voldoen aan de eisen van het schema van de STOP-standaard.|
 |LVBB1033|Blokkerend|Alle bestanden, die genoemd zijn in manifest-bhkv.xml moeten aanwezig zijn in de aangeleverde zip.|
@@ -81,8 +81,8 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1037|Blokkerend|Bestand manifest-bhkv.xml MOET aanwezig zijn in het aangeleverde zip-bestand bij: - "valideerRegelingVersie"; - "registreerRegelingVersie"; - "valideerDoorleverenRegelingVersie"; - "doorleverenRegelingVersie"|
 |LVBB1038|Blokkerend|Bestand manifest-bhkv.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij: - "validatieOpdracht" van een besluit; - "publicatieOpdracht" van een besluit; - "validatieOpdracht" van een kennisgeving; - "publicatieOpdracht" van een kennisgeving; - "validatieDirecteMutatieOpdracht" - "directeMutatieOpdracht" - "breekPublicatieAfOpdracht"; - "valideerGio"; - "publiceerGio"; - "valideerCio"; - "publiceerCio"|
 |LVBB1039|Blokkerend|Alle bestanden, die aanwezig zijn in de aangeleverde zip, moeten genoemd zijn in manifest-bhkv.xml.|
-|LVBB1040|Blokkerend|Opdracht.zip MAG NIET  groter zijn dan 1 GB|
-|LVBB1041|Blokkerend|Een individueel bestand (uitgepakt) in de aangeleverde opdracht.zip MAG NIET groter zijn dan 100 MB|
+|LVBB1040|Blokkerend|Opdracht.zip MAG NIET  groter zijn dan 1 GB.|
+|LVBB1041|Blokkerend|Een individueel bestand (uitgepakt) in de aangeleverde opdracht.zip MAG NIET groter zijn dan 100 MB.|
 |LVBB1501|Blokkerend|De  datumBekendmaking binnen de opdracht MOET een datum in juiste formaat (JJJJ-MM-DD) zijn en mag niet in het verleden liggen.|
 |LVBB1502|Blokkerend|De AKN in de opdracht (indien aanwezig) moet als derde veld 'bill' hebben.|
 |LVBB1505|Blokkerend|De opdracht moet de datum bekendmaking bevatten.|
@@ -140,128 +140,128 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB2503|Blokkerend|Doel in domeinmanifest moet bestaan.|
 |LVBB2504|Blokkerend|De bestanden genoemd in het domeinmanifest moeten meegeleverd zijn.|
 |LVBB2505|Blokkerend|Het doel moet gekoppeld zijn aan regelingversies, die horen bij de regeling die in het domeinmanifest staat.|
-|LVBB2511|Blokkerend|Bestand 'manifest-bhkv.xml' MOET aanwezig zijn|
-|LVBB2512|Blokkerend|Bestand 'manifest-bhkv.xml' MOET doel hebben|
-|LVBB2513|Blokkerend|Doel in bestand 'manifest-bhkv.xml' MOET bestaan|
+|LVBB2511|Blokkerend|Bestand 'manifest-bhkv.xml' MOET aanwezig zijn.|
+|LVBB2512|Blokkerend|Bestand 'manifest-bhkv.xml' MOET doel hebben.|
+|LVBB2513|Blokkerend|Doel in bestand 'manifest-bhkv.xml' MOET bestaan.|
 |LVBB2514|Blokkerend|De bestanden genoemd in het bestand 'manifest-bhkv.xml' moeten meegeleverd zijn|
-|LVBB2515|Blokkerend|Het doel moet gekoppeld zijn aan regelingversies, die horen bij de regeling die in het bestand 'manifest-bhkv.xml' staat|
-|LVBB2516|Blokkerend|De bestanden genoemd in het bestand 'manifest-bhkv.xml' moeten meegeleverd zijn|
-|LVBB3000|Blokkerend|De GML van een afzonderlijke locatie (binnen de GIO) MAG NIET groter zijn dan xx MB|
-|LVBB3002|Blokkerend|Zijn de geometrieën toegestaan volgens STOP/TP: Simple Features Profile 2 (SF2) geometrieën exclusief cirkels en bogen|
-|LVBB3003|Blokkerend|Controleer of srsName (coördinatensysteem) is opgegeven voor de geometrieën. (dimension ook)|
-|LVBB3004|Blokkerend|Het gml bestand MOET verwerkbaar  zijn|
-|LVBB3008|Blokkerend|Klopt de meegeleverde hash met de zelf berekende hash voor informatie-objecten|
-|LVBB3009|Blokkerend|Elk aangeleverd gml document moet voldoen aan de eisen van het schema van de Geometrie-standaard|
-|LVBB3010|Blokkerend|Elk aangeleverd gml document moet voldoen aan de eisen van het schema van de BasisGeometrie-standaard|
-|LVBB3011|Blokkerend|Elk GML-element MOET complete coördinaten bevatten|
-|LVBB3012|Blokkerend|Elk GML-element MOET een ingevulde <gml:posList> bevatten|
-|LVBB3150|Blokkerend|Een InformatieObject dat consolideerbaar is MOET een geboorteregeling bevatten  OF Een InformatieObject dat niet consolideerbaar is MAG NIET een  geboorteregeling bevatten|
+|LVBB2515|Blokkerend|Het doel moet gekoppeld zijn aan regelingversies, die horen bij de regeling die in het bestand 'manifest-bhkv.xml' staat.|
+|LVBB2516|Blokkerend|De bestanden genoemd in het bestand 'manifest-bhkv.xml' moeten meegeleverd zijn.|
+|LVBB3000|Blokkerend|De GML van een afzonderlijke locatie (binnen de GIO) MAG NIET groter zijn dan xx MB.|
+|LVBB3002|Blokkerend|Zijn de geometrieën toegestaan volgens STOP/TP: Simple Features Profile 2 (SF2) geometrieën exclusief cirkels en bogen.|
+|LVBB3003|Blokkerend|Controleer of srsName (coördinatensysteem) is opgegeven voor de geometrieën. (dimension ook).|
+|LVBB3004|Blokkerend|Het gml bestand MOET verwerkbaar  zijn.|
+|LVBB3008|Blokkerend|Klopt de meegeleverde hash met de zelf berekende hash voor informatie-objecten.|
+|LVBB3009|Blokkerend|Elk aangeleverd gml document moet voldoen aan de eisen van het schema van de Geometrie-standaard.|
+|LVBB3010|Blokkerend|Elk aangeleverd gml document moet voldoen aan de eisen van het schema van de BasisGeometrie-standaard.|
+|LVBB3011|Blokkerend|Elk GML-element MOET complete coördinaten bevatten.|
+|LVBB3012|Blokkerend|Elk GML-element MOET een ingevulde &lt;gml:posList&gt;  bevatten.|
+|LVBB3150|Blokkerend|Een InformatieObject dat consolideerbaar is MOET een geboorteregeling bevatten  OF Een InformatieObject dat niet consolideerbaar is MAG NIET een  geboorteregeling bevatten.|
 |LVBB3151|Blokkerend|Van een versie van een te consolideren IO, die onderdeel is van een besluit, MOET de expressie als tekst:ExtIoRef worden genoemd in òf de regelingtekst(mutatie) van het besluit òf de besluittekst.|
-|LVBB3501|Blokkerend|Elk InformatieObject in een aangeleverd document moet voldoen aan de eisen van het IO-schema van de STOP-standaard|
-|LVBB3502|Blokkerend|Het derde deel van de JOIN identificatie van een InformatieObject moet gelijk zijn aan pubdata|
-|LVBB3504|Blokkerend|Alle InformatieObjecten genoemd in de lijst met InformatieObjectRefs bij de BesluitMetadata MOETEN meegeleverd zijn|
-|LVBB3506|Blokkerend|GML bestand genoemd in IO is niet meegeleverd|
-|LVBB3507|Blokkerend|Het content-type van het meegeleverd bestand bij de IO is 'application/pdf' of 'application/gml+xml' |
-|LVBB3508|Blokkerend|De aangeleverde IO's MOGEN niet reeds bestaan|
+|LVBB3501|Blokkerend|Elk InformatieObject in een aangeleverd document moet voldoen aan de eisen van het IO-schema van de STOP-standaard.|
+|LVBB3502|Blokkerend|Het derde deel van de JOIN identificatie van een InformatieObject moet gelijk zijn aan pubdata.|
+|LVBB3504|Blokkerend|Alle InformatieObjecten genoemd in de lijst met InformatieObjectRefs bij de BesluitMetadata MOETEN meegeleverd zijn.|
+|LVBB3506|Blokkerend|GML bestand genoemd in IO is niet meegeleverd.|
+|LVBB3507|Blokkerend|Het content-type van het meegeleverd bestand bij de IO is 'application/pdf' of 'application/gml+xml' .|
+|LVBB3508|Blokkerend|De aangeleverde IO's MOGEN niet reeds bestaan.|
 |LVBB3509|Blokkerend|Elk aangeleverd InformatieObject MOET aanwezig zijn in de lijst met InformatieObjectRefs bij de BesluitMetadata.|
-|LVBB3510|Blokkerend|Geboorteregeling in een informatie-object moet voorkomen als regeling in het besluit|
-|LVBB3511|Blokkerend|Werk van join-id in informatie-object moet gelijk zijn aan die in bijbehorend GML-bestand|
-|LVBB3512|Blokkerend|Join-id in informatie-object moet gelijk zijn aan die in bijbehorend GML-bestand|
+|LVBB3510|Blokkerend|Geboorteregeling in een informatie-object moet voorkomen als regeling in het besluit.|
+|LVBB3511|Blokkerend|Werk van join-id in informatie-object moet gelijk zijn aan die in bijbehorend GML-bestand.|
+|LVBB3512|Blokkerend|Join-id in informatie-object moet gelijk zijn aan die in bijbehorend GML-bestand.|
 |LVBB3513|Blokkerend|InformatieObjectMetadata MOET aanwezig zijn in het aangeleverde informatie-object, INDIEN een informatie-object betrekking heeft op een nieuw werk|
-|LVBB3514|Blokkerend|Alle InformatieObjecten, waaraan gerefereerd wordt in deze aanlevering, MOETEN meegeleverd zijn of in de LVBB-database (CDS) opgeslagen zijn voordat verdere verwerking kan plaatsvinden|
+|LVBB3514|Blokkerend|Alle InformatieObjecten, waaraan gerefereerd wordt in deze aanlevering, MOETEN meegeleverd zijn of in de LVBB-database (CDS) opgeslagen zijn voordat verdere verwerking kan plaatsvinden.|
 |LVBB3515|Blokkerend|De informatieobjectversie (expressie-nivo), waarnaar de JOIN-identificatie in 'wasID' verwijst, MOET tot hetzelfde informatieobject (work-nivo) horen|
-|LVBB3516|Blokkerend|De informatieobjectversie (expressie-nivo), waarnaar de JOIN-identificatie in 'wasID' verwijst, MOET van hetzelfde informatieobject (work-nivo) de (enige) informatieobjectversie zijn, waarbij de einddatum (nog) onbekend is|
-|LVBB3517|Blokkerend|Ext-io-ref in besluit of consolidatie (m.b.t. JOIN-id) MAG GEEN voorloopspaties, naloopspaties of regelovergangen bevatten|
+|LVBB3516|Blokkerend|De informatieobjectversie (expressie-nivo), waarnaar de JOIN-identificatie in 'wasID' verwijst, MOET van hetzelfde informatieobject (work-nivo) de (enige) informatieobjectversie zijn, waarbij de einddatum (nog) onbekend is.|
+|LVBB3517|Blokkerend|Ext-io-ref in besluit of consolidatie (m.b.t. JOIN-id) MAG GEEN voorloopspaties, naloopspaties of regelovergangen bevatten.|
 |LVBB3518|Blokkerend|Bij definitieve besluiten van decentrale overheden MOETEN de vastgestelde informatie-objecten een datum juridisch werkend vanaf hebben.|
 |LVBB3519|Blokkerend|Bij definitieve besluiten van decentrale overheden MOETEN de vastgestelde regelingversies een datum juridisch werkend vanaf hebben.|
 |LVBB3520|Blokkerend|Elk tijdstempel in een besluit moet gekoppeld zijn aan tenminste één regelingversie, die in het besluit wordt vastgesteld. |
-|LVBB3800|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MOET bestaan|
-|LVBB3801|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MAG NIET al ingetrokken zijn|
-|LVBB3802|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MOET minimaal 1 openstaande expressie bevatten|
-|LVBB3900|Blokkerend|Van alle aanleveringen MOET de Expressie-id van een Informatie Object uniek zijn|
-|LVBB3901|Blokkerend|Van alle aanleveringen MOET de Werk-id van een Informatie Object uniek zijn|
+|LVBB3800|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MOET bestaan.|
+|LVBB3801|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MAG NIET al ingetrokken zijn.|
+|LVBB3802|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MOET minimaal 1 openstaande expressie bevatten.|
+|LVBB3900|Blokkerend|Van alle aanleveringen MOET de Expressie-id van een Informatie Object uniek zijn.|
+|LVBB3901|Blokkerend|Van alle aanleveringen MOET de Werk-id van een Informatie Object uniek zijn.|
 |LVBB3902|Blokkerend|Een met een besluit meegeleverd alleen bekend te maken IO MAG ALLEEN als inhoud van tekst:ExtRef genoemd worden in het besluitdeel van een Besluit (dus niet in de Regeling of een Regelingmutatie).|
 |LVBB4001|Blokkerend|Is het AKN ID van het werk dat het BG aan Besluit heeft toegekend uniek?|
-|LVBB4002|Blokkerend|Elk WijzigArtikel of WijzigLid moet een verwijzing hebben naar een WijzigBijlage en omgekeerd|
-|LVBB4005|Blokkerend|De AKN door het bevoegd gezag aangeleverde regeling moet als derde veld 'act' hebben|
-|LVBB4006|Blokkerend|Er kan geen AMvB verwerkt worden omdat het daarvoor noodzakelijke gegeven met het staatsblad id niet in de aanlevering zit|
-|LVBB4007|Blokkerend|soortRegeling van de eerste RegelingMetadata in een besluit moet beginnen met '/join/id/stop/regelingtype_0' (zodat van daaruit later juiste waardes kunnen worden bepaald)|
+|LVBB4002|Blokkerend|Elk WijzigArtikel of WijzigLid moet een verwijzing hebben naar een WijzigBijlage en omgekeerd.|
+|LVBB4005|Blokkerend|De AKN door het bevoegd gezag aangeleverde regeling moet als derde veld 'act' hebben.|
+|LVBB4006|Blokkerend|Er kan geen AMvB verwerkt worden omdat het daarvoor noodzakelijke gegeven met het staatsblad id niet in de aanlevering zit.|
+|LVBB4007|Blokkerend|soortRegeling van de eerste RegelingMetadata in een besluit moet beginnen met '/join/id/stop/regelingtype_0' (zodat van daaruit later juiste waardes kunnen worden bepaald).|
 |LVBB4014|Blokkerend|Is wordt-versie nog niet aanwezig?|
 |LVBB4015|Blokkerend|Bestaat was-versie?|
-|LVBB4017|Blokkerend|Datum ondertekening moet aanwezig zijn in het besluit|
-|LVBB4032|Blokkerend|Elke AKN wordt-expressie in mutatie-element moet voorkomen als instrumentVersie in BeoogdeRegeling en omgekeerd (daarbij ook lettend op de IO die voor kunnen komen)|
-|LVBB4033|Blokkerend|Elke AKN wordt-expressie in mutatie-element moet voorkomen als FRBRExpression in ExpressionIdentificatie van RegelingVersieInformatie en omgekeerd|
-|LVBB4036|Blokkerend|De waardelijst behorend bij de schema-versie moet aanwezig zijn |
-|LVBB4037|Blokkerend|De waarde van tooi-identifiers in het besluit moet allemaal teruggevonden kunnen worden in de waardelijst|
-|LVBB4038|Blokkerend|Subitems genoemd in de publicatie moeten meegeleverd zijn en omgekeerd|
-|LVBB4039|Blokkerend|De mimetype van een subitem in het document moet gelijk zijn aan het aangeleverde mimetype|
+|LVBB4017|Blokkerend|Datum ondertekening moet aanwezig zijn in het besluit.|
+|LVBB4032|Blokkerend|Elke AKN wordt-expressie in mutatie-element moet voorkomen als instrumentVersie in BeoogdeRegeling en omgekeerd (daarbij ook lettend op de IO die voor kunnen komen).|
+|LVBB4033|Blokkerend|Elke AKN wordt-expressie in mutatie-element moet voorkomen als FRBRExpression in ExpressionIdentificatie van RegelingVersieInformatie en omgekeerd.|
+|LVBB4036|Blokkerend|De waardelijst behorend bij de schema-versie moet aanwezig zijn.|
+|LVBB4037|Blokkerend|De waarde van tooi-identifiers in het besluit moet allemaal teruggevonden kunnen worden in de waardelijst.|
+|LVBB4038|Blokkerend|Subitems genoemd in de publicatie moeten meegeleverd zijn en omgekeerd.|
+|LVBB4039|Blokkerend|De mimetype van een subitem in het document moet gelijk zijn aan het aangeleverde mimetype.|
 |LVBB4040|Blokkerend|RegelingMetadata MOET aanwezig zijn in het aangeleverde besluit, INDIEN een Regelingversie betrekking heeft op een nieuwe regeling|
-|LVBB4041|Blokkerend|JOIN-id van de GIO op werkniveau MOET een waarde bevatten tussen de 4e '/' en de 5e '/'|
-|LVBB4042|Blokkerend|De code van de eindverantwoordelijke MOET ingevuld zijn met een waarde uit de afgesproken (toegestane) waardelijst|
-|LVBB4043|Blokkerend|Regeling is opvolger van een intrekking, maar wordt niet ingetrokken volgens consolidatie-informatie |
-|LVBB4045|Blokkerend|Een (unieke) RegelingVersieInformatie MAG alleen bij 1 element horen|
-|LVBB4200|Blokkerend|De 'datum JWV' van een wordt-versie MOET later zijn dan de 'datum JWV' van de was-versie|
-|LVBB4201|Blokkerend|Indien de was-versie een 'datum JWV'-einde heeft , dan MOET de 'datum JWV' van de wordt-versie eerder dan deze 'datum JWV'-einde zijn|
-|LVBB4204|Blokkerend|Als de wordt-versie een datum juridisch-werkend-vanaf heeft dan moet de was-versie ook een datum juridisch-werkend-vanaf hebben|
-|LVBB4204|Blokkerend|Als de wordt-versie een datum juridisch-werkend-vanaf heeft dan moet de was-versie ook een datum juridisch-werkend-vanaf hebben|
-|LVBB4205|Blokkerend|De datum juridisch-werkend-vanaf van een regelingversie moet voor de datum juridisch-werkend-tot liggen (als beide datums gevuld zijn)|
-|LVBB4206|Blokkerend|De datum geldig-vanaf van de wordt-versie moet voor de datum geldig-vanaf van de was-versie liggen (als beide datums gevuld zijn)	|
-|LVBB4207|Blokkerend|De datum geldig-vanaf van een regelingversie moet voor de datum geldig-tot liggen (als beide datums gevuld zijn)|
+|LVBB4041|Blokkerend|JOIN-id van de GIO op werkniveau MOET een waarde bevatten tussen de 4e '/' en de 5e '/'.|
+|LVBB4042|Blokkerend|De code van de eindverantwoordelijke MOET ingevuld zijn met een waarde uit de afgesproken (toegestane) waardelijst.|
+|LVBB4043|Blokkerend|Regeling is opvolger van een intrekking, maar wordt niet ingetrokken volgens consolidatie-informatie.|
+|LVBB4045|Blokkerend|Een (unieke) RegelingVersieInformatie MAG alleen bij 1 element horen.|
+|LVBB4200|Blokkerend|De 'datum JWV' van een wordt-versie MOET later zijn dan de 'datum JWV' van de was-versie.|
+|LVBB4201|Blokkerend|Indien de was-versie een 'datum JWV'-einde heeft , dan MOET de 'datum JWV' van de wordt-versie eerder dan deze 'datum JWV'-einde zijn.|
+|LVBB4204|Blokkerend|Als de wordt-versie een datum juridisch-werkend-vanaf heeft dan moet de was-versie ook een datum juridisch-werkend-vanaf hebben.|
+|LVBB4204|Blokkerend|Als de wordt-versie een datum juridisch-werkend-vanaf heeft dan moet de was-versie ook een datum juridisch-werkend-vanaf hebben.|
+|LVBB4205|Blokkerend|De datum juridisch-werkend-vanaf van een regelingversie moet voor de datum juridisch-werkend-tot liggen (als beide datums gevuld zijn).|
+|LVBB4206|Blokkerend|De datum geldig-vanaf van de wordt-versie moet voor de datum geldig-vanaf van de was-versie liggen (als beide datums gevuld zijn).	|
+|LVBB4207|Blokkerend|De datum geldig-vanaf van een regelingversie moet voor de datum geldig-tot liggen (als beide datums gevuld zijn).|
 |LVBB4209|Blokkerend|Als de wordt-versie een datum geldig-vanaf heeft dan moet de was-versie ook een datum geldig-vanaf hebben.|
-|LVBB4210|Blokkerend|De datum geldig-vanaf van een regelingversie moet voor de datum geldig-tot liggen (als beide datums gevuld zijn)|
+|LVBB4210|Blokkerend|De datum geldig-vanaf van een regelingversie moet voor de datum geldig-tot liggen (als beide datums gevuld zijn).|
 |LVBB4602|Blokkerend|Externe verwijzingen (imop-tekst:ExtIORef) in een ontwerpbesluit mogen alleen verwijzen naar met het ontwerpbesluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte ontwerp- of definitieve besluiten en bijbehorende informatieobjecten.  Hierbij wordt bij een ExtIoRef die op werk-niveau wordt aangeleverd gecontroleerd op de eerste expressie binnen dit werk.|
 |LVBB4603|Blokkerend|Externe verwijzingen (imop-tekst:ExtIORef) in een definitief besluit mogen alleen verwijzen naar met het besluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte definitieve besluiten en bijbehorende informatieobjecten.  Hierbij wordt bij een ExtIoRef die op werk-niveau wordt aangeleverd gecontroleerd op de eerste expressie binnen dit werk.|
-|LVBB4703|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking kennisgeving [zoals benoemd in de opdracht.xml]|
-|LVBB4704|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking van gerelateerd besluit [zoals benoemd onder 'mededelingOver']|
-|LVBB4705|Blokkerend|Besluit met akn-id %1 horende bij deze kennisgeving heeft nog geen publicatie akn-identifier|
-|LVBB4707|Blokkerend|Derde veld waarde akn bij kennisgeving moet gelijk zijn aan 'doc'|
-|LVBB4708|Blokkerend|Derde veld waarde 'mededeling-over' in kennisgeving moet gelijk zijn aan 'bill'|
-|LVBB4711|Blokkerend|Kennisgeving MAG niet eerder gepubliceerd zijn|
-|LVBB4712|Blokkerend|Datum bekendmaking bij kennisgeving MAG niet in het verleden (= voor huidige dag) zijn|
-|LVBB4713|Blokkerend|Kennisgeving wacht om afgebroken te worden|
-|LVBB4714|Blokkerend|Besluit bij kennisgeving wacht om afgebroken te worden|
+|LVBB4703|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking kennisgeving [zoals benoemd in de opdracht.xml].|
+|LVBB4704|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking van gerelateerd besluit [zoals benoemd onder 'mededelingOver'].|
+|LVBB4705|Blokkerend|Besluit met akn-id %1 horende bij deze kennisgeving heeft nog geen publicatie akn-identifier.|
+|LVBB4707|Blokkerend|Derde veld waarde akn bij kennisgeving moet gelijk zijn aan 'doc'.|
+|LVBB4708|Blokkerend|Derde veld waarde 'mededeling-over' in kennisgeving moet gelijk zijn aan 'bill'.|
+|LVBB4711|Blokkerend|Kennisgeving MAG niet eerder gepubliceerd zijn.|
+|LVBB4712|Blokkerend|Datum bekendmaking bij kennisgeving MAG niet in het verleden (= voor huidige dag) zijn.|
+|LVBB4713|Blokkerend|Kennisgeving wacht om afgebroken te worden.|
+|LVBB4714|Blokkerend|Besluit bij kennisgeving wacht om afgebroken te worden.|
 |LVBB4715|Blokkerend|Kennisgeving MOET de laatste kennisgeving bij hetzelfde besluit zijn (om te kunnen afbreken)|
-|LVBB4716|Blokkerend|Bestand met consolidatie-procedurestappen behorend bij kennisgeving wacht om afgebroken te worden|
-|LVBB4737|Blokkerend|De waarde van tooi-identifiers in de kennisgeving moet teruggevonden kunnen worden in de waardelijst|
-|LVBB4738|Blokkerend|SoortKennisgeving KennisgevingUitspraakRechter MAG NIET gebruikt worden|
-|LVBB4750|Blokkerend|In het resultaat van het procedureverloop van een (ontwerp)besluit en alle kennisgevingen over dit besluit mag elke code bij een procedurestap maximaal 1 keer voorkomen|
-|LVBB4751|Blokkerend|Het is niet mogelijk om een procedurestap te wijzigen of verwijderen die nog niet eerder is aangeleverd|
+|LVBB4716|Blokkerend|Bestand met consolidatie-procedurestappen behorend bij kennisgeving wacht om afgebroken te worden.|
+|LVBB4737|Blokkerend|De waarde van tooi-identifiers in de kennisgeving moet teruggevonden kunnen worden in de waardelijst.|
+|LVBB4738|Blokkerend|SoortKennisgeving KennisgevingUitspraakRechter MAG NIET gebruikt worden.|
+|LVBB4750|Blokkerend|In het resultaat van het procedureverloop van een (ontwerp)besluit en alle kennisgevingen over dit besluit mag elke code bij een procedurestap maximaal 1 keer voorkomen.|
+|LVBB4751|Blokkerend|Het is niet mogelijk om een procedurestap te wijzigen of verwijderen die nog niet eerder is aangeleverd.|
 |LVBB4753|Blokkerend|Het type procedureverloop MOET passen bij het type besluit waarvan het de procedure beschrijft.|
-|LVBB4754|Blokkerend|Soort stap MAG NIET aanwezig zijn in het besluit of de kennisgeving|
-|LVBB4755|Blokkerend|De procedurestappen MOGEN NIET dubbel voorkomen|
-|LVBB4756|Blokkerend|De datum bekend-op van de kennisgeving MOET liggen na de datum bekend-op van een eerdere consolidatie|
-|LVBB4757|Blokkerend|De datum ontvangen-op van de kennisgeving MOET liggen na de datum ontvangen-op van een eerdere consolidatie|
-|LVBB4758|Blokkerend|De datum einde inzagetermijn MOET later dan of gelijk zijn aan de datum begin inzagetermijn|
-|LVBB4759|Blokkerend|Datum bekendmaking kennisgeving %1 mag niet voor datum bekend op van het besluit %2 liggen |
-|LVBB4760|Blokkerend|Bij een kennisgeving ontwerp besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Begin inzagetermijnEinde inzagetermijn|
-|LVBB4761|Blokkerend|Bij een kennisgeving van een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde bezwaartermijnEinde beroepstermijn|
-|LVBB4762|Blokkerend|Bij een aanlevering van een kennisgeving MOET procedureverloopmutatie een waarde bevatten anders dan "vervangStappen" of "verwijderStappen"|
-|LVBB5002|Blokkerend|Indien een element verwijderd of vervangen moet worden, MOET dit element met aangegeven wId bestaan bij aangegeven regelingversie OF: Indien een element toegevoegd moet worden, MAG dit element met aangegeven wId NIET bestaan bij desbetreffend element in desbetreffende regelingversie, waaraan dit element moet worden toegevoegd|
-|LVBB5003|Blokkerend|De inhoud van het attribuut 'wat' van een vervang opdracht voor een regelingversie moet gelijk zijn aan het wId van het te vervangen element|
-|LVBB5005|Blokkerend|De wordt-versie moet gevuld zijn|
-|LVBB5006|Blokkerend|De was-versie moet gevuld zijn bij niet-initiele mutaties|
-|LVBB5007|Blokkerend|De was-versie mag niet door een ontwerp besluit aangemaakt zijn|
-|LVBB5008|Blokkerend|De was-versie mag niet aangemaakt zijn door een besluit dat in afwachting is om afgebroken te worden|
-|LVBB5009|Blokkerend|De 'soort work' van de was-versie MOET gelijk zijn aan de 'soort work' van de wordt-versie|
-|LVBB5010|Blokkerend|VoegToe: bestaat het toe te voegen element nog niet|
-|LVBB5011|Blokkerend|Er mag maar een toelichting voorkomen bij toevoegen|
-|LVBB5012|Blokkerend|De regeling bij de was- en wordt-verie mag niet ingetrokken zijn|
-|LVBB5013|Blokkerend|Een in te trekken regeling MOET juridisch werkend zijn, d.w.z. een openstaande versie van dezelfde regeling hebben|
-|LVBB5014|Blokkerend|Een in te trekken regeling MOET (eerder) geregistreerd zijn|
-|LVBB5015|Blokkerend|De was-versie binnen de regeling MAG NIET eerder gebruikt zijn als versie-gebaseerd-op|
+|LVBB4754|Blokkerend|Soort stap MAG NIET aanwezig zijn in het besluit of de kennisgeving.|
+|LVBB4755|Blokkerend|De procedurestappen MOGEN NIET dubbel voorkomen.|
+|LVBB4756|Blokkerend|De datum bekend-op van de kennisgeving MOET liggen na de datum bekend-op van een eerdere consolidatie.|
+|LVBB4757|Blokkerend|De datum ontvangen-op van de kennisgeving MOET liggen na de datum ontvangen-op van een eerdere consolidatie.|
+|LVBB4758|Blokkerend|De datum einde inzagetermijn MOET later dan of gelijk zijn aan de datum begin inzagetermijn.|
+|LVBB4759|Blokkerend|Datum bekendmaking kennisgeving %1 mag niet voor datum bekend op van het besluit %2 liggen .|
+|LVBB4760|Blokkerend|Bij een kennisgeving ontwerp besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Begin inzagetermijnEinde inzagetermijn.|
+|LVBB4761|Blokkerend|Bij een kennisgeving van een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde bezwaartermijnEinde beroepstermijn.|
+|LVBB4762|Blokkerend|Bij een aanlevering van een kennisgeving MOET procedureverloopmutatie een waarde bevatten anders dan "vervangStappen" of "verwijderStappen".|
+|LVBB5002|Blokkerend|Indien een element verwijderd of vervangen moet worden, MOET dit element met aangegeven wId bestaan bij aangegeven regelingversie OF: Indien een element toegevoegd moet worden, MAG dit element met aangegeven wId NIET bestaan bij desbetreffend element in desbetreffende regelingversie, waaraan dit element moet worden toegevoegd.|
+|LVBB5003|Blokkerend|De inhoud van het attribuut 'wat' van een vervang opdracht voor een regelingversie moet gelijk zijn aan het wId van het te vervangen element.|
+|LVBB5005|Blokkerend|De wordt-versie moet gevuld zijn.|
+|LVBB5006|Blokkerend|De was-versie moet gevuld zijn bij niet-initiele mutaties.|
+|LVBB5007|Blokkerend|De was-versie mag niet door een ontwerp besluit aangemaakt zijn.|
+|LVBB5008|Blokkerend|De was-versie mag niet aangemaakt zijn door een besluit dat in afwachting is om afgebroken te worden.|
+|LVBB5009|Blokkerend|De 'soort work' van de was-versie MOET gelijk zijn aan de 'soort work' van de wordt-versie.|
+|LVBB5010|Blokkerend|VoegToe: bestaat het toe te voegen element nog niet.|
+|LVBB5011|Blokkerend|Er mag maar een toelichting voorkomen bij toevoegen.|
+|LVBB5012|Blokkerend|De regeling bij de was- en wordt-verie mag niet ingetrokken zijn.|
+|LVBB5013|Blokkerend|Een in te trekken regeling MOET juridisch werkend zijn, d.w.z. een openstaande versie van dezelfde regeling hebben.|
+|LVBB5014|Blokkerend|Een in te trekken regeling MOET (eerder) geregistreerd zijn.|
+|LVBB5015|Blokkerend|De was-versie binnen de regeling MAG NIET eerder gebruikt zijn als versie-gebaseerd-op.|
 |LVBB5019|Blokkerend|Een nieuw aan te maken regeling MAG NOG NIET bestaan.|
 |LVBB5020|Blokkerend|Mutaties MOGEN ALLEEN op instrumentversies (regelingversies of informatieobjectversies) in een gelijke schemaversie plaatsvinden.|
 |LVBB5021|Blokkerend|Een regelingversie moet minimaal één wijziging van juridische aard bevatten.|
 |LVBB5100|Blokkerend|Bij een regelingmutatie met VervangRegeling mag geen afwijkend RegelingModel gehanteerd worden t.o.v. bestaande regeling.|
-|LVBB6000|Blokkerend|Valideert de AfwijkVergunning tegen het imop <?> schema?|
-|LVBB6001|Blokkerend|Voor publicatie van de afwijkvergunning MAG de uri van elke nieuwe Doorlever-zip NIET bestaan|
-|LVBB6002|Blokkerend|Voor de afwijkvergunning MOET elk metadata-document, waarnaar vanuit de publicatie verwezen wordt, gevonden worden|
-|LVBB6003|Blokkerend|Voor de afwijkvergunning MOET elk GML-document, waarnaar vanuit de publicatie verwezen wordt, gevonden worden|
+|LVBB6000|Blokkerend|Valideert de AfwijkVergunning tegen het imop &lt;?&gt; schema?|
+|LVBB6001|Blokkerend|Voor publicatie van de afwijkvergunning MAG de uri van elke nieuwe Doorlever-zip NIET bestaan.|
+|LVBB6002|Blokkerend|Voor de afwijkvergunning MOET elk metadata-document, waarnaar vanuit de publicatie verwezen wordt, gevonden worden.|
+|LVBB6003|Blokkerend|Voor de afwijkvergunning MOET elk GML-document, waarnaar vanuit de publicatie verwezen wordt, gevonden worden.|
 |LVBB7001|Blokkerend|Lukt het expanderen van de toestand?|
-|LVBB7002|Blokkerend|Voor elk Doel moet minimaal 1 regelingversie gekoppeld zijn|
-|LVBB7003|Blokkerend|Doel moet versies gekoppeld hebben op het moment dat er een datum inwerking wordt meegegeven|
-|LVBB7004|Blokkerend|Voor een regelingversie, aangeduid met een specifiek doel binnen een aangegeven regeling, MAG dit doel en bijbehorende datums maar 1 keer toegevoegd worden (en kan niet meer gewijzigd worden)|
-|LVBB7005|Blokkerend|Twee versies binnen dezelfde regeling moeten verschillende datums juridisch werkend vanaf hebben|
+|LVBB7002|Blokkerend|Voor elk Doel moet minimaal 1 regelingversie gekoppeld zijn.|
+|LVBB7003|Blokkerend|Doel moet versies gekoppeld hebben op het moment dat er een datum inwerking wordt meegegeven.|
+|LVBB7004|Blokkerend|Voor een regelingversie, aangeduid met een specifiek doel binnen een aangegeven regeling, MAG dit doel en bijbehorende datums maar 1 keer toegevoegd worden (en kan niet meer gewijzigd worden).|
+|LVBB7005|Blokkerend|Twee versies binnen dezelfde regeling moeten verschillende datums juridisch werkend vanaf hebben.|
 |LVBB7006|Blokkerend|Versie gekoppeld aan doel bestaat niet|
 |LVBB7007|Blokkerend|Informatie-object gekoppeld aan doel bestaat niet|
 |LVBB7008|Blokkerend|Ingetrokken regeling gekoppeld aan doel bestaat niet|

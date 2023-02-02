@@ -40,10 +40,10 @@ var respecConfig =
 {
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   //specStatus: "GN-BASIS",             // Basis Document
-  specStatus: "GN-WV",              // Werk Versie
+  //specStatus: "GN-WV",              // Werk Versie
   //specStatus: "GN-CV",              // Consultatie Versie
   //specStatus: "GN-VV",              // Vaststellings Versie
-  //specStatus: "GN-DEF",             // Definitieve Versie
+  specStatus: "GN-DEF",             // Definitieve Versie
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   //-- voor toegestane types zie: https://github.com/Geonovum/respec/wiki/specType
   specType: "AL",                   // Algemeen
@@ -51,7 +51,7 @@ var respecConfig =
   format: "markdown",                 // altijd "markdown" - JvG W3C aangepast, op 1 plek markdown aangeven    
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  //publishDate: "2019-10-08",  	    // Format is "YYYY-MM-DD"
+  publishDate: "2023-02-02",  	    // Format is "YYYY-MM-DD"
   //-- Repositorynaam op GitHub -------------------------------------------------------
   //github: "https://github.com/Geonovum/dso-validatiematrix",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
@@ -122,7 +122,7 @@ var respecConfig =
     src: "https://tools.geostandaarden.nl/respec/style/logos/ow.svg",
     alt: "Standaarden Omgevingswet",
     id: "TopLogo",
-    height: 44,
+    //height: 44,
     width: 240,
     url: "https://www.geonovum.nl/geo-standaarden/omgevingswet/STOPTPOD"
   }],
