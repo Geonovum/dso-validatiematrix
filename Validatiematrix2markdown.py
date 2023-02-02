@@ -18,7 +18,7 @@ print("""
 # De validatiematrix
 
 De volgende versie van de standaarden zijn gebruikt voor het samenstellen van de validatiematrix:
- - Informatiemodel Omgevingswet (IMOW) Versie 2.0.1.
+ - Informatiemodel Omgevingswet (IMOW) Versie 2.0.2.
  - STOP standaard Versie 1.3.0.
 
 Betekenis van de kolommen:
@@ -45,6 +45,6 @@ for row in sheet.iter_rows():
     ernst = str(row[4].value)
     if ernst != 'Blokkerend' and ernst != 'Waarschuwing':
         print("ERROR: ernst moet 'Blokkerend' pf 'Waarschuwing' zijn voor: " + id, file=sys.stderr)
-    regel = row[2].value.replace('\n',' ') 
+    regel = row[2].value.replace('\n',' ').replace('<','&lt;').replace('>','&gt;')
     print('|' + id + '|' + ernst + '|' + regel + '|',file=outfile)
 outfile.close()
