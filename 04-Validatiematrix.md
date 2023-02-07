@@ -4,6 +4,7 @@
 De volgende versie van de standaarden zijn gebruikt voor het samenstellen van de validatiematrix:
  - Informatiemodel Omgevingswet (IMOW) Versie 2.0.2.
  - STOP standaard Versie 1.3.0.
+ - Ook worden validatieregels van OZON en het LVBB bronhouderskoppelvlak opgenomen.
 
 Betekenis van de kolommen:
 
