@@ -46,6 +46,7 @@ De validatiematrix bevat de volgende validatieregels:
 |BHKV1063|Blokkerend|De eId van een data:Intrekking van een informatieobject MOET verwijzen naar de plaats in de RegelingMutatie waar de tekst:ExtIORef wordt verwijderd. (Dat is de eId van de tekst:ExtIORef 1) binnen een wijzig- of verwijder-actie van een bovenliggend element; 2) binnen een tekst:verwijder; of 3) binnen een tekst:verwijderdeTekst.)|
 |BHKV1064|Blokkerend|De module se:FeatureTypeStyle MAG ALLEEN bij een Geo-Informatieobject(GIO) aangeleverd worden.|
 |BHKV1065|Blokkerend|De module gio:JuridischeBorgingVan MAG ALLEEN bij een Geo-Informatieobject(GIO) aangeleverd worden.|
+|BHKV9998|Blokkerend|De waarde 'onbekend' MAG NIET gebruikt worden als idLevering.|
 |BHKV9999|Blokkerend|Interne fout.|
 |GEOMETRY.03.1|Blokkerend|geometrie is afwezig.|
 |GEOMETRY.03.2|Blokkerend|geometrie is ongeldig (zie functionele documentatie op: https://aandeslagmetdeomgevingswet.nl/ontwikkelaarsportaal/api-register/api/geo-validatieservice/).|
@@ -84,7 +85,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1039|Blokkerend|Alle bestanden, die aanwezig zijn in de aangeleverde zip, moeten genoemd zijn in manifest-bhkv.xml.|
 |LVBB1040|Blokkerend|Opdracht.zip MAG NIET  groter zijn dan 1 GB.|
 |LVBB1041|Blokkerend|Een individueel bestand (uitgepakt) in de aangeleverde opdracht.zip MAG NIET groter zijn dan 100 MB.|
-|LVBB1501|Blokkerend|De  datumBekendmaking binnen de opdracht MOET een datum in juiste formaat (JJJJ-MM-DD) zijn en mag niet in het verleden liggen.|
+|LVBB1501|Blokkerend|De  datumBekendmaking binnen de opdracht MOET een datum in juiste formaat (JJJJ-MM-DD) zijn en MOET in de toekomst liggen.|
 |LVBB1502|Blokkerend|De AKN in de opdracht (indien aanwezig) moet als derde veld 'bill' hebben.|
 |LVBB1505|Blokkerend|De opdracht moet de datum bekendmaking bevatten.|
 |LVBB1506|Blokkerend|Het publicatiebestand, waarvan de naam in de opdracht is vermeld, moet aanwezig zijn.|
@@ -114,7 +115,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1566|Blokkerend|Besluit dat afgebroken moet worden MAG GEEN regeling bevatten die ingetrokken is door een ander besluit.|
 |LVBB1567|Blokkerend|Besluit dat afgebroken moet worden MAG GEEN regeling bevatten die als hoofdregeling dient voor een regeling tijdelijk deel dat vastgesteld is in een ander besluit.|
 |LVBB1568|Blokkerend|De id-bevoegd-gezag (OIN) van de afbreekopdracht MOET gelijk zijn aan de id-bevoegd-gezag (OIN) van de af te breken opdracht.|
-|LVBB1571|Blokkerend|Voor het verwerken van een aanlevering MOET de status van een opgestart proces (met gegeven status identifier) bekend zijn|
+|LVBB1571|Blokkerend|Voor het verwerken van een aanlevering MOET de status van een opgestart proces (met gegeven status identifier) bekend zijn.|
 |LVBB1572|Blokkerend|Voor het valideren van een aanlevering MOET een af te melden validatierapport bekend zijn.|
 |LVBB1573|Blokkerend|Voor het valideren van een aanlevering MAG een eerder afgemeld validatierapport NIET opnieuw afgemeld worden.|
 |LVBB1574|Blokkerend|De juridisch werkend vanaf datum MOET op of na datum bekendmaking van het besluit liggen.|
@@ -210,6 +211,8 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4207|Blokkerend|De datum geldig-vanaf van een regelingversie moet voor de datum geldig-tot liggen (als beide datums gevuld zijn).|
 |LVBB4209|Blokkerend|Als de wordt-versie een datum geldig-vanaf heeft dan moet de was-versie ook een datum geldig-vanaf hebben.|
 |LVBB4210|Blokkerend|De datum geldig-vanaf van een regelingversie moet voor de datum geldig-tot liggen (als beide datums gevuld zijn).|
+|LVBB4211|Blokkerend|Een regelingmutatie op een was-versie MAG ALLEEN wanneer het besluit, dat deze regelingversie heeft vastgesteld, al gepubliceerd is.|
+|LVBB4212|Blokkerend|Een verwijzing naar een in te trekken regeling / geboorteregeling, hoofdregeling tijdelijk deel MAG ALLEEN wanneer het besluit, dat deze regeling heeft vastgesteld, al gepubliceerd is .|
 |LVBB4602|Blokkerend|Externe verwijzingen (imop-tekst:ExtIORef) in een ontwerpbesluit mogen alleen verwijzen naar met het ontwerpbesluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte ontwerp- of definitieve besluiten en bijbehorende informatieobjecten.  Hierbij wordt bij een ExtIoRef die op werk-niveau wordt aangeleverd gecontroleerd op de eerste expressie binnen dit werk.|
 |LVBB4603|Blokkerend|Externe verwijzingen (imop-tekst:ExtIORef) in een definitief besluit mogen alleen verwijzen naar met het besluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte definitieve besluiten en bijbehorende informatieobjecten.  Hierbij wordt bij een ExtIoRef die op werk-niveau wordt aangeleverd gecontroleerd op de eerste expressie binnen dit werk.|
 |LVBB4703|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking kennisgeving [zoals benoemd in de opdracht.xml].|
@@ -237,6 +240,9 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4760|Blokkerend|Bij een kennisgeving ontwerp besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Begin inzagetermijnEinde inzagetermijn.|
 |LVBB4761|Blokkerend|Bij een kennisgeving van een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde bezwaartermijnEinde beroepstermijn.|
 |LVBB4762|Blokkerend|Bij een aanlevering van een kennisgeving MOET procedureverloopmutatie een waarde bevatten anders dan "vervangStappen" of "verwijderStappen".|
+|LVBB4802|Blokkerend|Een besluit MAG maar één instrumentversie per instrument bevatten. |
+|LVBB4803|Blokkerend|Een aangeleverd besluit MAG maar één doel bevatten.|
+|LVBB4804|Blokkerend|Een aangeleverd besluit MAG enkel een instelling van een instrument(versie) bevatten of enkel een intrekking van het instrument bevatten. |
 |LVBB5002|Blokkerend|Indien een element verwijderd of vervangen moet worden, MOET dit element met aangegeven wId bestaan bij aangegeven regelingversie OF: Indien een element toegevoegd moet worden, MAG dit element met aangegeven wId NIET bestaan bij desbetreffend element in desbetreffende regelingversie, waaraan dit element moet worden toegevoegd.|
 |LVBB5003|Blokkerend|De inhoud van het attribuut 'wat' van een vervang opdracht voor een regelingversie moet gelijk zijn aan het wId van het te vervangen element.|
 |LVBB5005|Blokkerend|De wordt-versie moet gevuld zijn.|
@@ -741,47 +747,6 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP3174|Blokkerend|ExternalGraphic:Format MOET de waarde image/png hebben.|
 |STOP3175|Blokkerend|De module se:FeatureTypeStyle(symbolisatie) MAG ALLEEN bij een Geo-informatieobject(GIO) aangeleverd worden.|
 |STOP3200|Blokkerend|De module gio:JuridischeBorgingVan MAG ALLEEN bij een Geo-informatieobject(GIO) aangeleverd worden.|
-|TPOD0410|Waarschuwing|Een Hoofdstuk moet worden geduid met de label Hoofdstuk.|
-|TPOD0420|Waarschuwing|Hoofdstukken moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter.|
-|TPOD0460|Waarschuwing|Een Titel moet worden geduid met de label Titel.|
-|TPOD0470|Waarschuwing|De nummering van Titels moet beginnen met het nummer (en evt. letter) van het Hoofdstuk waarin de Titel voorkomt.|
-|TPOD0480|Waarschuwing|Titels moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter.|
-|TPOD0490|Waarschuwing|Achter het laatste cijfer van een titelnummer mag geen punt worden opgenomen.|
-|TPOD0510|Waarschuwing|Een Afdeling moet worden geduid met de label Afdeling.|
-|TPOD0520|Waarschuwing|Als tussen Hoofdstuk en Afdeling Titel voorkomt dan moet de nummering van Afdelingen beginnen met het samengestelde nummer van de Titel (en evt. letter) waarin de Afdeling voorkomt, gevolgd door een punt.|
-|TPOD0530|Waarschuwing|Afdelingen moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter.|
-|TPOD0540|Waarschuwing|Achter het laatste cijfer van een Afdelingnummer mag geen punt worden opgenomen.|
-|TPOD0560|Waarschuwing|Als tussen Hoofdstuk en Afdeling geen Titel voorkomt dan moet de nummering van Afdelingen beginnen met het nummer van het Hoofdstuk (en evt. letter) waarin de Afdeling voorkomt, gevolgd door een punt.|
-|TPOD0570|Waarschuwing|Een Paragraaf moet worden geduid met de label Paragraaf of het paragraaf-teken.|
-|TPOD0580|Waarschuwing|De nummering van Paragrafen begint met het samengestelde nummer (en evt. letter) van de Afdeling waarin de Paragraaf voorkomt, gevolgd door een punt.|
-|TPOD0590|Waarschuwing|Paragrafen moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter.|
-|TPOD0600|Waarschuwing|Achter het cijfer van een Paragraafnummer mag geen punt worden opgenomen.|
-|TPOD0620|Waarschuwing|Een Subparagraaf moet worden geduid met de label Subparagraaf.|
-|TPOD0630|Waarschuwing|De nummering van Subparagrafen begint met het samengestelde nummer (en evt. letter) van de Paragraaf waarin de Subparagraaf voorkomt, gevolgd door een punt.|
-|TPOD0640|Waarschuwing|Subparagrafen moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter.|
-|TPOD0650|Waarschuwing|Achter het laatste cijfer van een Subparagraafnummer mag geen punt worden opgenomen.|
-|TPOD0670|Waarschuwing|Een Subsubparagraaf moet worden geduid met de label Subsubparagraaf.|
-|TPOD0680|Waarschuwing|De nummering van Subsubparagrafen begint met het samengestelde nummer (en evt. letter) van de Subparagraaf waarin de Subsubparagraaf voorkomt, gevolgd door een punt.|
-|TPOD0690|Waarschuwing|Subsubparagrafen moeten oplopend worden genummerd in Arabische cijfers, indien nodig gevolgd door een letter.|
-|TPOD0700|Waarschuwing|Achter het laatste cijfer van een Subsubparagraafnummer mag geen punt worden opgenomen.|
-|TPOD0741|Waarschuwing|De nummering van Artikelen begint met het nummer van het Hoofdstuk (en evt. letter) waarin het Artikel voorkomt, gevolgd door een punt, daarna oplopende nummering van de Artikelen in Arabische cijfers inclusief indien nodig een letter.|
-|TPOD0750|Waarschuwing|Achter het cijfer van een Artikelnummer mag geen punt worden opgenomen.|
-|TPOD0781|Waarschuwing|Leden worden per artikel oplopend genummerd in Arabische cijfers en indien nodig een letter.|
-|TPOD0790|Waarschuwing|Het eerste lid van ieder artikel krijgt het nummer 1.|
-|TPOD0800|Waarschuwing|Het cijfer van een Lid moet worden opgevolgd door een punt.|
-|TPOD0811|Waarschuwing|Het is verboden om gebruik te maken van het Lijstaanhef-element.|
-|TPOD0830|Waarschuwing|De onderdelen van de Lijst op het eerste niveau moeten worden aangegeven met letters.|
-|TPOD0831|Waarschuwing|Het teken voor een Lijstitem mag zelf bepaald worden door het bevoegd gezag, ook als een lijst binnen een lid wordt gebruikt.|
-|TPOD0840|Waarschuwing|De onderdelen van de Lijst op het tweede niveau moeten worden aangegeven met Arabische cijfers.|
-|TPOD0841|Waarschuwing|Het teken voor een Lijstitem mag zelf bepaald worden door het bevoegd gezag, ook als een lijst binnen een lid wordt gebruikt.|
-|TPOD0850|Waarschuwing|De onderdelen van de Lijst op het derde niveau moeten worden aangegeven met Romeinse cijfers.|
-|TPOD0851|Waarschuwing|Het teken voor een Lijstitem mag zelf bepaald worden door het bevoegd gezag, ook als een lijst binnen een lid wordt gebruikt.|
-|TPOD0880|Waarschuwing|Hoofdstuk 1 heeft het Opschrift Algemene bepalingen.|
-|TPOD0980|Waarschuwing|Hoofdstuk 1 moet een artikel 'begripsbepalingen' bevatten.|
-|TPOD1000|Waarschuwing|Een Begrip moet bestaan uit één term en één definitie.|
-|TPOD1010|Waarschuwing|Begrippen moeten in alfabetische volgorde worden gesorteerd.|
-|TPOD1020|Waarschuwing|Begrippen mogen niet worden genummerd. (Het LiNummer mag niet gebruikt worden binnen een Begrippenlijst.).|
-|TPOD1070|Waarschuwing|Meet- en rekenbepalingen mogen niet worden genummerd. (Het LiNummer mag niet gebruikt worden binnen een Begrippenlijst.).|
 |TPOD1110|Blokkerend|IMOW-objecttypen kunnen alleen worden toegepast op het Lichaam van een Regeling, niet op Bijlagen of Toelichtingen.|
 |TPOD1310|Waarschuwing|Locatie heeft het attribuut hoogte, indien het attribuut hoogte gevuld wordt dient hier een waarde uit de waardelijst eenheid gekozen te worden.|
 |TPOD1650|Blokkerend|Het attribuut 'normwaarde' moet bestaan uit één van de drie mogelijke attributen; 'kwalitatieveWaarde' óf 'kwantitatieveWaarde' of 'waardeInRegeltekst'.|
@@ -842,3 +807,52 @@ De validatiematrix bevat de volgende validatieregels:
 |TPOD2431|Blokkerend|Het OW-object: Kaartlaag mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie.|
 |TPOD2432|Blokkerend|Het OW-object: SymbolisatieItem mag niet voorkomen bij Regelingen van het type: Instructie, Reactieve interventie.|
 |TPOD2433|Blokkerend|Het OW-object: Pons mag alleen voorkomen bij Regelingen van het type: Omgevingsplan.|
+|TPOD2434|Blokkerend|Als soortRegeling = 'Algemene maatregel van bestuur' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' zijn.|
+|TPOD2435|Blokkerend|Als soortRegeling = 'Algemene maatregel van bestuur' dan MOET voor de regeling RegelingKlassiek of RegelingCompact gebruikt worden.|
+|TPOD2436|Blokkerend|Als soortRegeling = 'Algemene maatregel van bestuur' dan MOET voor het instellings- of wijzigingsbesluit BesluitKlassiek of BesluitCompact gebruikt worden.|
+|TPOD2437|Blokkerend|Als soortRegeling = 'Ministeriële regeling' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' zijn.|
+|TPOD2438|Blokkerend|Als soortRegeling = 'Ministeriële regeling' dan MOET voor de regeling RegelingKlassiek of RegelingCompact gebruikt worden.|
+|TPOD2439|Blokkerend|Als soortRegeling = 'Ministeriële regeling' dan MOET voor het instellings- of wijzigingsbesluit BesluitKlassiek of BesluitCompact gebruikt worden.|
+|TPOD2440|Blokkerend|Als soortRegeling = 'Instructie' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' of 'Provincie' zijn.|
+|TPOD2441|Blokkerend|Als soortRegeling = 'Instructie' dan MOET  voor de regeling RegelingCompact gebruikt worden.|
+|TPOD2442|Blokkerend|Als soortRegeling = 'Instructie' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2443|Blokkerend|Als soortRegeling = 'Aanwijzingsbesluit N2000' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' zijn.|
+|TPOD2444|Blokkerend|Als soortRegeling = 'Aanwijzingsbesluit N2000' dan MOET voor de regeling RegelingKlassiek of RegelingCompact gebruikt worden.|
+|TPOD2445|Blokkerend|Als soortRegeling = 'Aanwijzingsbesluit N2000' dan MOET voor het instellings- of wijzigingsbesluit BesluitKlassiek of BesluitCompact gebruikt worden.|
+|TPOD2446|Blokkerend|Als soortRegeling = 'Toegangsbeperkingsbesluit' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' of 'Provincie' zijn.|
+|TPOD2447|Blokkerend|Als soortRegeling = 'Toegangsbeperkingsbesluit' en eindverantwoordelijke van het besluit = waarde uit waardelijst 'Ministerie' dan MOET voor de regeling RegelingKlassiek of RegelingCompact  gebruikt worden.|
+|TPOD2448|Blokkerend|Als soortRegeling = 'Toegangsbeperkingsbesluit' en eindverantwoordelijke van het besluit = waarde uit waardelijst 'Ministerie' dan MOET voor het instellings- of wijzigingsbesluit BesluitKlassiek of BesluitCompact gebruikt worden.|
+|TPOD2449|Blokkerend|Als soortRegeling = 'Toegangsbeperkingsbesluit' en eindverantwoordelijke van het besluit = waarde uit waardelijst 'Provincie' dan MOET voor de regeling RegelingCompact  gebruikt worden.|
+|TPOD2450|Blokkerend|Als soortRegeling = 'Toegangsbeperkingsbesluit' en eindverantwoordelijke van het besluit = waarde uit waardelijst 'Provincie' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2451|Blokkerend|Als soortRegeling = 'Omgevingsplan' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Gemeente' zijn.|
+|TPOD2452|Blokkerend|Als soortRegeling = 'Omgevingsplan' dan MOET voor de regeling RegelingCompact  gebruikt worden.|
+|TPOD2453|Blokkerend|Als soortRegeling = 'Omgevingsplan' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2454|Blokkerend|Als soortRegeling = 'Omgevingsverordening' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Provincie' zijn.|
+|TPOD2455|Blokkerend|Als soortRegeling = 'Omgevingsverordening' dan MOET voor de regeling RegelingCompact  gebruikt worden.|
+|TPOD2456|Blokkerend|Als soortRegeling = 'Omgevingsverordening' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2457|Blokkerend|Als soortRegeling = 'Omgevingsvisie' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' of 'Provincie' of 'Gemeente' zijn.|
+|TPOD2458|Blokkerend|Als soortRegeling = 'Omgevingsvisie' dan MOET voor de regeling RegelingVrijetekst gebruikt worden.|
+|TPOD2459|Blokkerend|Als soortRegeling = 'Omgevingsvisie' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2460|Blokkerend|Als soortRegeling = 'Programma' dan MOET voor de regeling RegelingVrijetekst gebruikt worden.|
+|TPOD2461|Blokkerend|Als soortRegeling = 'Programma' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2462|Blokkerend|Als soortRegeling = 'Projectbesluit' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' of 'Provincie' of 'Waterschap' zijn.|
+|TPOD2463|Blokkerend|Als soortRegeling = 'Projectbesluit' dan MOET voor de regeling RegelingVrijetekst gebruikt worden.|
+|TPOD2464|Blokkerend|Als soortRegeling = 'Omgevingsvisie' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2465|Blokkerend|Als soortRegeling = 'Omgevingsplanregels uit een projectbesluit' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' of 'Provincie' of 'Waterschap' zijn.|
+|TPOD2466|Blokkerend|Als soortRegeling = 'Omgevingsplanregels uit een projectbesluit' dan MOET voor de regeling RegelingTijdelijkdeel gebruikt worden.|
+|TPOD2467|Blokkerend|Als soortRegeling = 'Omgevingsplanregels uit een projectbesluit' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2468|Blokkerend|Als soortRegeling = 'Reactieve interventie' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Provincie' zijn.|
+|TPOD2469|Blokkerend|Als soortRegeling = 'Reactieve interventie' dan MOET voor de regeling RegelingTijdelijkdeel gebruikt worden.|
+|TPOD2470|Blokkerend|Als soortRegeling = 'Reactieve interventie' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2471|Blokkerend|Als soortRegeling = 'Voorbeschermingsregels' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' of 'Provincie' of 'Gemeente' zijn.|
+|TPOD2472|Blokkerend|Als soortRegeling = 'Voorbeschermingsregels' dan MOET voor de regeling RegelingTijdelijkdeel gebruikt worden.|
+|TPOD2473|Blokkerend|Als soortRegeling = 'Voorbeschermingsregels' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2474|Blokkerend|Als soortRegeling = 'Voorbeschermingsregels omgevingsplan' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' of 'Provincie' of 'Gemeente' zijn.|
+|TPOD2475|Blokkerend|Als soortRegeling = 'Voorbeschermingsregels omgevingsplan' dan MOET voor de regeling RegelingTijdelijkdeel gebruikt worden.|
+|TPOD2476|Blokkerend|Als soortRegeling = 'Voorbeschermingsregels omgevingsplan' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2477|Blokkerend|Als soortRegeling = 'Voorbeschermingsregels omgevingsverordening' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Provincie' zijn.|
+|TPOD2478|Blokkerend|Als soortRegeling = 'Voorbeschermingsregels omgevingsverordening' dan MOET voor de regeling RegelingTijdelijkdeel gebruikt worden.|
+|TPOD2479|Blokkerend|Als soortRegeling = 'Voorbeschermingsregels omgevingsverordening' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
+|TPOD2480|Blokkerend|Als soortRegeling = 'Waterschapsverordening' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Waterschap' zijn.|
+|TPOD2481|Blokkerend|Als soortRegeling = 'Waterschapsverordening' dan MOET voor de regeling RegelingCompact  gebruikt worden.|
+|TPOD2482|Blokkerend|Als soortRegeling = 'Waterschapsverordening' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|

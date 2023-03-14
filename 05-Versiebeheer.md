@@ -2,7 +2,7 @@
 
 
 ## Wensen en Eisen List (WELT)
-In dit wijzigingsoverzicht wordt met WELT-xx verwezen naar de Wensen en Eisen Lijst voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die door gebruikers van de standaard zijn ingediend. De ingediende meldingen zijn te vinden via [https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen](https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen).
+In dit wijzigingsoverzicht wordt met WELT verwezen naar de Wensen en Eisen Lijst voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die door gebruikers van de standaard zijn ingediend. De ingediende meldingen zijn te vinden via [https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen](https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen).
 
 
 ## Eedere versies van de validatiematrix 
@@ -12,6 +12,13 @@ De validatiematrix is eerder beschikbaar gesteld in de vorm van een spreadsheet.
 |-------|--------------|
 | geïmplementeerd |  Geeft aan of de validatie geïmplementeerd is in de keten. Omdat dit afhangt van de omgeving waarin gewerkt wordt is dit veld niet goed bij te houden bij de validatieregel zelf en wordt hiervoor verwezen naar de release notes van het betreffende systeem. |
 | meldingstekst | foutmelding die getoond wordt door de validatieregel. |
+
+## Wijzigingen in versie 3.0
+
+| aanleiding | Omschrijving |
+|------------|--------------|
+|WELT-210 | **Verwijderd:**  TPOD0410 TPOD0420 TPOD0460 TPOD0470 TPOD0480 TPOD0490 TPOD0510 TPOD0520 TPOD0530 TPOD0540 TPOD0560 TPOD0570 TPOD0580 TPOD0590 TPOD0600 TPOD0620 TPOD0630 TPOD0640 TPOD0650 TPOD0670 TPOD0680 TPOD0690 TPOD0700 TPOD0741 TPOD0750 TPOD0781 TPOD0790 TPOD0800 TPOD0811 TPOD0830 TPOD0831 TPOD0840 TPOD0841 TPOD0850 TPOD0851 TPOD0880  POD0980 TPOD1000 TPOD1010 TPOD1020 TPOD1070 **Nieuw:** TPOD2434 TPOD2435 TPOD2436 TPOD2437 TPOD2438 TPOD2439 TPOD2440 TPOD2441 TPOD2442 TPOD2443 TPOD2444 TPOD2445 TPOD2446 TPOD2447 TPOD2448 TPOD2449 TPOD2450 TPOD2451 TPOD2452 TPOD2453 TPOD2454 TPOD2455 TPOD2456 TPOD2457 TPOD2458 TPOD2459 TPOD2460 TPOD2461 TPOD2462 TPOD2463 TPOD2464 TPOD2465 TPOD2466 TPOD2467 TPOD2468 TPOD2469 TPOD2470 TPOD2471 TPOD2472 TPOD2473 TPOD2474 TPOD2475 TPOD2476 TPOD2477 TPOD2478 TPOD2479 TPOD2480 TPOD2481 TPOD2482 |
+|WELT-246 | **Nieuw:** LVBB4211 LVBB4212 LVBB4802 LVBB4803 LVBB4804 BHKV9998 **Gewijzigd:** LVBB1501  |
 
 ## Wijzigingen in versie 2.0
 
@@ -27,4 +34,4 @@ De validatiematrix is eerder beschikbaar gesteld in de vorm van een spreadsheet.
 |WELT-205    | **Nieuw:** OZON0104 |
 |WELT-234   | **Nieuw:** OZON0375 OZON0376 OZON0377 OZON0378 OZON0379 OZON0380 OZON0381 OZON0382 OZON0383 OZON0384 OZON0385 OZON1021 OZON1037 OZON1039 OZON5001 OZON5002 OZON5003 OZON5004 OZON5005 |
 
-WELT coderingingen zijn terug te vinden via de [meldingen pagina](https://www.geonovum.nl/geo-standaarden/meldingen) van Geonovum.
+
