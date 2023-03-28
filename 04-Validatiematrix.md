@@ -409,45 +409,45 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON0219|Blokkerend|Een Divisie of Divisietekst mag niet voorkomen in een andere regeling (behalve bij intrekken vervangen; in de ingetrokken regeling).                         |
 |OZON0220|Blokkerend|Een vergunning moet een unieke gepubliceerdIn hebben.|
 |OZON0310|Blokkerend|Identificaties van OW-objecten dienen globaal uniek te zijn.|
-|OZON0320|Blokkerend|Een regel voor iedereen mag niet twee keer verwijzen naar dezelfde locatie.|
-|OZON0321|Blokkerend|Een omgevingswaarderegel mag niet twee keer verwijzen naar dezelfde locatie.|
-|OZON0322|Blokkerend|Een instructieregel mag niet twee keer verwijzen naar dezelfde locatie.|
-|OZON0324|Blokkerend|Een regel voor iedereen mag niet twee keer verwijzen naar dezelfde omgevingsnorm.|
-|OZON0325|Blokkerend|Een regel voor iedereen mag niet twee keer verwijzen naar dezelfde omgevingswaarde.|
-|OZON0326|Blokkerend|Een regel voor iedereen mag niet twee keer verwijzen naar dezelfde gebiedsaanwijzing.|
-|OZON0327|Blokkerend|Een omgevingswaarderegel mag niet twee keer verwijzen naar dezelfde gebiedsaanwijzing.|
-|OZON0328|Blokkerend|Een instructieregel mag niet twee keer verwijzen naar dezelfde gebiedsaanwijzing.|
-|OZON0329|Blokkerend|Een instructieregel mag niet twee keer verwijzen naar dezelfde omgevingsnorm.|
-|OZON0331|Blokkerend|Een gebiedsaanwijzing mag niet twee keer verwijzen naar dezelfde locatie.|
-|OZON0340|Blokkerend|Een tekstdeel mag niet twee keer verwijzen naar dezelfde hoofdlijn.|
-|OZON0341|Blokkerend|Een tekstdeel mag niet twee keer verwijzen naar dezelfde locatie.|
-|OZON0342|Blokkerend|Een tekstdeel mag niet twee keer verwijzen naar dezelfde gebiedsaanwijzing.|
-|OZON0343|Blokkerend|Een regel voor iedereen mag niet twee keer verwijzen naar dezelfde kaart.|
-|OZON0344|Blokkerend|Een omgevingswaarderegel mag niet twee keer verwijzen naar dezelfde kaart.|
-|OZON0345|Blokkerend|Een instructieregel mag niet twee keer verwijzen naar dezelfde kaart.|
-|OZON0346|Blokkerend|Een tekstdeel mag niet twee keer verwijzen naar dezelfde kaart.|
+|OZON0320|Blokkerend|Een regel voor iedereen mag ten hoogste één keer verwijzen naar dezelfde locatie.|
+|OZON0321|Blokkerend|Een omgevingswaarderegel mag ten hoogste één keer verwijzen naar dezelfde locatie.|
+|OZON0322|Blokkerend|Een instructieregel mag ten hoogste één keer verwijzen naar dezelfde locatie.|
+|OZON0324|Blokkerend|Een regel voor iedereen mag ten hoogste één keer verwijzen naar dezelfde omgevingsnorm.|
+|OZON0325|Blokkerend|Een regel voor iedereen mag ten hoogste één keer verwijzen naar dezelfde omgevingswaarde.|
+|OZON0326|Blokkerend|Een regel voor iedereen mag ten hoogste één keer verwijzen naar dezelfde gebiedsaanwijzing.|
+|OZON0327|Blokkerend|Een omgevingswaarderegel mag ten hoogste één keer verwijzen naar dezelfde gebiedsaanwijzing.|
+|OZON0328|Blokkerend|Een instructieregel mag ten hoogste één keer verwijzen naar dezelfde gebiedsaanwijzing.|
+|OZON0329|Blokkerend|Een instructieregel mag ten hoogste één keer verwijzen naar dezelfde omgevingsnorm.|
+|OZON0331|Blokkerend|Een gebiedsaanwijzing mag ten hoogste één keer verwijzen naar dezelfde locatie.|
+|OZON0340|Blokkerend|Een tekstdeel mag ten hoogste één keer verwijzen naar dezelfde hoofdlijn.|
+|OZON0341|Blokkerend|Een tekstdeel mag ten hoogste één keer verwijzen naar dezelfde locatie.|
+|OZON0342|Blokkerend|Een tekstdeel mag ten hoogste één keer verwijzen naar dezelfde gebiedsaanwijzing.|
+|OZON0343|Blokkerend|Een regel voor iedereen mag ten hoogste één keer verwijzen naar dezelfde kaart.|
+|OZON0344|Blokkerend|Een omgevingswaarderegel mag ten hoogste één keer verwijzen naar dezelfde kaart.|
+|OZON0345|Blokkerend|Een instructieregel mag ten hoogste één keer verwijzen naar dezelfde kaart.|
+|OZON0346|Blokkerend|Een tekstdeel mag ten hoogste één keer verwijzen naar dezelfde kaart.|
 |OZON0347|Blokkerend|Een SymbolisatieItem moet naar een Activiteitlocatieaanduiding, Gebiedsaanwijzing of Normwaarde verwijzen die bestaat.|
-|OZON0348|Blokkerend|Een regel voor iedereen mag niet twee keer verwijzen naar de zelfde activiteitlocatieaanduiding.|
+|OZON0348|Blokkerend|Een regel voor iedereen mag ten hoogste één keer verwijzen naar de zelfde activiteitlocatieaanduiding.|
 |OZON0349|Blokkerend|Als een kaartlaag verwijst naar een activiteitlocatieaanduiding, omgevingsnorm, omgevingswaarde of gebiedsaanwijzing, dan moet deze bestaan.|
 |OZON0350|Blokkerend|Wanneer een object wordt beëindigd, dan mag er geen ander object meer naar verwijzen.|
 |OZON0351|Blokkerend|Het beëindigen/wijzigen van een object mag niet leiden tot het verwezen van een ander object.|
-|OZON0369|Blokkerend|Een ActiviteitLocatieaanduiding mag niet twee keer verwijzen naar dezelfde Locatie.|
+|OZON0369|Blokkerend|Een ActiviteitLocatieaanduiding mag ten hoogste één keer verwijzen naar dezelfde Locatie.|
 |OZON0370|Blokkerend|Een Geometrie mag niet gebruikt worden in twee of meer OW-Locaties. (Mag altijd maar gebruikt worden in één OW-Locatie.)|
-|OZON0371|Blokkerend|Een activiteit mag niet twee keer verwijzen naar dezelfde gerelateerde activiteit.|
-|OZON0372|Blokkerend|Een gebiedengroep mag niet twee keer verwijzen naar hetzelfde gebied.|
-|OZON0373|Blokkerend|Een lijnengroep mag niet twee keer verwijzen naar dezelfde lijn.|
-|OZON0374|Blokkerend|Een puntengroep mag niet twee keer verwijzen naar dezelfde punt.   |
-|OZON0375|Blokkerend|Een kaart mag niet twee keer verwijzen naar dezelfde kaartlaag.|
-|OZON0376|Blokkerend|Een kaartlaag mag niet twee keer verwijzen naar dezelfde activiteitlocatieaanduiding.|
-|OZON0377|Blokkerend|Een kaartlaag mag niet twee keer verwijzen naar dezelfde omgevingsnorm.|
-|OZON0378|Blokkerend|Een kaartlaag mag niet wee keer verwijzen naar dezelfde gebiedsaanwijzing.|
-|OZON0379|Blokkerend|Een regelvooriedereen mag niet twee keer verwijzen naar hetzelfde thema.|
-|OZON0380|Blokkerend|Een instructieregel mag niet twee keer verwijzen naar hetzelfde thema.|
-|OZON0381|Blokkerend|Een omgevingswaarderegel mag niet twee keer verwijzen naar hetzelfde thema.|
-|OZON0382|Blokkerend|Een instructieregel mag niet twee keer verwijzen naar hetzelfde instrument.|
-|OZON0383|Blokkerend|Een instructieregel mag niet twee keer verwijzen naar dezelfde taakuitoefening. |
-|OZON0384|Blokkerend|Een norm mag niet twee keer verwijzen naar dezelfde normwaarde.|
-|OZON0385|Blokkerend|Een normwaarde mag niet twee keer verwijzen naar dezelfde locatie.|
+|OZON0371|Blokkerend|Een activiteit mag ten hoogste één keer verwijzen naar dezelfde gerelateerde activiteit.|
+|OZON0372|Blokkerend|Een gebiedengroep mag ten hoogste één keer verwijzen naar hetzelfde gebied.|
+|OZON0373|Blokkerend|Een lijnengroep mag ten hoogste één keer verwijzen naar dezelfde lijn.|
+|OZON0374|Blokkerend|Een puntengroep mag ten hoogste één keer verwijzen naar dezelfde punt.   |
+|OZON0375|Blokkerend|Een kaart mag ten hoogste één keer verwijzen naar dezelfde kaartlaag.|
+|OZON0376|Blokkerend|Een kaartlaag mag ten hoogste één keer verwijzen naar dezelfde activiteitlocatieaanduiding.|
+|OZON0377|Blokkerend|Een kaartlaag mag ten hoogste één keer verwijzen naar dezelfde omgevingsnorm.|
+|OZON0378|Blokkerend|Een kaartlaag mag ten hoogste één keer verwijzen naar dezelfde gebiedsaanwijzing.|
+|OZON0379|Blokkerend|Een regelvooriedereen mag ten hoogste één keer verwijzen naar hetzelfde thema.|
+|OZON0380|Blokkerend|Een instructieregel mag ten hoogste één keer verwijzen naar hetzelfde thema.|
+|OZON0381|Blokkerend|Een omgevingswaarderegel mag ten hoogste één keer verwijzen naar hetzelfde thema.|
+|OZON0382|Blokkerend|Een instructieregel mag ten hoogste één keer verwijzen naar hetzelfde instrument.|
+|OZON0383|Blokkerend|Een instructieregel mag ten hoogste één keer verwijzen naar dezelfde taakuitoefening. |
+|OZON0384|Blokkerend|Een norm mag ten hoogste één keer verwijzen naar dezelfde normwaarde.|
+|OZON0385|Blokkerend|Een normwaarde mag ten hoogste één keer verwijzen naar dezelfde locatie.|
 |OZON1019|Blokkerend|Het bevoegd gezag moet het juiste format hebben: het moet eindigen met het type bevoegd gezag (ministerie, provincie, gemeente, waterschap), een /, en de organisatiecode, bijvoorbeeld ‘/gemeente/gm0037’. |
 |OZON1020|Blokkerend|Het soort regeling moet overeenkomen met de waardelijst soortregeling (uit OP-waardelijsten).|
 |OZON1021|Blokkerend|Alle regelingen (behalve intrekkingen) moeten een AnnotatieBijToestand bevatten.|
@@ -462,7 +462,6 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON1033|Blokkerend|Intrekken/Vervangen van een RegelingVersie is niet toegestaan wanneer er een Tijdelijk Deel naar verwijst.|
 |OZON1034|Blokkerend|Een ontwerp Ow-object mag niet bestaan in Ozon.|
 |OZON1036|Blokkerend|Een regeling die een tijdelijk deel is, mag zelf geen tijdelijk deel hebben.|
-|OZON1037|Blokkerend|Een regeling die een tijdelijk deel is, mag zelf geen pons hebben.|
 |OZON1038|Blokkerend|Een ontwerpregeling kan niet geladen worden als er al een andere ontwerpregeling bestaat met hetzelfde expressionId of dezelfde ontwerpbesluitIdentificatie.|
 |OZON1039|Blokkerend|Een ontwerpregeling moet procedurestappen hebben die voorkomen in de waardelijst procedurestappen_ontwerp|
 |OZON1040|Blokkerend|Een actualisatie van procedureverloop moet verwijzen naar een ontwerpregeling die bekend is in Ozon.|
@@ -490,7 +489,6 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON5002|Blokkerend|(TPOD2080) Een instructieregel moet ofwel een 'InstructieregelInstrument', ofwel een 'InstructieregelTaakuitoefening' hebben|
 |OZON5003|Blokkerend|(TPOD2090) De normwaarden binnen een norm moeten hetzelfde type hebben.|
 |OZON5004|Blokkerend|(TPOD2100) Als een norm een Eenheid heeft, dan moeten de normwaarden van het type kwantitatief zijn.|
-|OZON5005|Blokkerend|(TPOD2110) Een Tekstdeel met een locatie moet ook een idealisatie hebben.|
 |RTRG0016|Blokkerend|Als een activiteit van een gemeente verwijst naar een bovenliggende activiteit niet van een gemeente, dan moet deze verwijzen naar de activiteit: 'activiteit in omgevingsplan'|
 |RTRG0017|Blokkerend|Als een activiteit van een provincie verwijst naar een bovenliggende activiteit niet van een provincie, dan moet deze verwijzen naar de activiteit: 'activiteit in omgevingsverordening'|
 |RTRG0018|Blokkerend|Als een activiteit van een waterschap verwijst naar een bovenliggende activiteit niet van een waterschap, dan moet deze verwijzen naar de activiteit: 'activiteit in waterschapsverordening'|
