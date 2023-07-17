@@ -13,6 +13,13 @@ De validatiematrix is eerder beschikbaar gesteld in de vorm van een spreadsheet.
 | geïmplementeerd |  Geeft aan of de validatie geïmplementeerd is in de keten. Omdat dit afhangt van de omgeving waarin gewerkt wordt is dit veld niet goed bij te houden bij de validatieregel zelf en wordt hiervoor verwezen naar de release notes van het betreffende systeem. |
 | meldingstekst | foutmelding die getoond wordt door de validatieregel. |
 
+## Wijzigingen in versie 4.0
+
+| aanleiding | Omschrijving |
+|------------|--------------|
+|WELT-262 | **Verwijderd:** LVBB4602 LVBB4603 **Nieuw:** LVBB1042 LVBB4740 LVBB4763 **Gewijzigd:** LVBB1041 LVBB1555 LVBB1556 LVBB1557 LVBB4711 LVBB4762 LVBB5013  |
+
+
 ## Wijzigingen in versie 3.0
 
 | aanleiding | Omschrijving |

@@ -84,7 +84,8 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1038|Blokkerend|Bestand manifest-bhkv.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij: - "validatieOpdracht" van een besluit; - "publicatieOpdracht" van een besluit; - "validatieOpdracht" van een kennisgeving; - "publicatieOpdracht" van een kennisgeving; - "validatieDirecteMutatieOpdracht" - "directeMutatieOpdracht" - "breekPublicatieAfOpdracht"; - "valideerGio"; - "publiceerGio"; - "valideerCio"; - "publiceerCio"|
 |LVBB1039|Blokkerend|Alle bestanden, die aanwezig zijn in de aangeleverde zip, moeten genoemd zijn in manifest-bhkv.xml.|
 |LVBB1040|Blokkerend|Opdracht.zip MAG NIET  groter zijn dan 1 GB.|
-|LVBB1041|Blokkerend|Een individueel bestand (uitgepakt) in de aangeleverde opdracht.zip MAG NIET groter zijn dan 100 MB.|
+|LVBB1041|Blokkerend|Een individueel bestand (uitgepakt) in de aangeleverde opdracht.zip MAG NIET kleiner zijn dan 1 byte en MAG NIET groter zijn dan 100 MB|
+|LVBB1042|Blokkerend|De aangeleverde zip MOET unieke bestandsnamen bevatten|
 |LVBB1501|Blokkerend|De  datumBekendmaking binnen de opdracht MOET een datum in juiste formaat (JJJJ-MM-DD) zijn en MOET in de toekomst liggen.|
 |LVBB1502|Blokkerend|De AKN in de opdracht (indien aanwezig) moet als derde veld 'bill' hebben.|
 |LVBB1505|Blokkerend|De opdracht moet de datum bekendmaking bevatten.|
@@ -101,9 +102,9 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1551|Blokkerend|Bij Afbreken moet de opgegeven AKN bestaan.|
 |LVBB1553|Blokkerend|Bij Afbreken moet de datum bekendmaking van het af te breken besluit in de toekomst liggen.|
 |LVBB1554|Blokkerend|Publicatie dat afgebroken moet worden moet niet al in afwachting zijn om afgebroken te worden.|
-|LVBB1555|Blokkerend|Publicatie dat afgebroken moet worden mag niet gepubliceerd zijn.|
-|LVBB1556|Blokkerend|Besluit dat afgebroken moet worden mag geen regelingversie bepalen die al gepubliceerd is.|
-|LVBB1557|Blokkerend|Besluit dat afgebroken moet worden mag geen informatie-object hebben die al gepubliceerd is.|
+|LVBB1555|Blokkerend|Publicatie die afgebroken moet worden MAG NIET gepubliceerd zijn|
+|LVBB1556|Blokkerend|Besluit dat afgebroken moet worden mag geen regelingversie bevatten die al gepubliceerd is.|
+|LVBB1557|Blokkerend|Besluit dat afgebroken moet worden mag geen informatieobject versie bevatten die al gepubliceerd is.|
 |LVBB1558|Blokkerend|Besluit dat afgebroken moet worden mag geen regelingversie bepalen die gebruikt als was-versie voor een mutatie in een ander besluit.|
 |LVBB1559|Blokkerend|Bestand met consolidatie-procedurestappen bij besluit wacht om afgebroken te worden.|
 |LVBB1560|Blokkerend|Voor een af te breken besluit MAG NIET een kennisgeving naar dit besluit verwijzen.|
@@ -213,14 +214,12 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4210|Blokkerend|De datum geldig-vanaf van een regelingversie moet voor de datum geldig-tot liggen (als beide datums gevuld zijn).|
 |LVBB4211|Blokkerend|Een regelingmutatie op een was-versie MAG ALLEEN wanneer het besluit, dat deze regelingversie heeft vastgesteld, al gepubliceerd is.|
 |LVBB4212|Blokkerend|Een verwijzing naar een in te trekken regeling / geboorteregeling, hoofdregeling tijdelijk deel MAG ALLEEN wanneer het besluit, dat deze regeling heeft vastgesteld, al gepubliceerd is .|
-|LVBB4602|Blokkerend|Externe verwijzingen (imop-tekst:ExtIORef) in een ontwerpbesluit mogen alleen verwijzen naar met het ontwerpbesluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte ontwerp- of definitieve besluiten en bijbehorende informatieobjecten.  Hierbij wordt bij een ExtIoRef die op werk-niveau wordt aangeleverd gecontroleerd op de eerste expressie binnen dit werk.|
-|LVBB4603|Blokkerend|Externe verwijzingen (imop-tekst:ExtIORef) in een definitief besluit mogen alleen verwijzen naar met het besluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte definitieve besluiten en bijbehorende informatieobjecten.  Hierbij wordt bij een ExtIoRef die op werk-niveau wordt aangeleverd gecontroleerd op de eerste expressie binnen dit werk.|
 |LVBB4703|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking kennisgeving [zoals benoemd in de opdracht.xml].|
 |LVBB4704|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking van gerelateerd besluit [zoals benoemd onder 'mededelingOver'].|
 |LVBB4705|Blokkerend|Besluit met akn-id %1 horende bij deze kennisgeving heeft nog geen publicatie akn-identifier.|
 |LVBB4707|Blokkerend|Derde veld waarde akn bij kennisgeving moet gelijk zijn aan 'doc'.|
 |LVBB4708|Blokkerend|Derde veld waarde 'mededeling-over' in kennisgeving moet gelijk zijn aan 'bill'.|
-|LVBB4711|Blokkerend|Kennisgeving MAG niet eerder gepubliceerd zijn.|
+|LVBB4711|Blokkerend|Kennisgeving die afgebroken moet worden MAG NIET gepubliceerd zijn|
 |LVBB4712|Blokkerend|Datum bekendmaking bij kennisgeving MAG niet in het verleden (= voor huidige dag) zijn.|
 |LVBB4713|Blokkerend|Kennisgeving wacht om afgebroken te worden.|
 |LVBB4714|Blokkerend|Besluit bij kennisgeving wacht om afgebroken te worden.|
@@ -228,6 +227,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4716|Blokkerend|Bestand met consolidatie-procedurestappen behorend bij kennisgeving wacht om afgebroken te worden.|
 |LVBB4737|Blokkerend|De waarde van tooi-identifiers in de kennisgeving moet teruggevonden kunnen worden in de waardelijst.|
 |LVBB4738|Blokkerend|SoortKennisgeving KennisgevingUitspraakRechter MAG NIET gebruikt worden.|
+|LVBB4740|Blokkerend|Een KennisgevingVoorgenomenBesluit MAG GEEN mededelingOver bevatten.|
 |LVBB4750|Blokkerend|In het resultaat van het procedureverloop van een (ontwerp)besluit en alle kennisgevingen over dit besluit mag elke code bij een procedurestap maximaal 1 keer voorkomen.|
 |LVBB4751|Blokkerend|Het is niet mogelijk om een procedurestap te wijzigen of verwijderen die nog niet eerder is aangeleverd.|
 |LVBB4753|Blokkerend|Het type procedureverloop MOET passen bij het type besluit waarvan het de procedure beschrijft.|
@@ -239,7 +239,8 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4759|Blokkerend|Datum bekendmaking kennisgeving %1 mag niet voor datum bekend op van het besluit %2 liggen .|
 |LVBB4760|Blokkerend|Bij een kennisgeving ontwerp besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Begin inzagetermijnEinde inzagetermijn.|
 |LVBB4761|Blokkerend|Bij een kennisgeving van een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde bezwaartermijnEinde beroepstermijn.|
-|LVBB4762|Blokkerend|Bij een aanlevering van een kennisgeving MOET procedureverloopmutatie een waarde bevatten anders dan "vervangStappen" of "verwijderStappen".|
+|LVBB4762|Blokkerend|Een aanlevering van een kennisgeving met soort KennisgevingBesluitTermijnen MOET een procedureverloopmutatie  bevatten met het element "voegStappenToe", verwijderStappen of vervangStappen.|
+|LVBB4763|Blokkerend|Een KennisgevingVoorgenomenBesluit MAG GEEN procedureverloopmutatie bevatten.|
 |LVBB4802|Blokkerend|Een besluit MAG maar één instrumentversie per instrument bevatten. |
 |LVBB4803|Blokkerend|Een aangeleverd besluit MAG maar één doel bevatten.|
 |LVBB4804|Blokkerend|Een aangeleverd besluit MAG enkel een instelling van een instrument(versie) bevatten of enkel een intrekking van het instrument bevatten. |
@@ -253,7 +254,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB5010|Blokkerend|VoegToe: bestaat het toe te voegen element nog niet.|
 |LVBB5011|Blokkerend|Er mag maar een toelichting voorkomen bij toevoegen.|
 |LVBB5012|Blokkerend|De regeling bij de was- en wordt-verie mag niet ingetrokken zijn.|
-|LVBB5013|Blokkerend|Een in te trekken regeling MOET juridisch werkend zijn, d.w.z. een openstaande versie van dezelfde regeling hebben.|
+|LVBB5013|Blokkerend|Een in te trekken regeling MOET juridisch werkend zijn, d.w.z. een openstaande versie van dezelfde regeling hebben en geen ontwerpregeling zijn.|
 |LVBB5014|Blokkerend|Een in te trekken regeling MOET (eerder) geregistreerd zijn.|
 |LVBB5015|Blokkerend|De was-versie binnen de regeling MAG NIET eerder gebruikt zijn als versie-gebaseerd-op.|
 |LVBB5019|Blokkerend|Een nieuw aan te maken regeling MAG NOG NIET bestaan.|
