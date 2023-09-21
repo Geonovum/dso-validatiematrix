@@ -813,7 +813,7 @@ De validatiematrix bevat de volgende validatieregels:
 |TPOD2438|Blokkerend|Als soortRegeling = 'Ministeriële regeling' dan MOET voor de regeling RegelingKlassiek of RegelingCompact gebruikt worden.|
 |TPOD2439|Blokkerend|Als soortRegeling = 'Ministeriële regeling' dan MOET voor het instellings- of wijzigingsbesluit BesluitKlassiek of BesluitCompact gebruikt worden.|
 |TPOD2440|Blokkerend|Als soortRegeling = 'Instructie' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' of 'Provincie' zijn.|
-|TPOD2441|Blokkerend|Als soortRegeling = 'Instructie' dan MOET  voor de regeling RegelingCompact gebruikt worden.|
+|TPOD2441|Blokkerend|Als soortRegeling = 'Instructie' dan MOET  voor de regeling RegelingVrijetekst gebruikt worden.|
 |TPOD2442|Blokkerend|Als soortRegeling = 'Instructie' dan MOET voor het instellings- of wijzigingsbesluit BesluitCompact gebruikt worden.|
 |TPOD2443|Blokkerend|Als soortRegeling = 'Aanwijzingsbesluit N2000' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' zijn.|
 |TPOD2444|Blokkerend|Als soortRegeling = 'Aanwijzingsbesluit N2000' dan MOET voor de regeling RegelingKlassiek of RegelingCompact gebruikt worden.|
