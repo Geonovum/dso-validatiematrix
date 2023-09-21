@@ -15,9 +15,10 @@ De validatiematrix is eerder beschikbaar gesteld in de vorm van een spreadsheet.
 
 ## Wijzigingen in versie 4.0
 
-| aanleiding | Omschrijving |
-|------------|--------------|
-|WELT-262 | **Verwijderd:** LVBB4602 LVBB4603 **Nieuw:** LVBB1042 LVBB4740 LVBB4763 **Gewijzigd:** LVBB1041 LVBB1555 LVBB1556 LVBB1557 LVBB4711 LVBB4762 LVBB5013  |
+| aanleiding | Omschrijving                                                                                                                                          |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| WELT-262   | **Verwijderd:** LVBB4602 LVBB4603 **Nieuw:** LVBB1042 LVBB4740 LVBB4763 **Gewijzigd:** LVBB1041 LVBB1555 LVBB1556 LVBB1557 LVBB4711 LVBB4762 LVBB5013 |
+| WELT-271   | **Toegevoegd:** OZON0132                                                                                                                              |
 
 
 ## Wijzigingen in versie 3.0

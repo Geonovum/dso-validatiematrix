@@ -392,6 +392,7 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON0129|Blokkerend|(TPOD1960) Iedere verwijzing naar een geometrie vanuit een Lijn moet een lijn-geometrie zijn.|
 |OZON0130|Blokkerend|(TPOD1970) Iedere verwijzing naar een geometrie vanuit een Punt moet een punt-geometrie zijn.|
 |OZON0131|Blokkerend|(TPOD1980) Iedere verwijzing naar een geometrie vanuit een Gebied moet een gebied-geometrie zijn.|
+|OZON0132|Blokkerend|Een aanlevering met een Geometrie waarvan de 'id' gelijk is aan een id met een andere geometrie mag niet.|
 |OZON0200|Blokkerend|Elk type gebiedsaanwijzing in CIMOW is aanwezig in de waardelijst 'gebiedsaanwijzingstypen'|
 |OZON0201|Blokkerend|Een gebiedsaanwijzing mag niet wijzigen van type|
 |OZON0204|Blokkerend|Als een Tekstdeel verwijst naar een locatie, dan moet deze bestaan.|
