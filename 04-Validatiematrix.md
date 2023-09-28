@@ -8,7 +8,7 @@ De volgende versie van de standaarden zijn gebruikt voor het samenstellen van de
 
 Betekenis van de kolommen:
 
-| kolom         | omschrijving |
+| Kolom         | Omschrijving |
 |---------------|--------------|
 | identificatie | Unieke identificatie van de validatieregel die gebruikt kan worden in communicatie over de regel. |
 | ernst         | 'Blokkerend' of 'Waarschuwing'. Blokkerende regels leiden tot afkeuring van het document in de keten. Een waarschuwing resulteert niet tot afkeuring van het document maar levert een melding bij de indiener van het document. |
@@ -17,7 +17,7 @@ Betekenis van de kolommen:
 
 De validatiematrix bevat de volgende validatieregels:
 
-| identificatie | ernst | omschrijving|
+| Identificatie | Ernst | Omschrijving|
 |:--------------|:------|:------------|
 |BHKV1004|Blokkerend|Voor een ontwerpbesluit MAG GEEN tijdstempel worden meegeleverd.|
 |BHKV1005|Blokkerend|Een Besluit (tekst:BesluitCompact of tekst:BesluitKlassiek) MOET een identificatie hebben die aangeeft dat het een Besluit betreft (data:soortWork = /join/id/stop/work_003).|
@@ -120,6 +120,10 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1572|Blokkerend|Voor het valideren van een aanlevering MOET een af te melden validatierapport bekend zijn.|
 |LVBB1573|Blokkerend|Voor het valideren van een aanlevering MAG een eerder afgemeld validatierapport NIET opnieuw afgemeld worden.|
 |LVBB1574|Blokkerend|De juridisch werkend vanaf datum MOET op of na datum bekendmaking van het besluit liggen.|
+|LVBB1575|Blokkerend|Het manifest.xml MOET unieke bestanden bevatten.|
+|LVBB1576|Blokkerend|Besluit dat afgebroken moet worden mag geen regeling intrekken waarvan de intrekking al gepubliceerd is.|
+|LVBB1577|Blokkerend|Besluit dat afgebroken moet worden mag geen informatieobject intrekken waarvan de intrekking al gepubliceerd is. |
+|LVBB1579|Blokkerend|Publicatieopdracht MAG NIET worden afgebroken als de wetstechnische informatie, die voortkomt uit deze opdracht, al gepubliceerd is|
 |LVBB1600|Blokkerend|Een Directe Mutatie op een Regelingversie MAG ALLEEN wanneer het Besluit, dat deze Regelingversie heeft vastgesteld, al gepubliceerd is.|
 |LVBB1601|Blokkerend|Bij een directe mutatie MAG NIET meer dan 1 aanlevering element in het manifest-ow voorkomen (hiermee kan een regelingversie/doel combinatie maar 1 keer voorkomen). |
 |LVBB2002|Blokkerend|Is er validatieplan aanwezig voor ConformProfiel.|
@@ -203,6 +207,8 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4042|Blokkerend|De code van de eindverantwoordelijke MOET ingevuld zijn met een waarde uit de afgesproken (toegestane) waardelijst.|
 |LVBB4043|Blokkerend|Regeling is opvolger van een intrekking, maar wordt niet ingetrokken volgens consolidatie-informatie.|
 |LVBB4045|Blokkerend|Een (unieke) RegelingVersieInformatie MAG alleen bij 1 element horen.|
+|LVBB4046|Blokkerend|De volgende elementen binnen RegelingMetadata MOGEN NIET worden gewijzigd: Eindverantwoordelijke, Opvolging, SoortRegeling, Maker.|
+|LVBB4047|Blokkerend|De volgende elementen binnen InformatieobjectMetadata MOGEN NIET worden gewijzigd: Eindverantwoordelijke, FormaatInformatieobject, Opvolging, Publicatieinstructie, Maker.|
 |LVBB4200|Blokkerend|De 'datum JWV' van een wordt-versie MOET later zijn dan de 'datum JWV' van de was-versie.|
 |LVBB4201|Blokkerend|Indien de was-versie een 'datum JWV'-einde heeft , dan MOET de 'datum JWV' van de wordt-versie eerder dan deze 'datum JWV'-einde zijn.|
 |LVBB4204|Blokkerend|Als de wordt-versie een datum juridisch-werkend-vanaf heeft dan moet de was-versie ook een datum juridisch-werkend-vanaf hebben.|
@@ -214,6 +220,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4210|Blokkerend|De datum geldig-vanaf van een regelingversie moet voor de datum geldig-tot liggen (als beide datums gevuld zijn).|
 |LVBB4211|Blokkerend|Een regelingmutatie op een was-versie MAG ALLEEN wanneer het besluit, dat deze regelingversie heeft vastgesteld, al gepubliceerd is.|
 |LVBB4212|Blokkerend|Een verwijzing naar een in te trekken regeling / geboorteregeling, hoofdregeling tijdelijk deel MAG ALLEEN wanneer het besluit, dat deze regeling heeft vastgesteld, al gepubliceerd is .|
+|LVBB4500|Blokkerend|Terugtrekkingen in de consolidatieinformatie MOGEN NIET gebruikt worden.|
 |LVBB4703|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking kennisgeving [zoals benoemd in de opdracht.xml].|
 |LVBB4704|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking van gerelateerd besluit [zoals benoemd onder 'mededelingOver'].|
 |LVBB4705|Blokkerend|Besluit met akn-id %1 horende bij deze kennisgeving heeft nog geen publicatie akn-identifier.|
@@ -244,14 +251,12 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4802|Blokkerend|Een besluit MAG maar één instrumentversie per instrument bevatten. |
 |LVBB4803|Blokkerend|Een aangeleverd besluit MAG maar één doel bevatten.|
 |LVBB4804|Blokkerend|Een aangeleverd besluit MAG enkel een instelling van een instrument(versie) bevatten of enkel een intrekking van het instrument bevatten. |
-|LVBB5002|Blokkerend|Indien een element verwijderd of vervangen moet worden, MOET dit element met aangegeven wId bestaan bij aangegeven regelingversie OF: Indien een element toegevoegd moet worden, MAG dit element met aangegeven wId NIET bestaan bij desbetreffend element in desbetreffende regelingversie, waaraan dit element moet worden toegevoegd.|
 |LVBB5003|Blokkerend|De inhoud van het attribuut 'wat' van een vervang opdracht voor een regelingversie moet gelijk zijn aan het wId van het te vervangen element.|
 |LVBB5005|Blokkerend|De wordt-versie moet gevuld zijn.|
 |LVBB5006|Blokkerend|De was-versie moet gevuld zijn bij niet-initiele mutaties.|
 |LVBB5007|Blokkerend|De was-versie mag niet door een ontwerp besluit aangemaakt zijn.|
 |LVBB5008|Blokkerend|De was-versie mag niet aangemaakt zijn door een besluit dat in afwachting is om afgebroken te worden.|
 |LVBB5009|Blokkerend|De 'soort work' van de was-versie MOET gelijk zijn aan de 'soort work' van de wordt-versie.|
-|LVBB5010|Blokkerend|VoegToe: bestaat het toe te voegen element nog niet.|
 |LVBB5011|Blokkerend|Er mag maar een toelichting voorkomen bij toevoegen.|
 |LVBB5012|Blokkerend|De regeling bij de was- en wordt-verie mag niet ingetrokken zijn.|
 |LVBB5013|Blokkerend|Een in te trekken regeling MOET juridisch werkend zijn, d.w.z. een openstaande versie van dezelfde regeling hebben en geen ontwerpregeling zijn.|
@@ -260,7 +265,17 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB5019|Blokkerend|Een nieuw aan te maken regeling MAG NOG NIET bestaan.|
 |LVBB5020|Blokkerend|Mutaties MOGEN ALLEEN op instrumentversies (regelingversies of informatieobjectversies) in een gelijke schemaversie plaatsvinden.|
 |LVBB5021|Blokkerend|Een regelingversie moet minimaal één wijziging van juridische aard bevatten.|
+|LVBB5022|Blokkerend|Een definitief besluit met een RegelingTijdelijkdeel MAG NIET een tijdelijk deel zijn van een ontwerpregeling.|
+|LVBB5023|Blokkerend|De RegelingMutatie MAG GEEN toe te voegen wId's bevatten die reeds voorkomen in de was-versie.|
+|LVBB5024|Blokkerend|Een te verwijderen wID in een RegelingMutatie MOET voorkomen in de was-versie.|
+|LVBB5025|Blokkerend|De RegelingMutatie MAG GEEN impliciet toegevoegde wId's in de vervang-mutatie bevatten.|
+|LVBB5026|Blokkerend|De RegelingMutatie MAG GEEN impliciet verwijderde wId's in de vervang-mutatie of verwijder-mutatie bevatten.|
+|LVBB5027|Blokkerend|De @context in de RegelingMutatie MOET bestaan in de wordt-versie.|
+|LVBB5028|Blokkerend|De RegelingMutatie MAG GEEN kind-elementen in de vervang-mutatie of verwijder-mutatie gebruiken die niet voorkomen in de was-versie.|
+|LVBB5030|Blokkerend|Elk expliciet toegevoegd element MOET uiteindelijk in de wordt-versie terecht komen.|
+|LVBB5031|Blokkerend|Een tekst:Vervang met @revisie=1 in een RegelingMutatie MAG GEEN renvooi-elementen of @context bevatten.|
 |LVBB5100|Blokkerend|Bij een regelingmutatie met VervangRegeling mag geen afwijkend RegelingModel gehanteerd worden t.o.v. bestaande regeling.|
+|LVBB5900|Blokkerend|Een directe mutatie MAG NIET worden gedaan op een ontwerpregeling|
 |LVBB6000|Blokkerend|Valideert de AfwijkVergunning tegen het imop &lt;?&gt; schema?|
 |LVBB6001|Blokkerend|Voor publicatie van de afwijkvergunning MAG de uri van elke nieuwe Doorlever-zip NIET bestaan.|
 |LVBB6002|Blokkerend|Voor de afwijkvergunning MOET elk metadata-document, waarnaar vanuit de publicatie verwezen wordt, gevonden worden.|

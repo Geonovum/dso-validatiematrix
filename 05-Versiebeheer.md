@@ -15,22 +15,23 @@ De validatiematrix is eerder beschikbaar gesteld in de vorm van een spreadsheet.
 
 ## Wijzigingen in versie 4.0
 
-| aanleiding | Omschrijving                                                                                                                                          |
+| Aanleiding | Omschrijving                                                                                                                                          |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | WELT-262   | **Verwijderd:** LVBB4602 LVBB4603 **Nieuw:** LVBB1042 LVBB4740 LVBB4763 **Gewijzigd:** LVBB1041 LVBB1555 LVBB1556 LVBB1557 LVBB4711 LVBB4762 LVBB5013 |
 | WELT-271   | **Toegevoegd:** OZON0132                                                                                                                              |
+| WELT-XXX   | **Verwijderd:** LVBB5002 LVBB5010 **Nieuw:** LVBB1575 LVBB1576 LVBB1577 LVBB1579 LVBB5023 LVBB5024 LVBB5025 LVBB5026 LVBB5027 LVBB5028 LVBB5030  LVBB4046 LVBB4047 LVBB4500 LVBB5022 LVBB5031 LVBB5900                                                                                                                                            |
 
 
 ## Wijzigingen in versie 3.0
 
-| aanleiding | Omschrijving |
+| Aanleiding | Omschrijving |
 |------------|--------------|
 |WELT-210 | **Verwijderd:**  TPOD0410 TPOD0420 TPOD0460 TPOD0470 TPOD0480 TPOD0490 TPOD0510 TPOD0520 TPOD0530 TPOD0540 TPOD0560 TPOD0570 TPOD0580 TPOD0590 TPOD0600 TPOD0620 TPOD0630 TPOD0640 TPOD0650 TPOD0670 TPOD0680 TPOD0690 TPOD0700 TPOD0741 TPOD0750 TPOD0781 TPOD0790 TPOD0800 TPOD0811 TPOD0830 TPOD0831 TPOD0840 TPOD0841 TPOD0850 TPOD0851 TPOD0880  POD0980 TPOD1000 TPOD1010 TPOD1020 TPOD1070 **Nieuw:** TPOD2434 TPOD2435 TPOD2436 TPOD2437 TPOD2438 TPOD2439 TPOD2440 TPOD2441 TPOD2442 TPOD2443 TPOD2444 TPOD2445 TPOD2446 TPOD2447 TPOD2448 TPOD2449 TPOD2450 TPOD2451 TPOD2452 TPOD2453 TPOD2454 TPOD2455 TPOD2456 TPOD2457 TPOD2458 TPOD2459 TPOD2460 TPOD2461 TPOD2462 TPOD2463 TPOD2464 TPOD2465 TPOD2466 TPOD2467 TPOD2468 TPOD2469 TPOD2470 TPOD2471 TPOD2472 TPOD2473 TPOD2474 TPOD2475 TPOD2476 TPOD2477 TPOD2478 TPOD2479 TPOD2480 TPOD2481 TPOD2482 |
 |WELT-246 | **Nieuw:** LVBB4211 LVBB4212 LVBB4802 LVBB4803 LVBB4804 BHKV9998 **Gewijzigd:** LVBB1501  |
 
 ## Wijzigingen in versie 2.0
 
-| aanleiding | Omschrijving |
+| Aanleiding | Omschrijving |
 |------------|--------------|
 |migratie    | Validatiematrix omgezet van spreadsheet naar document. |
 |CAB 2022-11-24    | Nieuwe governance regels validatiematrix vastgelegd in dit document.|

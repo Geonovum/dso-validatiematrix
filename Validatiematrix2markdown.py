@@ -24,7 +24,7 @@ De volgende versie van de standaarden zijn gebruikt voor het samenstellen van de
 
 Betekenis van de kolommen:
 
-| kolom         | omschrijving |
+| Kolom         | Omschrijving |
 |---------------|--------------|
 | identificatie | Unieke identificatie van de validatieregel die gebruikt kan worden in communicatie over de regel. |
 | ernst         | 'Blokkerend' of 'Waarschuwing'. Blokkerende regels leiden tot afkeuring van het document in de keten. Een waarschuwing resulteert niet tot afkeuring van het document maar levert een melding bij de indiener van het document. |
@@ -33,7 +33,7 @@ Betekenis van de kolommen:
 
 De validatiematrix bevat de volgende validatieregels:
 
-| identificatie | ernst | omschrijving|
+| Identificatie | Ernst | Omschrijving|
 |:--------------|:------|:------------|""",file=outfile)
 
 wb = openpyxl.load_workbook('Validatiematrix.xlsx')
@@ -45,7 +45,7 @@ for row in sheet.iter_rows():
     id = str(row[1].value) 
     ernst = str(row[4].value)
     if ernst != 'Blokkerend' and ernst != 'Waarschuwing':
-        print("ERROR: ernst moet 'Blokkerend' pf 'Waarschuwing' zijn voor: " + id, file=sys.stderr)
+        print("ERROR: ernst moet 'Blokkerend' of 'Waarschuwing' zijn voor: " + id, file=sys.stderr)
     regel = row[2].value.replace('\n',' ').replace('<','&lt;').replace('>','&gt;')
     print('|' + id + '|' + ernst + '|' + regel + '|',file=outfile)
 outfile.close()
