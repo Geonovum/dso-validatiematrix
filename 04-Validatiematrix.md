@@ -267,7 +267,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB5021|Blokkerend|Een regelingversie moet minimaal één wijziging van juridische aard bevatten.|
 |LVBB5022|Blokkerend|Een definitief besluit met een RegelingTijdelijkdeel MAG NIET een tijdelijk deel zijn van een ontwerpregeling.|
 |LVBB5023|Blokkerend|De RegelingMutatie MAG GEEN toe te voegen wId's bevatten die reeds voorkomen in de was-versie.|
-|LVBB5024|Blokkerend|Een te verwijderen wID in een RegelingMutatie MOET voorkomen in de was-versie.|
+|LVBB5024|Blokkerend|De RegelingMutatie MAG GEEN te verwijderen wId's bevatten die niet voorkomen in de was-versie|
 |LVBB5025|Blokkerend|De RegelingMutatie MAG GEEN impliciet toegevoegde wId's in de vervang-mutatie bevatten.|
 |LVBB5026|Blokkerend|De RegelingMutatie MAG GEEN impliciet verwijderde wId's in de vervang-mutatie of verwijder-mutatie bevatten.|
 |LVBB5027|Blokkerend|De @context in de RegelingMutatie MOET bestaan in de wordt-versie.|
