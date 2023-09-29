@@ -15,11 +15,12 @@ De validatiematrix is eerder beschikbaar gesteld in de vorm van een spreadsheet.
 
 ## Wijzigingen in versie 4.0
 
-| Aanleiding | Omschrijving                                                                                                                                          |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| WELT-262   | **Verwijderd:** LVBB4602 LVBB4603 **Nieuw:** LVBB1042 LVBB4740 LVBB4763 **Gewijzigd:** LVBB1041 LVBB1555 LVBB1556 LVBB1557 LVBB4711 LVBB4762 LVBB5013 |
-| WELT-271   | **Toegevoegd:** OZON0132                                                                                                                              |
-| WELT-272   | **Verwijderd:** LVBB5002 LVBB5010 **Nieuw:** LVBB1575 LVBB1576 LVBB1577 LVBB1579 LVBB5023 LVBB5024 LVBB5025 LVBB5026 LVBB5027 LVBB5028 LVBB5030  LVBB4046 LVBB4047 LVBB4500 LVBB5022 LVBB5031 LVBB5900                                                                                                                                            |
+| Aanleiding | Omschrijving                                                                                                                                                                                           |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| WELT-245   | **Verwijderd:** TPOD2400 TPOD2401 TPOD2402 TPOD2403 TPOD2404 TPOD2405 TPOD2406 TPOD2407 TPOD2408 TPOD2409 TPOD2410 TPOD2411 TPOD2412 TPOD2413 TPOD2414 TPOD2415 TPOD2416 TPOD2417 TPOD2418 TPOD2419 TPOD2420 TPOD2421 TPOD2422 TPOD2423 TPOD2424 TPOD2425 TPOD2426 TPOD2427 TPOD2428 TPOD2429 TPOD2430 TPOD2431 TPOD2432 **Nieuw:** TPOD2483 TPOD2484 TPOD2485 TPOD2486 TPOD2487 TPOD2488 TPOD2489 TPOD2490 TPOD2491 TPOD2492 TPOD2493 TPOD2494 TPOD2495 TPOD2496 TPOD2497 TPOD2498 TPOD2499 TPOD2500 TPOD2501 TPOD2502 TPOD2503 TPOD2504 TPOD2505 TPOD2506 TPOD2507 TPOD2508 TPOD2509 TPOD2510 TPOD2511 TPOD2512  |
+| WELT-262   | **Verwijderd:** LVBB4602 LVBB4603 **Nieuw:** LVBB1042 LVBB4740 LVBB4763 **Gewijzigd:** LVBB1041 LVBB1555 LVBB1556 LVBB1557 LVBB4711 LVBB4762 LVBB5013                                                  |
+| WELT-271   | **Toegevoegd:** OZON0132                                                                                                                                                                               |
+| WELT-272   | **Verwijderd:** LVBB5002 LVBB5010 **Nieuw:** LVBB1575 LVBB1576 LVBB1577 LVBB1579 LVBB5023 LVBB5024 LVBB5025 LVBB5026 LVBB5027 LVBB5028 LVBB5030  LVBB4046 LVBB4047 LVBB4500 LVBB5022 LVBB5031 LVBB5900 |
 
 
 ## Wijzigingen in versie 3.0
