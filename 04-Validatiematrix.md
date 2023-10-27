@@ -776,6 +776,9 @@ De validatiematrix bevat de volgende validatieregels:
 |TPOD1990|Waarschuwing|Ieder OwObject, behalve Activiteit heeft minstens een OwObject dat ernaar verwijst.|
 |TPOD2000|Blokkerend|het wId van de Regeltekst in OW moet verwijzen naar een bestaande wId van een Artikel of Lid in OP.|
 |TPOD2040|Blokkerend|Het wId van de Divisie of Divisietekst in OW moet verwijzen naar een bestaande wId van een Divisie in OP.|
+|TPOD2050|Blokkerend|Er mag hoogstens één Regeltekst-object naar een Artikel/Lid verwijzen.|
+|TPOD2051|Blokkerend|Er mag hoogstens één OW Divisie-object naar een OP Divisie verwijzen.|
+|TPOD2052|Blokkerend|Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekst verwijzen.|
 |TPOD2060|Blokkerend|Indien het Artikel is onderverdeeld in Leden, dan dient er geannoteerd te worden op het Lid (en mag er niet geannoteerd worden op het Artikel).|
 |TPOD2080|Blokkerend|Een instructieregel moet ofwel een "InstructieregelInstrument", ofwel een "InstructieregelTaakuitoefening" hebben.|
 |TPOD2090|Blokkerend|Binnen een Omgevingsnorm of Omgevingswaarde moeten alle normwaarden van hetzelfde type zijn: kwalitatief, kwantitatief, of waardeInRegeltekst.|
