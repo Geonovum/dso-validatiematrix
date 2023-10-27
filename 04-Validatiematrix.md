@@ -36,7 +36,7 @@ De validatiematrix bevat de volgende validatieregels:
 |BHKV1036|Blokkerend|De eId en de Instrumentversie van elk BeoogdInformatieobject bij een besluit MOET d.m.v. een corresponderende ExtIORef (attributen eId en ref komen overeen) genoemd worden in de regeling(mutatie).|
 |BHKV1044|Blokkerend|Een @wordt-versie in een besluit MOET gelijk zijn aan precies één meegeleverde FRBRExpression-identificatie in de lvbba:RegelingVersieInformatie.|
 |BHKV1046|Blokkerend|Procedurestap Publicatie MAG NIET aangeleverd worden.|
-|BHKV1047|Blokkerend|Bij een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:  Vaststelling Ondertekening|
+|BHKV1047|Blokkerend|Bij een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen: 'Vaststelling', 'Ondertekening'.|
 |BHKV1048|Blokkerend|Een definitief besluit MOET de procedurestap Ondertekening hebben.|
 |BHKV1049|Blokkerend|Bij een ontwerpbesluit MOGEN ALLEEN de volgende procedurestappen voorkomen: Vaststelling Ondertekening|
 |BHKV1057|Blokkerend|Bij een kennisgeving MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde BezwaartermijnEinde BeroepstermijnBegin InzagetermijnEinde Inzagetermijn.|
