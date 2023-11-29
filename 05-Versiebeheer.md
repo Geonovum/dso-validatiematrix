@@ -17,6 +17,8 @@ De validatiematrix is eerder beschikbaar gesteld in de vorm van een spreadsheet.
 
 | Aanleiding | Omschrijving |
 | ---------- | ------------ |
+| WELT-245   | **Verwijderd:** TPOD1840 |
+| WELT-268   | **Nieuw:** TPOD1200 TPOD1950 TPOD1951 TPOD1952 TPOD1953 |
 | WELT-273   | **Nieuw:** TPOD2050 TPOD2051 TPOD2052  |
 
 ## Wijzigingen in versie 4.0
