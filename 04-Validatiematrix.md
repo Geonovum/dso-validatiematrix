@@ -332,7 +332,7 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON0010|Blokkerend|Het objectType in het standbestand moet een Activiteit, Divisie, Gebiedsaanwijzing, Gebied, Gebiedengroep, Hoofdlijn, Punt, Puntengroep, Lijn, Lijnengroep, Regeltekst, RegelVoorIedereen, Instructieregel, Omgevingswaarderegel, Omgevingsnorm, Omgevingswaarde, Pons, Tekstdeel, Kaart, Kaartlaag, Ambtsgebied of Divisietekst zijn.|
 |OZON0013|Blokkerend|Het type van het owObject moet voorkomen in de lijst objectTypen in de inhoud.|
 |OZON0017|Blokkerend|Er moet een RegelVoorIedereen zijn die verwijst naar de Activiteit.|
-|OZON0022|Blokkerend|Er moet een RegelVoorIedereen, Instructieregel of Tekstdeel zijn die verwijst naar de Gebiedsaanwijzing|
+|OZON0022|Blokkerend|Er moet een RegelVoorIedereen, Omgevingswaarderegel, Instructieregel of Tekstdeel zijn die verwijst naar de Gebiedsaanwijzing|
 |OZON0026|Blokkerend|Er moet een RegelVoorIedereen of een Instructieregel zijn die verwijst naar de Omgevingsnorm.|
 |OZON0030|Blokkerend|Er moet een Omgevingswaarderegel zijn die verwijst naar de Omgevingswaarde.|
 |OZON0033|Blokkerend|Iedere RegelVoorIedereen verwijst naar een Regeltekst die bestaat.|
@@ -353,7 +353,7 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON0066|Blokkerend|Voor ieder Gebied moet er een Geometrie aanwezig zijn in de levering.|
 |OZON0067|Blokkerend|Voor iedere Lijn moet er een Geometrie aanwezig zijn in de levering.|
 |OZON0068|Blokkerend|Voor ieder Punt moet er een Geometrie aanwezig zijn in de levering.|
-|OZON0069|Blokkerend|(TPOD940) Als een Locatie uit meer dan één geometrie bestaat, dan moeten de geometrieën volgens dezelfde coordinate reference system (crs) zijn opgebouwd.|
+|OZON0069|Blokkerend|Als een Locatie uit meer dan één geometrie bestaat, dan moeten de geometrieën volgens dezelfde coordinate reference system (crs) zijn opgebouwd.|
 |OZON0070|Blokkerend|Het veld RegelVoorIedereen.activiteitregelkwalificatie moet een waarde bevatten uit de waardelijst ActiviteitRegelkwalificatie.|
 |OZON0071|Blokkerend|Het veld Instructieregel.instructieregelTaakuitoefening moet een waarde bevatten uit de waardelijst Adressaat.|
 |OZON0072|Blokkerend|Het veld Instructieregel.instructieregelInstrument moet een waarde bevatten uit de waardelijst InstructieregelInstrument.|
@@ -370,15 +370,14 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON0084|Blokkerend|(TPOD1730/TPOD1740) Als een Activiteit gerelateerde Activiteiten heeft, dan moeten deze bestaan in de levering of in Ozon.|
 |OZON0085|Blokkerend|(TPOD1700/TPOD1710) Een Activiteit mag niet gerelateerd zijn aan zichzelf.|
 |OZON0086|Blokkerend|Naar iedere aangeleverde geometrie moet verwezen worden door een locatie|
-|OZON0090|Blokkerend|Iedere Divisie moet verwijzen naar een of meerdere Tekstdelen.|
+|OZON0090|Blokkerend|Iedere Divisie(tekst) moet verwijzen naar een of meerdere Tekstdelen.|
 |OZON0092|Blokkerend|Ieder Tekstdeel verwijst naar een Divisie of Divisietekst die bestaat.|
 |OZON0093|Blokkerend|Als een Tekstdeel verwijst naar een Gebiedsaanwijzing, dan moet deze bestaan.|
 |OZON0094|Blokkerend|Als een Tekstdeel verwijst naar een Hoofdlijn, dan moet deze bestaan.|
 |OZON0096|Blokkerend|Iedere gebiedsaanwijzing moet verwijzen naar een of meerdere locaties die bestaan.|
-|OZON0097|Blokkerend|(TPOD1650) Iedere Normwaarde moet ofwel een kwalitatieve, ofwel een kwantitatieve waarde hebben.|
 |OZON0098|Blokkerend|(TPOD1850) Een Regeltekst die verwijst naar een RegelVoorIedereen, mag niet naar een Instructieregel of Omgevingswaarderegel verwijzen.|
-|OZON0099|Blokkerend|(TPOD1850)  Een Regeltekst die verwijst naar een RegelVoorIedereen, mag niet naar een Instructieregel of Omgevingswaarderegel verwijzen.|
-|OZON0100|Blokkerend|(TPOD1850) Een Regeltekst die verwijst naar een RegelVoorIedereen, mag niet naar een Instructieregel of Omgevingswaarderegel verwijzen.|
+|OZON0099|Blokkerend|(TPOD1850) Een Regeltekst die verwijst naar een Omgevingswaarderegel, mag niet naar een Instructieregel of RegelVoorIedereen verwijzen.|
+|OZON0100|Blokkerend|(TPOD1850) Een Regeltekst die verwijst naar een Instructieregel, mag niet naar een RegelVoorIedereen of Omgevingswaarderegel verwijzen.|
 |OZON0101|Blokkerend|Een Normwaarde moet verwijzen naar een locatie die bestaat.|
 |OZON0102|Blokkerend|Een Regeltekst moet verwijzen naar één of meer Juridische Regels.|
 |OZON0103|Blokkerend|(TPOD2180) Per Regeling moet er een Regelingsgebied zijn aangeleverd.|
@@ -404,10 +403,7 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON0126|Blokkerend|Een vastgesteld ow-object mag geen procedurestatus hebben.|
 |OZON0127|Blokkerend|Een ontwerp ow-object moet een procedurestatus met de waarde 'ontwerp' hebben.|
 |OZON0128|Blokkerend|Ontwerp symbolisatie-items worden nog niet ondersteund (tijdelijke validatie)|
-|OZON0129|Blokkerend|(TPOD1960) Iedere verwijzing naar een geometrie vanuit een Lijn moet een lijn-geometrie zijn.|
-|OZON0130|Blokkerend|(TPOD1970) Iedere verwijzing naar een geometrie vanuit een Punt moet een punt-geometrie zijn.|
-|OZON0131|Blokkerend|(TPOD1980) Iedere verwijzing naar een geometrie vanuit een Gebied moet een gebied-geometrie zijn.|
-|OZON0132|Blokkerend|Een aanlevering met een Geometrie waarvan de 'id' gelijk is aan een id met een andere geometrie mag niet.|
+|OZON0132|Blokkerend|Een aanlevering met een Geometrie waarvan de 'id' gelijk is aan die van een eerder aangeleverde Geometrie, maar met een andere geometrie, wordt afgekeurd.|
 |OZON0200|Blokkerend|Elk type gebiedsaanwijzing in CIMOW is aanwezig in de waardelijst 'gebiedsaanwijzingstypen'|
 |OZON0201|Blokkerend|Een gebiedsaanwijzing mag niet wijzigen van type|
 |OZON0204|Blokkerend|Als een Tekstdeel verwijst naar een locatie, dan moet deze bestaan.|
@@ -424,7 +420,6 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON0217|Blokkerend|Als een Pons verwijst naar een Locatie dan moet deze bestaan.|
 |OZON0218|Blokkerend|Een Regeltekst mag niet voorkomen in een andere regeling (behalve bij intrekken vervangen; in de ingetrokken regeling|
 |OZON0219|Blokkerend|Een Divisie of Divisietekst mag niet voorkomen in een andere regeling (behalve bij intrekken vervangen; in de ingetrokken regeling).                         |
-|OZON0220|Blokkerend|Een vergunning moet een unieke gepubliceerdIn hebben.|
 |OZON0310|Blokkerend|Identificaties van OW-objecten dienen globaal uniek te zijn.|
 |OZON0320|Blokkerend|Een regel voor iedereen mag ten hoogste één keer verwijzen naar dezelfde locatie.|
 |OZON0321|Blokkerend|Een omgevingswaarderegel mag ten hoogste één keer verwijzen naar dezelfde locatie.|
@@ -465,31 +460,12 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON0383|Blokkerend|Een instructieregel mag ten hoogste één keer verwijzen naar dezelfde taakuitoefening. |
 |OZON0384|Blokkerend|Een norm mag ten hoogste één keer verwijzen naar dezelfde normwaarde.|
 |OZON0385|Blokkerend|Een normwaarde mag ten hoogste één keer verwijzen naar dezelfde locatie.|
-|OZON1019|Blokkerend|Het bevoegd gezag moet het juiste format hebben: het moet eindigen met het type bevoegd gezag (ministerie, provincie, gemeente, waterschap), een /, en de organisatiecode, bijvoorbeeld ‘/gemeente/gm0037’. |
-|OZON1020|Blokkerend|Het soort regeling moet overeenkomen met de waardelijst soortregeling (uit OP-waardelijsten).|
-|OZON1021|Blokkerend|Alle regelingen (behalve intrekkingen) moeten een AnnotatieBijToestand bevatten.|
-|OZON1024|Blokkerend|Een levering moet 1 of 2 toestanden bevatten.|
 |OZON1025|Blokkerend|Als een levering een regelingversie intrekt, dan moet deze bekend zijn bij Ozon.|
-|OZON1026|Blokkerend|Een initiele levering dient nog niet bekend te zijn bij Ozon.|
-|OZON1027|Blokkerend|Elke nieuwe regelingversie moet 1 doel hebben (tijdelijk).|
-|OZON1028|Blokkerend|De instrumentversie-identificatie van een nieuwe toestand moet overeenkomen met de FRBRExpression van de regelingversie.|
-|OZON1029|Blokkerend|Een nieuwe toestand moet aangeleverd worden met een regelingversie.|
-|OZON1031|Blokkerend|Als een RegelingVersie verwijst naar een afbeelding dan moet deze aanwezig zijn in de levering|
-|OZON1032|Blokkerend|Een Tijdelijk Deel moet verwijzen naar een bestaande RegelingVersie in de database|
 |OZON1033|Blokkerend|Intrekken/Vervangen van een RegelingVersie is niet toegestaan wanneer er een Tijdelijk Deel naar verwijst.|
 |OZON1034|Blokkerend|Een ontwerp Ow-object mag niet bestaan in Ozon.|
-|OZON1036|Blokkerend|Een regeling die een tijdelijk deel is, mag zelf geen tijdelijk deel hebben.|
-|OZON1038|Blokkerend|Een ontwerpregeling kan niet geladen worden als er al een andere ontwerpregeling bestaat met hetzelfde expressionId of dezelfde ontwerpbesluitIdentificatie.|
-|OZON1039|Blokkerend|Een ontwerpregeling moet procedurestappen hebben die voorkomen in de waardelijst procedurestappen_ontwerp|
-|OZON1040|Blokkerend|Een actualisatie van procedureverloop moet verwijzen naar een ontwerpregeling die bekend is in Ozon.|
+|OZON1037|Blokkerend|Een regeling die een tijdelijk deel is, mag zelf geen pons hebben.|
 |OZON1041|Blokkerend|Een ontwerpregeling moet een regelingsgebied hebben of gekoppeld kunnen worden aan een vastgesteld document. |
 |OZON1042|Blokkerend|Een intrekking van een Regeling moet ook bijbehorend regelingsgebied, regelteksten, divisies/divisieteksten, en ponsen beëindigen.|
-|OZON2000|Blokkerend|het wId van de Regeltekst in OW moet verwijzen naar een bestaande wId van een Artikel of Lid in OP|
-|OZON2040|Blokkerend|(TPOD2040) het id van Divisie of Divisietekst in OW moet verwijzen naar een bestaande id van een Divisie of Divisietekst in OP|
-|OZON2060|Blokkerend|(TPOD2060) Een OW-annotatie mag alleen worden toegevoegd op het niveau van een Artikel indien het Artikel geen leden heeft|
-|OZON2140|Blokkerend|(TPOD2140) Het WorkIDRegeling van het manifest-ow moet verwijzen naar een bestaande data:FRBRWork van een Regeling in OP|
-|OZON2150|Blokkerend|(TPOD2150) Het DoelID van het manifest-ow moet verwijzen naar een bestaand doel dat aanwezig is in de bijbehorende Regeling in OP.|
-|OZON2210|Blokkerend|(TPOD2210) De combinatie van Doel en Regeling uit het manifest-OW moet ook als combinatie bestaan in OP.|
 |OZON3000|Blokkerend|Er is onvoldoende informatie gevonden in de aanlevering om een object te kunnen vormen (volgens CIMOW). |
 |OZON4000|Blokkerend|Opeenvolgende versies van objecten moeten opeenvolgende tijdsparameters hebben.|
 |OZON4001|Blokkerend|Als een OwObject beeindigd wordt (status=B), moet deze bij Ozon bekend zijn.|
@@ -502,10 +478,6 @@ De validatiematrix bevat de volgende validatieregels:
 |OZON4008|Blokkerend|Bij een levering met meerdere regelingen, mag ieder owObject maar in één regeling gebruikt worden.                                                |
 |OZON4009|Blokkerend|Bij een levering met meerdere regelingen, mag iedere geo maar in één regeling gebruikt worden.                  |
 |OZON4010|Blokkerend|Intrekken-vervangen (scenario 0) mag niet worden gebruikt in combinatie met meerdere regelingen.|
-|OZON5001|Blokkerend|(TPOD1890) Het objecttype in de identificatie van het OwObject moet overeenkomen met het objecttype van het OwObject|
-|OZON5002|Blokkerend|(TPOD2080) Een instructieregel moet ofwel een 'InstructieregelInstrument', ofwel een 'InstructieregelTaakuitoefening' hebben|
-|OZON5003|Blokkerend|(TPOD2090) De normwaarden binnen een norm moeten hetzelfde type hebben.|
-|OZON5004|Blokkerend|(TPOD2100) Als een norm een Eenheid heeft, dan moeten de normwaarden van het type kwantitatief zijn.|
 |RTRG0016|Blokkerend|Als een activiteit van een gemeente verwijst naar een bovenliggende activiteit niet van een gemeente, dan moet deze verwijzen naar de activiteit: 'activiteit in omgevingsplan'|
 |RTRG0017|Blokkerend|Als een activiteit van een provincie verwijst naar een bovenliggende activiteit niet van een provincie, dan moet deze verwijzen naar de activiteit: 'activiteit in omgevingsverordening'|
 |RTRG0018|Blokkerend|Als een activiteit van een waterschap verwijst naar een bovenliggende activiteit niet van een waterschap, dan moet deze verwijzen naar de activiteit: 'activiteit in waterschapsverordening'|

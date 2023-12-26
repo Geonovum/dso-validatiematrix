@@ -15,11 +15,12 @@ De validatiematrix is eerder beschikbaar gesteld in de vorm van een spreadsheet.
 
 ## Wijzigingen in versie 5.0
 
-| Aanleiding | Omschrijving |
-| ---------- | ------------ |
-| WELT-245   | **Verwijderd:** TPOD1840 |
+| Aanleiding | Omschrijving                                            |
+| ---------- | ------------------------------------------------------- |
+| WELT-245   | **Verwijderd:** TPOD1840                                |
 | WELT-268   | **Nieuw:** TPOD1200 TPOD1950 TPOD1951 TPOD1952 TPOD1953 |
-| WELT-273   | **Nieuw:** TPOD2050 TPOD2051 TPOD2052  |
+| WELT-273   | **Nieuw:** TPOD2050 TPOD2051 TPOD2052                   |
+| WELT-276   | **Gewijzigd**: OZON0022 OZON0069 OZON0090 OZON0098 OZON0099 OZON0100 OZON0132 **Nieuw:** OZON1037 **Verwijderd:** OZON0097 OZON0129 OZON0130 OZON0131 OZON0220 OZON1019 OZON1020 OZON1021 OZON1024 OZON1026 OZON1027 OZON1028 OZON1029 OZON1031 OZON1032 OZON1036 OZON1038 OZON1039 OZON1040 OZON2000 OZON2040 OZON2060 OZON2140 OZON2150 OZON2210 OZON5001 OZON5002 OZON5003 OZON5004|
 
 ## Wijzigingen in versie 4.0
 
