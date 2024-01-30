@@ -75,13 +75,13 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1025|Blokkerend|In het manifest-OW mag het objecttype Geometrie niet voorkomen.|
 |LVBB1026|Blokkerend|In het manifest-OW mag een bestandsnaam niet eindigen op '.gml'.|
 |LVBB1027|Blokkerend|Bestand manifest-ow.xml MOET aanwezig zijn in het aangeleverde zip-bestand bij: - &lt;validatieOpdracht&gt; van een besluit; - &lt;publicatieOpdracht&gt; van een besluit; - &lt;validatieDirecteMutatieOpdracht&gt;; - &lt;directeMutatieOpdracht&gt;; - &lt;valideerRegelingVersie&gt;; - &lt;registreerRegelingVersie&gt;; - &lt;valideerDoorleverenRegelingVersie&gt;; - &lt;doorleverenRegelingVersie&gt;|
-|LVBB1028|Blokkerend|Bestand manifest-ow.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij: - "validatieOpdracht" van een kennisgeving; - "publicatieOpdracht" van een kennisgeving; - "breekPublicatieAfOpdracht"; - "valideerGio"; - "publiceerGio"; - "valideerCio"; - "publiceerCio"|
+|LVBB1028|Blokkerend|Bestand manifest-ow.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij: - &lt;validatieOpdracht&gt; van een kennisgeving; - &lt;publicatieOpdracht&gt; van een kennisgeving; - &lt;breekPublicatieAfOpdracht&gt;; - &lt;valideerGio&gt;; - &lt;publiceerGio&gt;; - &lt;valideerCio&gt;; - &lt;publiceerCio&gt;|
 |LVBB1032|Blokkerend|Een aangeleverd manifest-ow.xml (of bij een interne opdracht aangeleverd manifest-bhkv.xml) moet voldoen aan de eisen van het schema van de STOP-standaard.|
 |LVBB1033|Blokkerend|Alle bestanden, die genoemd zijn in manifest-bhkv.xml moeten aanwezig zijn in de aangeleverde zip.|
 |LVBB1035|Blokkerend|In het manifest-bhkv mag alleen het objecttype Geometrie voorkomen.|
-|LVBB1036|Blokkerend|In het manifest-bhkv moet een bestandsnaam eindigen op '.gml'.|
+|LVBB1036|Blokkerend|In het manifest-bhkv moet een bestandsnaam eindigen op '.gml'|
 |LVBB1037|Blokkerend|Bestand manifest-bhkv.xml MOET aanwezig zijn in het aangeleverde zip-bestand bij: - "valideerRegelingVersie"; - "registreerRegelingVersie"; - "valideerDoorleverenRegelingVersie"; - "doorleverenRegelingVersie"|
-|LVBB1038|Blokkerend|Bestand manifest-bhkv.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij: - "validatieOpdracht" van een besluit; - "publicatieOpdracht" van een besluit; - "validatieOpdracht" van een kennisgeving; - "publicatieOpdracht" van een kennisgeving; - "validatieDirecteMutatieOpdracht" - "directeMutatieOpdracht" - "breekPublicatieAfOpdracht"; - "valideerGio"; - "publiceerGio"; - "valideerCio"; - "publiceerCio"|
+|LVBB1038|Blokkerend|Bestand manifest-bhkv.xml MAG NIET aanwezig zijn in het aangeleverde zip-bestand bij: - &lt;validatieOpdracht&gt; van een besluit; - &lt;publicatieOpdracht&gt; van een besluit; - &lt;validatieOpdracht&gt; van een kennisgeving; - &lt;publicatieOpdracht&gt; van een kennisgeving; - &lt;validatieDirecteMutatieOpdracht&gt;; - &lt;directeMutatieOpdracht&gt;; - &lt;breekPublicatieAfOpdracht&gt;; - &lt;valideerGio&gt;; - &lt;publiceerGio&gt;; - &lt;valideerCio&gt;; - &lt;publiceerCio&gt;|
 |LVBB1039|Blokkerend|Alle bestanden, die aanwezig zijn in de aangeleverde zip, moeten genoemd zijn in manifest-bhkv.xml.|
 |LVBB1040|Blokkerend|Opdracht.zip MAG NIET  groter zijn dan 1 GB.|
 |LVBB1041|Blokkerend|Een individueel bestand (uitgepakt) in de aangeleverde opdracht.zip MAG NIET kleiner zijn dan 1 byte en MAG NIET groter zijn dan 100 MB|
@@ -98,6 +98,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1515|Blokkerend|De (soort) aanlevering MOET een besluit of kennisgeving zijn met een geldige schemaversie.|
 |LVBB1517|Blokkerend|Bij aanlevering van een GIO zonder besluit MOET  het 4e veld van de AKN-Id van de Regelingversie de waarde "act" bevatten.|
 |LVBB1518|Blokkerend|Bij aanlevering van een GIO zonder besluit MOET  het 4e veld van de JOIN-Id van de GIO de waarde "regdata" bevatten.|
+|LVBB1519|Blokkerend|De datum bekendmaking MOET een werkdag zijn.|
 |LVBB1550|Blokkerend|Het opdracht bestand moet bij afbreken aanwezig zijn voor opgegeven oin en idlevering.|
 |LVBB1551|Blokkerend|Bij Afbreken moet de opgegeven AKN bestaan.|
 |LVBB1553|Blokkerend|Bij Afbreken moet de datum bekendmaking van het af te breken besluit in de toekomst liggen.|
@@ -119,10 +120,11 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB1571|Blokkerend|Voor het verwerken van een aanlevering MOET de status van een opgestart proces (met gegeven status identifier) bekend zijn.|
 |LVBB1572|Blokkerend|Voor het valideren van een aanlevering MOET een af te melden validatierapport bekend zijn.|
 |LVBB1573|Blokkerend|Voor het valideren van een aanlevering MAG een eerder afgemeld validatierapport NIET opnieuw afgemeld worden.|
-|LVBB1574|Blokkerend|De juridisch werkend vanaf datum MOET op of na datum bekendmaking van het besluit liggen.|
+|LVBB1574|Blokkerend|Bij ValideerRegelingVersie en  RegistreerRegelingVersie moet de WTI eerst worden ingeladen. |
 |LVBB1575|Blokkerend|Het manifest.xml MOET unieke bestanden bevatten.|
 |LVBB1576|Blokkerend|Besluit dat afgebroken moet worden mag geen regeling intrekken waarvan de intrekking al gepubliceerd is.|
 |LVBB1577|Blokkerend|Besluit dat afgebroken moet worden mag geen informatieobject intrekken waarvan de intrekking al gepubliceerd is. |
+|LVBB1578|Blokkerend|Publicatieopdracht MAG NIET niet worden afgebroken omdat de interne verwerking nog bezig is OF reeds is verwerkt.|
 |LVBB1579|Blokkerend|Publicatieopdracht MAG NIET worden afgebroken als de wetstechnische informatie, die voortkomt uit deze opdracht, al gepubliceerd is|
 |LVBB1600|Blokkerend|Een Directe Mutatie op een Regelingversie MAG ALLEEN wanneer het Besluit, dat deze Regelingversie heeft vastgesteld, al gepubliceerd is.|
 |LVBB1601|Blokkerend|Bij een directe mutatie MAG NIET meer dan 1 aanlevering element in het manifest-ow voorkomen (hiermee kan een regelingversie/doel combinatie maar 1 keer voorkomen). |
@@ -153,16 +155,19 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB2514|Blokkerend|De bestanden genoemd in het bestand 'manifest-bhkv.xml' moeten meegeleverd zijn|
 |LVBB2515|Blokkerend|Het doel moet gekoppeld zijn aan regelingversies, die horen bij de regeling die in het bestand 'manifest-bhkv.xml' staat.|
 |LVBB2516|Blokkerend|De bestanden genoemd in het bestand 'manifest-bhkv.xml' moeten meegeleverd zijn.|
-|LVBB3000|Blokkerend|De GML van een afzonderlijke locatie (binnen de GIO) MAG NIET groter zijn dan xx MB.|
+|LVBB3000|Blokkerend|De GML van een afzonderlijke locatie (binnen de GIO) MAG NIET groter zijn dan 10 MB.|
 |LVBB3002|Blokkerend|Zijn de geometrieën toegestaan volgens STOP/TP: Simple Features Profile 2 (SF2) geometrieën exclusief cirkels en bogen.|
 |LVBB3003|Blokkerend|Controleer of srsName (coördinatensysteem) is opgegeven voor de geometrieën. (dimension ook).|
-|LVBB3004|Blokkerend|Het gml bestand MOET verwerkbaar  zijn.|
+|LVBB3004|Blokkerend|Het gml bestand MOET verwerkbaar zijn.|
 |LVBB3008|Blokkerend|Klopt de meegeleverde hash met de zelf berekende hash voor informatie-objecten.|
 |LVBB3009|Blokkerend|Elk aangeleverd gml document moet voldoen aan de eisen van het schema van de Geometrie-standaard.|
 |LVBB3010|Blokkerend|Elk aangeleverd gml document moet voldoen aan de eisen van het schema van de BasisGeometrie-standaard.|
 |LVBB3011|Blokkerend|Elk GML-element MOET complete coördinaten bevatten.|
-|LVBB3012|Blokkerend|Elk GML-element MOET een ingevulde &lt;gml:posList&gt;  bevatten.|
-|LVBB3150|Blokkerend|Een InformatieObject dat consolideerbaar is MOET een geboorteregeling bevatten  OF Een InformatieObject dat niet consolideerbaar is MAG NIET een  geboorteregeling bevatten.|
+|LVBB3012|Blokkerend|Elk GML-element MOET een ingevulde &lt;gml:posList&gt; bevatten.|
+|LVBB3020|Blokkerend|Voor het verwerken van een aanlevering MOET de status van een opgestart proces (met gegeven status identifier) bekend zijn.|
+|LVBB3021|Blokkerend|Voor het valideren van een aanlevering MOET een af te melden validatierapport bekend zijn.|
+|LVBB3022|Blokkerend|Voor het valideren van een aanlevering MAG een eerder afgemeld validatierapport NIET opnieuw afgemeld worden.|
+|LVBB3150|Blokkerend|Een InformatieObject dat consolideerbaar is MOET een geboorteregeling bevatten   OF  Een InformatieObject dat niet consolideerbaar is MAG NIET een  geboorteregeling bevatten.|
 |LVBB3151|Blokkerend|Van een versie van een te consolideren IO, die onderdeel is van een besluit, MOET de expressie als tekst:ExtIoRef worden genoemd in òf de regelingtekst(mutatie) van het besluit òf de besluittekst.|
 |LVBB3501|Blokkerend|Elk InformatieObject in een aangeleverd document moet voldoen aan de eisen van het IO-schema van de STOP-standaard.|
 |LVBB3502|Blokkerend|Het derde deel van de JOIN identificatie van een InformatieObject moet gelijk zijn aan pubdata.|
@@ -179,9 +184,8 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB3515|Blokkerend|De informatieobjectversie (expressie-nivo), waarnaar de JOIN-identificatie in 'wasID' verwijst, MOET tot hetzelfde informatieobject (work-nivo) horen|
 |LVBB3516|Blokkerend|De informatieobjectversie (expressie-nivo), waarnaar de JOIN-identificatie in 'wasID' verwijst, MOET van hetzelfde informatieobject (work-nivo) de (enige) informatieobjectversie zijn, waarbij de einddatum (nog) onbekend is.|
 |LVBB3517|Blokkerend|Ext-io-ref in besluit of consolidatie (m.b.t. JOIN-id) MAG GEEN voorloopspaties, naloopspaties of regelovergangen bevatten.|
-|LVBB3518|Blokkerend|Bij definitieve besluiten van decentrale overheden MOETEN de vastgestelde informatie-objecten een datum juridisch werkend vanaf hebben.|
-|LVBB3519|Blokkerend|Bij definitieve besluiten van decentrale overheden MOETEN de vastgestelde regelingversies een datum juridisch werkend vanaf hebben.|
-|LVBB3520|Blokkerend|Elk tijdstempel in een besluit moet gekoppeld zijn aan tenminste één regelingversie, die in het besluit wordt vastgesteld. |
+|LVBB3518|Blokkerend|Bij definitieve besluiten van decentrale overheden MOETEN de vastgestelde of in te trekken informatie-objecten een datum juridisch werkend vanaf hebben.|
+|LVBB3519|Blokkerend|Bij definitieve besluiten van decentrale overheden MOETEN de vastgestelde of in te trekken regelingversies een datum juridisch werkend vanaf hebben.|
 |LVBB3800|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MOET bestaan.|
 |LVBB3801|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MAG NIET al ingetrokken zijn.|
 |LVBB3802|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MOET minimaal 1 openstaande expressie bevatten.|
@@ -193,6 +197,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4005|Blokkerend|De AKN door het bevoegd gezag aangeleverde regeling moet als derde veld 'act' hebben.|
 |LVBB4006|Blokkerend|Er kan geen AMvB verwerkt worden omdat het daarvoor noodzakelijke gegeven met het staatsblad id niet in de aanlevering zit.|
 |LVBB4007|Blokkerend|soortRegeling van de eerste RegelingMetadata in een besluit moet beginnen met '/join/id/stop/regelingtype_0' (zodat van daaruit later juiste waardes kunnen worden bepaald).|
+|LVBB4011|Blokkerend|Een wijzigingsbesluit MOET mutaties bevatten|
 |LVBB4014|Blokkerend|Is wordt-versie nog niet aanwezig?|
 |LVBB4015|Blokkerend|Bestaat was-versie?|
 |LVBB4017|Blokkerend|Datum ondertekening moet aanwezig zijn in het besluit.|
@@ -201,17 +206,17 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4036|Blokkerend|De waardelijst behorend bij de schema-versie moet aanwezig zijn.|
 |LVBB4037|Blokkerend|De waarde van tooi-identifiers in het besluit moet allemaal teruggevonden kunnen worden in de waardelijst.|
 |LVBB4038|Blokkerend|Subitems genoemd in de publicatie moeten meegeleverd zijn en omgekeerd.|
-|LVBB4039|Blokkerend|De mimetype van een subitem in het document moet gelijk zijn aan het aangeleverde mimetype.|
+|LVBB4039|Blokkerend|De mimetype van een subitem in het document moet gelijk zijn aan het aangeleverde mimetype. |
 |LVBB4040|Blokkerend|RegelingMetadata MOET aanwezig zijn in het aangeleverde besluit, INDIEN een Regelingversie betrekking heeft op een nieuwe regeling|
 |LVBB4041|Blokkerend|JOIN-id van de GIO op werkniveau MOET een waarde bevatten tussen de 4e '/' en de 5e '/'.|
 |LVBB4042|Blokkerend|De code van de eindverantwoordelijke MOET ingevuld zijn met een waarde uit de afgesproken (toegestane) waardelijst.|
 |LVBB4043|Blokkerend|Regeling is opvolger van een intrekking, maar wordt niet ingetrokken volgens consolidatie-informatie.|
+|LVBB4044|Blokkerend|soortWork van de Regeling MOET "/join/id/stop/work_021" zijn, indien het een RegelingTijdelijkDeel betreft; indien het geen RegelingTijdelijkDeel betreft MOET soortWork "/join/id/stop/work_019" zijn.|
 |LVBB4045|Blokkerend|Een (unieke) RegelingVersieInformatie MAG alleen bij 1 element horen.|
-|LVBB4046|Blokkerend|De volgende elementen binnen RegelingMetadata MOGEN NIET worden gewijzigd: Eindverantwoordelijke, Opvolging, SoortRegeling, Maker.|
-|LVBB4047|Blokkerend|De volgende elementen binnen InformatieobjectMetadata MOGEN NIET worden gewijzigd: Eindverantwoordelijke, FormaatInformatieobject, Opvolging, Publicatieinstructie, Maker.|
+|LVBB4046|Blokkerend|De volgende elementen binnen RegelingMetadata MOGEN NIET worden gewijzigd: Eindverantwoordelijke,  Opvolging, SoortRegeling, Maker.|
+|LVBB4048|Blokkerend|De volgende elementen binnen InformatieobjectMetadata MOGEN NIET worden gewijzigd: Eindverantwoordelijke, FormaatInformatieobject, Opvolging, Publicatieinstructie, Maker.|
 |LVBB4200|Blokkerend|De 'datum JWV' van een wordt-versie MOET later zijn dan de 'datum JWV' van de was-versie.|
 |LVBB4201|Blokkerend|Indien de was-versie een 'datum JWV'-einde heeft , dan MOET de 'datum JWV' van de wordt-versie eerder dan deze 'datum JWV'-einde zijn.|
-|LVBB4204|Blokkerend|Als de wordt-versie een datum juridisch-werkend-vanaf heeft dan moet de was-versie ook een datum juridisch-werkend-vanaf hebben.|
 |LVBB4204|Blokkerend|Als de wordt-versie een datum juridisch-werkend-vanaf heeft dan moet de was-versie ook een datum juridisch-werkend-vanaf hebben.|
 |LVBB4205|Blokkerend|De datum juridisch-werkend-vanaf van een regelingversie moet voor de datum juridisch-werkend-tot liggen (als beide datums gevuld zijn).|
 |LVBB4206|Blokkerend|De datum geldig-vanaf van de wordt-versie moet voor de datum geldig-vanaf van de was-versie liggen (als beide datums gevuld zijn).	|
@@ -221,6 +226,8 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4211|Blokkerend|Een regelingmutatie op een was-versie MAG ALLEEN wanneer het besluit, dat deze regelingversie heeft vastgesteld, al gepubliceerd is.|
 |LVBB4212|Blokkerend|Een verwijzing naar een in te trekken regeling / geboorteregeling, hoofdregeling tijdelijk deel MAG ALLEEN wanneer het besluit, dat deze regeling heeft vastgesteld, al gepubliceerd is .|
 |LVBB4500|Blokkerend|Terugtrekkingen in de consolidatieinformatie MOGEN NIET gebruikt worden.|
+|LVBB4701|Blokkerend|Het AKN ID van het werk dat het bevoegd gezag aan de Kennisgeving heeft toegekend moet uniek zijn.|
+|LVBB4702|Blokkerend|Het besluit benoemd in de Kennisgeving in 'mededelingOver' moet reeds aanwezig zijn in de LVBB (in een eerdere aanlevering zijn aangeleverd).|
 |LVBB4703|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking kennisgeving [zoals benoemd in de opdracht.xml].|
 |LVBB4704|Blokkerend|Datum begin inzagetermijn mag niet liggen voor datum bekendmaking van gerelateerd besluit [zoals benoemd onder 'mededelingOver'].|
 |LVBB4705|Blokkerend|Besluit met akn-id %1 horende bij deze kennisgeving heeft nog geen publicatie akn-identifier.|
@@ -235,15 +242,15 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4737|Blokkerend|De waarde van tooi-identifiers in de kennisgeving moet teruggevonden kunnen worden in de waardelijst.|
 |LVBB4738|Blokkerend|SoortKennisgeving KennisgevingUitspraakRechter MAG NIET gebruikt worden.|
 |LVBB4740|Blokkerend|Een KennisgevingVoorgenomenBesluit MAG GEEN mededelingOver bevatten.|
-|LVBB4750|Blokkerend|In het resultaat van het procedureverloop van een (ontwerp)besluit en alle kennisgevingen over dit besluit mag elke code bij een procedurestap maximaal 1 keer voorkomen.|
-|LVBB4751|Blokkerend|Het is niet mogelijk om een procedurestap te wijzigen of verwijderen die nog niet eerder is aangeleverd.|
+|LVBB4750|Blokkerend|Alleen voor de eerste kennisgeving bij een besluit mag dezelfde combinatie datum-bekend-op %1 en datum-ontvangen-op (verwerkingsdatum LVBB) worden gebruikt. De eventueel daaropvolgende kennisgevingen moeten een latere combinatie datum-bekend-op %1 en datum-ontvangen-op hebben. |
+|LVBB4751|Blokkerend|Het is niet mogelijk om een procedurestap te vervangen of verwijderen die nog niet eerder is aangeleverd.|
 |LVBB4753|Blokkerend|Het type procedureverloop MOET passen bij het type besluit waarvan het de procedure beschrijft.|
-|LVBB4754|Blokkerend|Soort stap MAG NIET aanwezig zijn in het besluit of de kennisgeving.|
-|LVBB4755|Blokkerend|De procedurestappen MOGEN NIET dubbel voorkomen.|
+|LVBB4754|Blokkerend|Soort stap 'Publicatie' MAG NIET aanwezig zijn in het besluit of de kennisgeving, omdat deze wordt bepaald door de daadwerkelijke publicatiedatum.|
+|LVBB4755|Blokkerend|De procedurestappen MOGEN NIET dubbel voorkomen in het meest recente geconsolideerde resultaat van procedurestappen of na het samenstellen van het nieuwe geconsolideerde resultaat van procedurestappen.|
 |LVBB4756|Blokkerend|De datum bekend-op van de kennisgeving MOET liggen na de datum bekend-op van een eerdere consolidatie.|
 |LVBB4757|Blokkerend|De datum ontvangen-op van de kennisgeving MOET liggen na de datum ontvangen-op van een eerdere consolidatie.|
 |LVBB4758|Blokkerend|De datum einde inzagetermijn MOET later dan of gelijk zijn aan de datum begin inzagetermijn.|
-|LVBB4759|Blokkerend|Datum bekendmaking kennisgeving %1 mag niet voor datum bekend op van het besluit %2 liggen .|
+|LVBB4759|Blokkerend|Datum bekendmaking kennisgeving %1 mag niet voor datum bekend op van het besluit %2 liggen.|
 |LVBB4760|Blokkerend|Bij een kennisgeving ontwerp besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Begin inzagetermijnEinde inzagetermijn.|
 |LVBB4761|Blokkerend|Bij een kennisgeving van een definitief besluit MOGEN ALLEEN de volgende procedurestappen voorkomen:Einde bezwaartermijnEinde beroepstermijn.|
 |LVBB4762|Blokkerend|Een aanlevering van een kennisgeving met soort KennisgevingBesluitTermijnen MOET een procedureverloopmutatie  bevatten met het element "voegStappenToe", verwijderStappen of vervangStappen.|
@@ -251,17 +258,22 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB4802|Blokkerend|Een besluit MAG maar één instrumentversie per instrument bevatten. |
 |LVBB4803|Blokkerend|Een aangeleverd besluit MAG maar één doel bevatten.|
 |LVBB4804|Blokkerend|Een aangeleverd besluit MAG enkel een instelling van een instrument(versie) bevatten of enkel een intrekking van het instrument bevatten. |
+|LVBB5002|Blokkerend|Indien een element verwijderd of vervangen moet worden, MOET dit element met aangegeven wId bestaan bij aangegeven regelingversie OF: Indien een element toegevoegd moet worden, MAG dit element met aangegeven wId NIET bestaan bij desbetreffend element in desbetreffende regelingversie, waaraan dit element moet worden toegevoegd|
 |LVBB5003|Blokkerend|De inhoud van het attribuut 'wat' van een vervang opdracht voor een regelingversie moet gelijk zijn aan het wId van het te vervangen element.|
 |LVBB5005|Blokkerend|De wordt-versie moet gevuld zijn.|
 |LVBB5006|Blokkerend|De was-versie moet gevuld zijn bij niet-initiele mutaties.|
 |LVBB5007|Blokkerend|De was-versie mag niet door een ontwerp besluit aangemaakt zijn.|
 |LVBB5008|Blokkerend|De was-versie mag niet aangemaakt zijn door een besluit dat in afwachting is om afgebroken te worden.|
 |LVBB5009|Blokkerend|De 'soort work' van de was-versie MOET gelijk zijn aan de 'soort work' van de wordt-versie.|
+|LVBB5010|Blokkerend|VoegToe: bestaat het toe te voegen element nog niet.|
 |LVBB5011|Blokkerend|Er mag maar een toelichting voorkomen bij toevoegen.|
 |LVBB5012|Blokkerend|De regeling bij de was- en wordt-verie mag niet ingetrokken zijn.|
 |LVBB5013|Blokkerend|Een in te trekken regeling MOET juridisch werkend zijn, d.w.z. een openstaande versie van dezelfde regeling hebben en geen ontwerpregeling zijn.|
 |LVBB5014|Blokkerend|Een in te trekken regeling MOET (eerder) geregistreerd zijn.|
 |LVBB5015|Blokkerend|De was-versie binnen de regeling MAG NIET eerder gebruikt zijn als versie-gebaseerd-op.|
+|LVBB5016|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MOET bestaan|
+|LVBB5017|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MAG NIET al ingetrokken zijn|
+|LVBB5018|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MOET minimaal 1 openstaande expressie bevatten|
 |LVBB5019|Blokkerend|Een nieuw aan te maken regeling MAG NOG NIET bestaan.|
 |LVBB5020|Blokkerend|Mutaties MOGEN ALLEEN op instrumentversies (regelingversies of informatieobjectversies) in een gelijke schemaversie plaatsvinden.|
 |LVBB5021|Blokkerend|Een regelingversie moet minimaal één wijziging van juridische aard bevatten.|
@@ -272,11 +284,14 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB5026|Blokkerend|De RegelingMutatie MAG GEEN impliciet verwijderde wId's in de vervang-mutatie of verwijder-mutatie bevatten.|
 |LVBB5027|Blokkerend|De @context in de RegelingMutatie MOET bestaan in de wordt-versie.|
 |LVBB5028|Blokkerend|De RegelingMutatie MAG GEEN kind-elementen in de vervang-mutatie of verwijder-mutatie gebruiken die niet voorkomen in de was-versie.|
-|LVBB5030|Blokkerend|Elk expliciet toegevoegd element MOET uiteindelijk in de wordt-versie terecht komen.|
+|LVBB5029|Blokkerend|De RegelingMutatie MAG GEEN impliciet toegevoegde ouder-elementen in de vervang-mutatie of voegtoe-mutatie bevatten.|
+|LVBB5030|Blokkerend|Een wId die als @context wordt gebruikt in de RegelingMutatie MAG NIET ook worden verwijderd in dezelfde RegelingMutatie.|
 |LVBB5031|Blokkerend|Een tekst:Vervang met @revisie=1 in een RegelingMutatie MAG GEEN renvooi-elementen of @context bevatten.|
+|LVBB5032|Blokkerend|De RegelingMutatie MAG GEEN vervang met een verplaatsing ten opzichte van zichzelf bevatten.|
+|LVBB5033|Blokkerend|De RegelingMutatie MAG geen overlappende vervang-mutaties bevatten zonder context.|
 |LVBB5100|Blokkerend|Bij een regelingmutatie met VervangRegeling mag geen afwijkend RegelingModel gehanteerd worden t.o.v. bestaande regeling.|
 |LVBB5900|Blokkerend|Een directe mutatie MAG NIET worden gedaan op een ontwerpregeling|
-|LVBB6000|Blokkerend|Valideert de AfwijkVergunning tegen het imop &lt;?&gt; schema?|
+|LVBB6000|Blokkerend|De AfwijkVergunning MOET voldoen aan het lvbb-vergunningsmetadata.xsd.|
 |LVBB6001|Blokkerend|Voor publicatie van de afwijkvergunning MAG de uri van elke nieuwe Doorlever-zip NIET bestaan.|
 |LVBB6002|Blokkerend|Voor de afwijkvergunning MOET elk metadata-document, waarnaar vanuit de publicatie verwezen wordt, gevonden worden.|
 |LVBB6003|Blokkerend|Voor de afwijkvergunning MOET elk GML-document, waarnaar vanuit de publicatie verwezen wordt, gevonden worden.|
@@ -304,6 +319,7 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB7707|Blokkerend|Aantal RegelingMetadata MOET 1 zijn|
 |LVBB7708|Blokkerend|AKN aanvullend type MOET 'act' zijn|
 |LVBB7709|Blokkerend|AKN van de AnnotatieBijToestand moet een 5e veld hebben dat gelijk is aan "gemeente", "provincie", "waterschap" of  "ministerie"|
+|LVBB7710|Blokkerend|De aangeboden invoer MOET een Consolidatie element zijn|
 |LVBB7713|Blokkerend|AKN van cvdr-werk-boven bij ConsolidatieIdentificatie MOET gelijk zijn aan AKN van cvdr-werk-onder bij AnnotatieBijToestand|
 |LVBB7714|Blokkerend|AKN van cvdr-expressie-boven bij ConsolidatieIdentificatie MOET gelijk zijn aan AKN van cvdr-expressie-onder bij AnnotatieBijToestand|
 |LVBB7715|Blokkerend|AKN van cvdr-werk-boven bij ConsolidatieIdentificatie MOET gelijk zijn aan AKN van cvdr-werk-onder bij RegelingVersie|
@@ -614,7 +630,7 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP1218|Blokkerend|Een IMOP-module die voor een component vermeld is in de pakbon MOET volgens de vermelde versie van IMOP daadwerkelijk een module van de component zijn.|
 |STOP1300|Blokkerend|Het procedureverloop MOET alleen stappen bevatten die bij één type procedureverloop horen.Het procedureverloop kan bijvoorbeeld geen stappen bevatten die specifiek zijn voor een procedure rond een ontwerpbesluit; en tevens stappen specifiek voor een (definitief) besluit.|
 |STOP1301|Blokkerend|Het type procedureverloop MOET passen bij het type besluit waarvan het de procedure beschrijft.|
-|STOP1302|Blokkerend|Bepaalde stappen in het procedureverloop MOGEN hooguit één keer voorkomen.Sommige stappen worden maar één keer gezet in een procedure en kennen dus ook maar één datum waarop ze voltooid zijn. Als blijkt dat de datum niet correct is; kan die via een mutatie van het procedureverloop aangepast worden. De uniciteit van deze stappen is belangrijk omdat de datum ervan nodig is om de relevantie te bepalen van besluiten en/of kennisgevingen erover.|
+|STOP1302|Blokkerend|Bepaalde stappen in het procedureverloop MOGEN hooguit één keer voorkomen.Sommige stappen worden maar één keer gezet in een procedure en kennen dus ook maar één datum waarop ze voltooid zijn. Als blijkt dat de datum niet correct is; kan die via een mutatie van het procedureverloop aangepast worden. De uniciteit van deze stappen is belangrijk omdat de datum ervan nodig is om de relevantie te bepalen van besluiten en/of kennisgevingen erover.VaststellingOndertekeningPublicatieBegin inzagetermijnEinde inzagetermijnEinde bezwaartermijnEinde beroepstermijn.|
 |STOP1303|Blokkerend|De stappen die door (de organisatie van) het bevoegd gezag gedaan worden MOETEN in het procedureverloop opgenomen zijn in de volgorde waarin de besluitvormingsprocedure verloopt.Besluit volgordeVaststellingOndertekeningPublicatie|
 |STOP1304|Blokkerend|De stappen die relevant zijn voor de reactie van belanghebbenden op het besluit MOETEN in het procedureverloop opgenomen zijn in de juiste volgorde.Welke stappen dat zijn hangt af van het type besluit. Zie de beschrijving voor de juiste volgorde.|
 |STOP1305|Blokkerend|De stappen gerelateerd aan de instelling en behandeling van een beroep tegen het besluit MOETEN in het procedureverloop opgenomen zijn in de volgorde waarin de besluitvormingsprocedure verloopt.Beroep volgordeVaststellingOndertekeningBeroep(en) ingesteldEinde Beroepstermijn|
@@ -644,8 +660,8 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP2025|Blokkerend|data:officieleTitel van een informatieobject MOET gelijk zijn aan het data:FRBRWork.|
 |STOP2026|Blokkerend|De collectie(regdata; pubdata of infodata) gebruikt in de JOIN identifier van een informatieobject MOET overeenkomen met zijn data:publicatieinstructie.|
 |STOP2030|Blokkerend|Een met een besluit of rectificatie meegeleverde consolideerbare informatieobject-versie MOET als inhoud van tekst:ExtIoRef genoemd worden in de Regeling of Regelingmutatie.|
-|STOP2031|Blokkerend|Externe verwijzingen (imop-tekst:ExtRef en imop-tekst:ExtIORef) in een ontwerpbesluit mogen alleen verwijzen naar met het ontwerpbesluit meegeleverde informatieobjecten; ofnaar eerder bekend gemaakte ontwerp- of definitieve besluiten en bijbehorende informatieobjecten.|
-|STOP2032|Blokkerend|Externe verwijzingen (imop-tekst:ExtRef en imop-tekst:ExtIORef) in een definitief besluit mogen alleen verwijzen naar met het besluit meegeleverde informatieobjecten; ofnaar eerder bekend gemaakte definitieve besluiten en bijbehorende informatieobjecten.|
+|STOP2031|Blokkerend|Externe verwijzingen (imop-tekst:ExtRef en imop-tekst:ExtIORef) in een ontwerpbesluit mogen alleen verwijzen naar met het ontwerpbesluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte ontwerp- of definitieve besluiten en bijbehorende informatieobjecten.|
+|STOP2032|Blokkerend|Externe verwijzingen (imop-tekst:ExtRef en imop-tekst:ExtIORef) in een definitief besluit mogen alleen verwijzen naar met het besluit meegeleverde informatieobjecten; of naar eerder bekend gemaakte definitieve besluiten en bijbehorende informatieobjecten.|
 |STOP2033|Blokkerend|Een met een besluit of rectificatie meegeleverd  alleen bekend te maken informatieobject MAG ALLEEN als inhoud van tekst:ExtRef genoemd worden in het besluitdeel van een Besluit/Rectificatie (dus niet in de Regeling of een Regelingmutatie).|
 |STOP2034|Blokkerend|Een met een besluit of rectificatie meegeleverd Informatief informatieobject MAG NIET voorkomen in de tekst van het besluit.|
 |STOP2039|Blokkerend|Een rectificatie MOET verwijzen naar een reeds gepubliceerde besluitversie.|
@@ -693,6 +709,7 @@ De validatiematrix bevat de volgende validatieregels:
 |STOP3024|Blokkerend|Een GIO kan maximaal één locatiegroep-indeling hebben.|
 |STOP3025|Blokkerend|Locatiegroepen MOGEN elkaar NIET overlappen.|
 |STOP3026|Blokkerend|Een locatie kan slechts deel uitmaken van één locatiegroep.|
+|STOP3027|Blokkerend|Van een versie van een te consolideren GIO die onderdeel is van een besluit; MOET de Expression (JOIN ID) worden genoemd in òf de regelingtekst(mutatie) van het besluit; òf de besluittekst (bijvoorbeeld indien het GIO gebruikt wordt als Pons).|
 |STOP3028|Blokkerend|Alle Expressies van een GIO Work MOETEN betrekking hebben op dezelfde norm. (De eenheid kan wijzigen en ook de norm-ID en norm-label kunnen wijzigen; maar de GIO moet betrekking houden op dezelfde norm)|
 |STOP3029|Blokkerend|Als een GIO normwaarden bevat dan MOETEN deze normwaarden door symbolisatie duidelijk te onderscheiden zijn als het volledige GIO met de bijbehorende symbolisatie wordt getoond.|
 |STOP3070|Blokkerend|Een vastgestelde GIO heeft een vaststellingscontext (achtergrondkaart); waarvan de versie is aangegeven.|
