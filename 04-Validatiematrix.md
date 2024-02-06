@@ -164,9 +164,6 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB3010|Blokkerend|Elk aangeleverd gml document moet voldoen aan de eisen van het schema van de BasisGeometrie-standaard.|
 |LVBB3011|Blokkerend|Elk GML-element MOET complete coördinaten bevatten.|
 |LVBB3012|Blokkerend|Elk GML-element MOET een ingevulde &lt;gml:posList&gt; bevatten.|
-|LVBB3020|Blokkerend|Voor het verwerken van een aanlevering MOET de status van een opgestart proces (met gegeven status identifier) bekend zijn.|
-|LVBB3021|Blokkerend|Voor het valideren van een aanlevering MOET een af te melden validatierapport bekend zijn.|
-|LVBB3022|Blokkerend|Voor het valideren van een aanlevering MAG een eerder afgemeld validatierapport NIET opnieuw afgemeld worden.|
 |LVBB3150|Blokkerend|Een InformatieObject dat consolideerbaar is MOET een geboorteregeling bevatten   OF  Een InformatieObject dat niet consolideerbaar is MAG NIET een  geboorteregeling bevatten.|
 |LVBB3151|Blokkerend|Van een versie van een te consolideren IO, die onderdeel is van een besluit, MOET de expressie als tekst:ExtIoRef worden genoemd in òf de regelingtekst(mutatie) van het besluit òf de besluittekst.|
 |LVBB3501|Blokkerend|Elk InformatieObject in een aangeleverd document moet voldoen aan de eisen van het IO-schema van de STOP-standaard.|
@@ -271,9 +268,6 @@ De validatiematrix bevat de volgende validatieregels:
 |LVBB5013|Blokkerend|Een in te trekken regeling MOET juridisch werkend zijn, d.w.z. een openstaande versie van dezelfde regeling hebben en geen ontwerpregeling zijn.|
 |LVBB5014|Blokkerend|Een in te trekken regeling MOET (eerder) geregistreerd zijn.|
 |LVBB5015|Blokkerend|De was-versie binnen de regeling MAG NIET eerder gebruikt zijn als versie-gebaseerd-op.|
-|LVBB5016|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MOET bestaan|
-|LVBB5017|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MAG NIET al ingetrokken zijn|
-|LVBB5018|Blokkerend|Het in te trekken Informatie-Object (op werk-nivo) MOET minimaal 1 openstaande expressie bevatten|
 |LVBB5019|Blokkerend|Een nieuw aan te maken regeling MAG NOG NIET bestaan.|
 |LVBB5020|Blokkerend|Mutaties MOGEN ALLEEN op instrumentversies (regelingversies of informatieobjectversies) in een gelijke schemaversie plaatsvinden.|
 |LVBB5021|Blokkerend|Een regelingversie moet minimaal één wijziging van juridische aard bevatten.|
