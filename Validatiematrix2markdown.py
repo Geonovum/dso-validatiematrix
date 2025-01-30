@@ -39,13 +39,13 @@ De validatiematrix bevat de volgende validatieregels:
 wb = openpyxl.load_workbook('Validatiematrix.xlsx')
 sheet = wb['Validatieregels']
 for row in sheet.iter_rows():
-    if row[1].value == 'Id' :
+    if row[0].value == 'Id' :
         continue
 
-    id = str(row[1].value) 
-    ernst = str(row[4].value)
+    id = str(row[0].value) 
+    ernst = str(row[3].value)
     if ernst != 'Blokkerend' and ernst != 'Waarschuwing':
         print("ERROR: ernst moet 'Blokkerend' of 'Waarschuwing' zijn voor: " + id, file=sys.stderr)
-    regel = row[2].value.replace('\n',' ').replace('<','&lt;').replace('>','&gt;')
+    regel = row[1].value.replace('\n',' ').replace('<','&lt;').replace('>','&gt;')
     print('|' + id + '|' + ernst + '|' + regel + '|',file=outfile)
 outfile.close()
