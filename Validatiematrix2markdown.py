@@ -15,14 +15,15 @@ import sys
 outfile = open('04-Validatiematrix.md','w')
 
 print("""
-# De validatiematrix
+# Verdere validaties
 
-De validatiematrix hoort niet bij een specifieke versie van de STOP of IMOW
+Deze validaties horen niet bij een specifieke versie van de STOP of IMOW
 standaard. Om te weten of een validatie geldig is of niet kun je naar de kolom
 herkomst kijken. Deze geeft aan vanaf welke versie de validatie in de standaard
 zit.
 
 De volgende versie van de standaarden zijn gebruikt voor het samenstellen van de validatiematrix:
+
  - Informatiemodel Omgevingswet (IMOW) Versie 2.0.2.
  - STOP standaard Versie 1.3.0.
  - Ook worden validatieregels van OZON en het LVBB bronhouderskoppelvlak opgenomen.

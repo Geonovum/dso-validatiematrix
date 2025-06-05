@@ -10,7 +10,7 @@ ValidatiesLVBB.md: ValidatiesLVBB.xlsx ValidatiesLVBB2markdown.py
 	./ValidatiesLVBB2markdown.py
 
 ValidatiesTPOD.md: ../ow-IMOW/constraints.md ValidatiesTPOD-catalogus.md ValidatieTPOD-tpods.md
-	echo '# Validaties TPOD' > ValidatiesTPOD.md
+	echo '# Validaties uit de TPOD standaarden' > ValidatiesTPOD.md
 	echo '' >> ValidatiesTPOD.md
 	echo '| id  | validatie |' >> ValidatiesTPOD.md
 	echo '|-----|---------- |' >> ValidatiesTPOD.md
