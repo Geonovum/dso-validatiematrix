@@ -2,19 +2,22 @@
 # Dit programma maakt gebruik van openpyxl
 # probeer: sudo apt install python3-openpyxl
 #
-all: 04-Validatiematrix.md ValidatiesLVBB.md ValidatiesTPOD.md
-04-Validatiematrix.md: Validatiematrix.xlsx Validatiematrix2markdown.py
-	./Validatiematrix2markdown.py
+all: 04-Validaties-LVBB-STOP-BHKV.md 06-Validaties-TPOD.md 05-Validaties-OZON.md
 
-ValidatiesLVBB.md: ValidatiesLVBB.xlsx ValidatiesLVBB2markdown.py
-	./ValidatiesLVBB2markdown.py
+05-Validaties-OZON.md: Validaties-OZON.xlsx Validaties-OZON-2markdown.py
+	./Validaties-OZON-2markdown.py
 
-ValidatiesTPOD.md: ../ow-IMOW/constraints.md ValidatiesTPOD-catalogus.md ValidatieTPOD-tpods.md
-	echo '# Validaties uit de TPOD standaarden' > ValidatiesTPOD.md
-	echo '' >> ValidatiesTPOD.md
-	echo '| id  | validatie |' >> ValidatiesTPOD.md
-	echo '|-----|---------- |' >> ValidatiesTPOD.md
-	cat ../ow-IMOW/constraints.md ValidatiesTPOD-catalogus.md ValidatieTPOD-tpods.md | sort  >> ValidatiesTPOD.md
+04-Validaties-LVBB-STOP-BHKV.md: Validaties-LVBB-STOP-BHKV.xlsx Validaties-LVBB-STOP-BHKV-2markdown.py
+	./Validaties-LVBB-STOP-BHKV-2markdown.py
+
+06-Validaties-TPOD.md: ../ow-IMOW/constraints.md  Makefile
+	echo '# TPOD validaties' > $@
+	echo '' >> $@
+	echo 'De volgende validaties zijn in de TPOD standaarden beschreven.' >> $@
+	echo 'Implementatie van de validaties moet in de LVBB of OZON gebeuren' >> $@
+	echo '' >> $@
+	cat ../ow-IMOW/constraints.md >> $@
+	cat Validaties-TPOD-tpods.md >> $@
 
 clean:
-	rm -f ValidatiesTPOD.md 04-Validatiematrix.md ValidatiesLVBB.md
+	rm -f 06-Validaties-TPOD.md 04-Validaties-LVBB-STOP-BHKV.md 05-Validaties-OZON.md

@@ -1,3 +1,79 @@
+# TPOD validaties
+
+De volgende validaties zijn in de TPOD standaarden beschreven.
+Implementatie van de validaties moet in de LVBB of OZON gebeuren
+
+| Nummer | Tekst |
+| ------ | ----- |
+| TPOD1162 |  Het manifest-ow.xml in een OW-aanlevering  moet voldoen aan hetxml-schema in `bestanden-ow/generiek/manifest-ow.xsd`.   |
+| TPOD1160 |  Het xml-attribuut schemaversie in het root element van het`manifest-ow.xml` bestand bevat het versienummer van het gebruikte xsd.   |
+| TPOD1164 |  OW-bestanden moeten voldoen aan het xml-schema in`bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd`   |
+| TPOD1163 |  Het xml-attribuut schemaversie in het root element owBestand bevathet versienummer van het gebruikte xsd.   |
+| TPOD2420 |  Bij een OW-aanlevering behorend bij een besluit over eenomgevingsdocument met artikelstructuur  mogen geen andere dan de volgendeOW-objecten worden aangeleverd: Regeltekst, Juridische regel, Activiteit,Gebiedsaanwijzing, Omgevingsnorm, Omgevingswaarde, Locatie, Pons, Kaart,Kaartlaag  en Regelingsgebied.   |
+| TPOD2421 |  Bij een OW-aanlevering behorend bij een besluit over eenomgevingsdocument met vrijetekststructuur mogen geen andere dan de volgendeOW-objecten worden aangeleverd: Divisietekst, Tekstdeel, Hoofdlijn,Gebiedsaanwijzing, Kaart, Kaartlaag, Regelingsgebied en Locatie.   |
+| TPOD2230 |  Aan iedere Geometrie in een regeling moet eenOW-Locatie gekoppeld zijn.   |
+| TPOD1892 |  De identificatie van een OW-object voldoet aan de volgende reguliere expressie:<code>'nl\.imow-(gm&#124;pv&#124;ws&#124;mn&#124;mnre)[0-9]{1,6}\.''(regeltekst&#124;gebied&#124;gebiedengroep&#124;lijn&#124;lijnengroep&#124;punt&#124;puntengroep&#124;activiteit&#124;''gebiedsaanwijzing&#124;omgevingswaarde&#124;omgevingsnorm&#124;pons&#124;kaart&#124;tekstdeel&#124;hoofdlijn&#124;''divisie&#124;kaartlaag&#124;juridischeregel&#124;activiteitlocatieaanduiding&#124;normwaarde&#124;regelingsgebied&#124;''ambtsgebied&#124;divisietekst)\.[A-Za-z0-9]{1,32}'</code>  |
+| TPOD1300 |  Een attribuut waarvoor een waarde uit een waardelijst moet wordengekozen, moet de uri van die waarde uit de betreffende waardelijst inde [Stelselcatalogus](https://stelselcatalogus.omgevingswet.overheid.nl/waardelijsten)bevatten.   |
+| TPOD2142 |  Een OW-object hoort bij de regeling met het WorkIDRegelingvan de OW-Aanlevering waarin het OW-object ontstaat.   |
+| TPOD1200 |  Een OW-object mag alleen gewijzigd worden in eenOW-aanlevering die hoort bij een besluit dat de regeling wijzigt waar hetOW-object bij hoort.   |
+| TPOD1900 |  Een OW-object met status = 'actief' mag niet verwijzen naar eenOW-object met status = 'beëindigd'.   |
+| TPOD1950 |   - Een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel  mag alleen verwijzen naar een OW-object behorend bij een regeling van  hetzelfde bevoegd gezag, met uitzondering van de relatie  bovenliggendeActiviteit van het OW-object Activiteit, waarvoor de specifieke  regels van TPOD1951, TPOD1952 en TPOD1953 gelden;- een OW-object behorend bij een regeling niet zijnde een tijdelijk regelingdeel  mag niet verwijzen naar een OW-object behorend bij een tijdelijk regelingdeel;- een OW-object behorend bij een tijdelijk regelingdeel mag alleen verwijzen  naar een OW-object behorend bij hetzelfde tijdelijk regelingdeel, met  uitzondering van de relatie bovenliggendeActiviteit van de tophaak-Activiteit  van het tijdelijk regelingdeel, waarvoor de specifieke regels van TPOD1954 gelden. |
+| TPOD1940 |  Een OW-object behorend bij een vastgestelde regeling mag nietverwijzing naar een OW-object in een ontwerpregeling.   |
+| TPOD1951 |    Met uitzondering van AMvB en ministeriëleregeling moet in iedere Regeling waarin één of meer Activiteiten zijngeannoteerd één zogenaamde tophaak voorkomen:- voor de omgevingsverordening is dat de meest bovenliggende Activiteit van die  Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in de  omgevingsverordening &lt;naam provincie&gt;’;- voor de waterschapsverordening is dat de meest bovenliggende Activiteit van  die Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in  de waterschapsverordening &lt;naam waterschap&gt;’;- voor het omgevingsplan is dat de meest bovenliggende Activiteit van die  Regeling; de naam van deze Activiteit moet zijn ‘Activiteit gereguleerd in het  omgevingsplan gemeente &lt;naam gemeente&gt;’. |
+| TPOD1952 |  Voor omgevingsverordening,waterschapsverordening en omgevingsplan geldt, in afwijking van het bepaalde inregel TPOD1950, dat de relatie bovenliggendeActiviteitvan een Activiteit niet zijnde de tophaak uitsluitend mag verwijzen naar eenandere Activiteit die hoort bij dezelfde Regeling.   |
+| TPOD1953 |    Voor de relatie bovenliggendeActiviteit van de tophakengeldt, in afwijking van het bepaalde in paragraaf TPOD1950,het volgende:- in de omgevingsverordening moet de relatie bovenliggendeActiviteit van de  tophaak verwijzen naar de 'Activiteit gereguleerd in de omgevingsverordening'  in de Placeholder-Regeling;- in de waterschapsverordening moet de relatie bovenliggendeActiviteit van de  tophaak moet verwijzen naar de 'Activiteit gereguleerd in de  waterschapsverordening' in de Placeholder-Regeling;- in het omgevingsplan moet de relatie bovenliggendeActiviteit van de tophaak  moet verwijzen naar de 'Activiteit gereguleerd in het omgevingsplan' in de  Placeholder-Regeling;- in AMvB en ministeriële regeling mag de relatie bovenliggendeActiviteit van  een Activiteit uitsluitend verwijzen naar de ‘Activiteit gereguleerd bij AMvB’  of naar een andere Activiteit die hoort bij de Placeholder-Regeling, bij een  AMvB of bij een ministeriële regeling. |
+| TPOD1954 |   - in een tijdelijk regelingdeel waarin één of meer Activiteiten zijn geannoteerd  moet één zogenaamde tophaak voorkomen;- de tophaak is de meest bovenliggende Activiteit van het tijdelijk  regelingdeel;- de naam van de tophaak annex de meest bovenliggende Activiteit moet zijn  ‘Activiteit gereguleerd in &lt;citeertitel tijdelijk regelingdeel&gt;’;- voor een tijdelijk regelingdeel moet de relatie bovenliggendeActiviteit  van de tophaak verwijzen naar de tophaak van de regeling waaraan het  tijdelijk regelingdeel door middel van het element isTijdelijkdeelVan  gekoppeld is. |
+| TPOD0104 |  Een nieuw OW-object mag niet de status beëindigd hebben.   |
+| TPOD0108 |  Een wijziging van een OW-object moet daadwerkelijk een kenmerk vanhet OW-object wijzigen.   |
+| TPOD1891 |  Bij het wijzigen van een OW-object moet het een instantie blijvenvan hetzelfde UML Objecttype.   |
+| TPOD0107 |  Het beëindigen van een OW-object is alleen toegestaan als de inhoud vanhet object, afgezien van het attribuut 'status', exact overeenkomt met de laatstaangeleverde OW-informatie.   |
+| TPOD1900 |  Een OW-aanlevering mag niet resulteren in wees-objecten  . |
+| TPOD2180 |  Een OW-aanlevering moet resulteren in een Regeling met daarin precieséén Regelingsgebied.   |
+| TPOD0110 |  Een OW-aanlevering moet resulteren in een Regeling met daarin maximaaléén Pons-object.   |
+| TPOD2050 |  Alleen bij een Lid of Artikel dat een STOP-element Inhoud bevat is een Regeltekst toegestaan; in dat geval moet er precies één Regeltekst zijn    |
+| TPOD2052 |  Er mag hoogstens één OW Divisietekst-object naar een OP Divisietekstverwijzen.   |
+| TPOD2053 |  Er mag hoogstens één OW Divisie-object naar een OP Divisieverwijzen.   |
+| TPOD2152 |  De attributen 'workIDRegeling', 'doelID' en 'expresionIDRegeling' van eenOW-aanlevering corresponderen met precies één nieuwe regelingversie die in een aanleveringwordt aangemaakt.   |
+| TPOD2151 |  Bij een OW-aanlevering behorend bij de intrekking een regelingis het veld expressionIDRegeling leeg.   |
+| TPOD2600 |  Het veld JuridischBorgingVan behorend bij een GIO heeft maximaaléén kenmerk JuridischeBorgVan met domein = `http://www.geostandaarden.nl/imow/`.De waarde van domeinObjectID in dit kenmerk is de idenficatie van een actief OW-object behorendbij de Regeling die de betreffende GIO als geboorteregeling heeft en die geometrischexact overeenkomt.   |
+| TPOD2601 |  De geometrische afbakening van de GIO en van het juridisch geborgde OW-object komen overeen.   |
+| TPOD2602 |  Een OW-object heeft maximaal 1 GIO die daarnaar verwijst.   |
+| TPOD2603 |  Als er verschillende OW-objecten zijn die geometrisch equivalentzijn met de GIO dan verwijst JuridischeBorgingVan in volgorde van vookeurnaar: Norm, Gebiedsaanwijzing, ActiviteitLocatieAanduiding, Locatiegroep, Locatie.   |
+| TPOD2604 |  Bij een GIO met de verschijningsvorm GIO-mutatie moet JuridischeBorgingVan onderdeel zijn van het GIO.   |
+| TPOD2700 |  Alle geometrieën in een omgevingsdocument moeten liggen binnende geometrie van Nederland met inbegrip van de exclusieve economische zone (EEZ).   |
+| TPOD1150 | Bij object­Type zijn de volgende waardes toegestaan: Activiteit, Gebiedsaanwijzing, Gebied, Gebiedengroep, Hoofdlijn, Punt, Puntengroep, Lijn, Lijnengroep, Regeltekst, Regel­Voor­Iedereen, Instructieregel, Omgevingswaarderegel, Omgevingsnorm, Omgevingswaarde, Pons, Tekstdeel, Kaart, Kaartlaag, Ambtsgebied, Divisie of Divisietekst. |
+| TPOD1161 | Als een bestand genoemd wordt dan moet het aanwezig zijn in de aanlevering. |
+| TPOD1225 | Als een LVBB-aanlevering een regeling initieert, wijzigt, of intrekt moet voor elke regelingversie die daardoor ontstaat of eindigt een OW-aanlevering gekoppeld zijn. |
+| TPOD1250 | Een OW-Bestand moet voldoen aan het xmlschema: bestanden-ow/generiek/standlevering-generiek.xsd. |
+| TPOD1650 | Van de attributen kwalitatieve&#173;Waarde, kwantitatieve&#173;Waarde en waarde&#173;In­Regeltekst moet er precies &#233;&#233;n voorkomen. |
+| TPOD1850 | Alle Juridische regels die naar dezelfde Regeltekst verwijzen moeten van hetzelfde type zijn.                                                                                                                                                                                                                                                |
+| TPOD1850 | Alle Juridische regels die naar dezelfde Regeltekst verwijzen moeten van hetzelfde type zijn. |
+| TPOD1890 | De identificatie van een OW-object moet overeenkomen met het type OW-object. |
+| TPOD1960 | Iedere verwijzing naar een Geometrie vanuit een Locatie van het type Lijn moet een verwijzing zijn naar een geometrie van het type GM\_Curve of GM\_Multi­Curve. |
+| TPOD1970 | Iedere verwijzing naar een Geometrie vanuit een Locatie van het type Punt moet een verwijzing zijn naar een geometrie van het type GM\_Point of GM\_Multi­Point. |
+| TPOD1980 | Iedere verwijzing naar een Geometrie vanuit een Locatie van het type Gebied moet een verwijzing zijn naar een geometrie van het type GM\_Surface of GM\_Multi­Surface. |
+| TPOD2000 | Het w­Id attribuut moet verwijzen naar een bestaande w­Id van een Artikel of Lid in de Regeling.                                                                                                                                                                                                                                             |
+| TPOD2027 | Alle Juridische regels die verwijzen naar dezelfde Regeltekst moeten dezelfde waarde hebben voor idealisatie. |
+| TPOD2041 | Het w­Id van een OW-object Divisie moet verwijzen naar een STOP-tekstelement van het type Divisie in de Regelingtekst. |
+| TPOD2042 | Het w&#173;Id van een OW-object Divisietekst moet verwijzen naar een STOP-tekstelement van het type Divisietekst in de Regelingtekst. |
+| TPOD2051 | Er mag hoogstens 1 OP-object­Annotatie naar een tekstelement in de regeling verwijzen.                                                                                                                                                                                                                                                       |
+| TPOD2060 | Indien een Artikel is onderverdeeld in Leden zijn annotaties alleen toegestaan op Leden. |
+| TPOD2061 | Alleen bij een Lid of Artikel dat een STOP-element Inhoud bevat is een Regeltekst toegestaan; in dat geval moet er precies &#233;&#233;n Regeltekst zijn. |
+| TPOD2080 | Van de attributen instructieregel­Instrument en instructieregel­Taakuitoefening moet er precies &#233;&#233;n voorkomen |
+| TPOD2090 | Binnen een Omgevingsnorm of Omgevingswaarde moeten alle normwaarden van hetzelfde type zijn: kwalitatief, kwantitatief, of waardeInRegeltekst. |
+| TPOD2100 | Eenheid mag alleen voorkomen als de Normwaarde het attribuut kwantitatieve­Waarde heeft en is dan verplicht. |
+| TPOD2101 | Voor ieder punt op de kaart mag een Norm maar &#233;&#233;n waarde hebben. |
+| TPOD2102 | Locaties van een Norm mogen elkaar niet geheel of gedeeltelijk overlappen. |
+| TPOD2103 | Een Normwaarde geldt voor iedere individuele geometrie van Gebied, Lijn, Punt, Gebiedengroep, Lijnengroep of Puntengroep respectievelijk van de Multi­Surface, Multi­Curve of Multi­Point van de Locatie waarnaar die Normwaarde verwijst. |
+| TPOD2104 | Een Normwaarde die bedoeld is als gezamenlijke waarde voor meerdere geometrie&#235;n is niet toegestaan. |
+| TPOD2110 | Als er bij een Tekstdeel direct of indirect een Locatie hoort dan is idealisatie verplicht. |
+| TPOD2111 | Alle Tekstdelen die verwijzen naar dezelfde Divisie moeten dezelfde waarde hebben voor idealisatie. |
+| TPOD2112 | Alle Tekstdelen die verwijzen naar dezelfde Divisietekst moeten dezelfde waarde hebben voor idealisatie. |
+| TPOD2140 | Het Work­IDRegeling van het manifest-ow moet verwijzen naar een bestaande data:FRBRWork van een Regeling in OP.                                                                                                                                                                                                                              |
+| TPOD2150 | Als doel­ID is ingevuld dan moet expression­IDRegeling leeg zijn en gelden de de regels van IMOW 3.0. Een aanlevering met doel­ID wordt niet geaccepteerd als er gebruik is gemaakt van de in STOP 1.4 ge&#239;ntroduceerde consolidatiescenario's. |
+| TPOD2151 | Als doel­ID leeg is dan worden de in STOP 1.4 ge&#239;ntroduceerde consolidatiescenario's gebruikt. |
+| TPOD1110 | IMOW-objecttypen kunnen alleen worden toegepast op het Lichaam van een Regeling, niet op Bijlagen of Toelichtingen. |
+| TPOD1830 | Binnen het object ‘Gebiedsaanwijzing’ is de waarde ‘functie’ van attribuut ‘type’ (datatype TypeGebiedsaanwijzing) niet toegestaan. (voor AMvB/MR). |
 | TPOD2434 | Als soortRegeling = 'Algemene maatregel van bestuur' dan MOET de eindverantwoordelijke van het besluit een waarde uit waardelijst 'Ministerie' zijn. |
 | TPOD2435 | Als soortRegeling = 'Algemene maatregel van bestuur' dan MOET voor de regeling RegelingKlassiek of RegelingCompact gebruikt worden. |
 | TPOD2436 | Als soortRegeling = 'Algemene maatregel van bestuur' dan MOET voor het instellings- of wijzigingsbesluit BesluitKlassiek of BesluitCompact gebruikt worden. |

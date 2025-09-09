@@ -2,23 +2,28 @@
 
 
 ## Wensen en Eisen List (WELT)
-In dit wijzigingsoverzicht wordt met WELT verwezen naar de Wensen en Eisen Lijst voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die door gebruikers van de standaard zijn ingediend. De ingediende meldingen zijn te vinden via [https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen](https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen).
+
+In dit wijzigingsoverzicht wordt met WELT verwezen naar de Wensen en Eisen Lijst
+voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die
+door gebruikers van de standaard zijn ingediend. De ingediende meldingen zijn te
+vinden via <https://www.geonovum.nl/geo-standaarden/omgevingswet/meldingen>
 
 
-## Eedere versies van de validatiematrix 
-De validatiematrix is eerder beschikbaar gesteld in de vorm van een spreadsheet.  De validatieregels in spreadsheet formaat zijn nog steeds beschikbaar en zijn te vinden via: [https://github.com/Geonovum/dso-validatiematrix/blob/main/Validatiematrix.xlsx](https://github.com/Geonovum/dso-validatiematrix/blob/main/Validatiematrix.xlsx). Deze spreadsheet bevat een aantal extra kolommen, deze zijn niet normatief. Uitleg van sommige extra kolommen in de spreadsheet:
+## Wijzigingen in versie 6.0
 
-| Kolom | Omschrijving |
-|-------|--------------|
-| geïmplementeerd |  Geeft aan of de validatie geïmplementeerd is in de keten. Omdat dit afhangt van de omgeving waarin gewerkt wordt is dit veld niet goed bij te houden bij de validatieregel zelf en wordt hiervoor verwezen naar de release notes van het betreffende systeem. |
-| meldingstekst | foutmelding die getoond wordt door de validatieregel. |
+In versie 6.0 is de opzet van de validatiematrix grondig gewijzigd: 
 
-## Wijzigingen in versie 5.1
+- De lijst met validaties is gesplist in drie hoofdstukken met in ieder
+  hoofdstuk een lijst met validaties per aanleverende partij.
+  Hierdoor is het publiceren van de matrix niet meer dan het samenvoegen van de
+  drie lijsten.
+- De validaties uit de TPOD standaarden zijn vrijwel allemaal expliciet als
+  constraint opgenomen in de TPOD standaarden waardoor de validaties eenvoudig
+  te relateren zijn aan de TPOD documenten. Alle validaties in de TPOD
+  standaarden hebben ook een TPOD nummer gekregen.
 
-| Aanleiding | Omschrijving                                                                                                                                                                                                                                                                                                                                                                           |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| WELT-278   | **Verwijderd:** LVBB3000                                                                                                                                                                                                                                                                                                                                                               |
-|            | kolom herkomst toegevoegd |
+Door het grote aantal wijzingen zijn de individueel gewijzigd validaties niet
+meer gemarkeerd in het overzicht.
 
 
 ## Wijzigingen in versie 5.0

@@ -5,6 +5,13 @@ De volgende uitgangspunten gelden bij het samenstellen van de matrix:
 - De regels in dit document gaan over documenten die worden aangeboden in de
   ‘Van plan to publicatie’ keten.  Vereisten aan deze document die nodig zijn
   voor correcte verwerking zijn hier wel in meegenomen.
+- De regels in dit document zijn over verschillende manieren tot stand gekomen:
+  hoofdstuk TODO waarin de validaties van de TPOD standaarden beschreven staan
+  bevat de regels die in de TPOD standaarden beschreven zonder informatie over
+  de vraag of in het stelsel de regel ook daadwerkelijk controleert. De andere
+  hoofdstukken bevatten regels over validaties die daarwerkelijk geïmplementeerd
+  zijn. Bij de OZON validaties die een TPOD regel implementeren staat een
+  verwijzing naar de TPOD regel die geïmplementeerd is.
 - De regels in dit document zijn altijd herleidbaar tot (1) een standaard, (2)
   een koppelvlakafspraak of (3) en interne verwerkingsregel. Dit document is
   zelf dus geen bron van nieuwe regels.
@@ -24,9 +31,9 @@ De volgende uitgangspunten gelden bij het samenstellen van de matrix:
   document (omdat het ervan afhangt in welke omgeving je werkt). Er wordt naar
   gestreefd per werkomgeving bij te houden welke validatieregels afgedwongen
   worden. Bijvoorbeeld in de release notes.
-- Voor wijzigingsbeheer betekent dit dat de impact van dit document altijd klein
-  is: de impact zit in het wijzigen van de standaard of in het feit dat de regel
-  in een systeem wordt geïmplementeerd.
+- Voor wijzigingsbeheer betekent dit dat de impact van het wijzigen van de
+  validatiematrix altijd klein is: de impact zit in het wijzigen van de
+  standaard of in het feit dat de regel in een systeem wordt geïmplementeerd.
 - Validatieregels worden zo nauwkeurig mogelijk gespecificeerd in natuurlijke
   taal, bijvoorbeeld door de richtlijnen van
   [RuleSpeak](https://www.rulespeak.com/nl/) toe te passen.
@@ -44,10 +51,5 @@ De volgende uitgangspunten gelden bij het samenstellen van de matrix:
   voorbeeld hiervan is een Locatie die buiten het ambtsgebied van een bevoegd
   gezag ligt. Er zijn gevallen waarin dit kan gebeuren maar vaak zal het toch
   niet de bedoeling zijn geweest.
-- Eigenaarschap van regels: voor het regelen van verantwoordelijkheden binnen de
-  validatiematrix is het wenselijk om per regel een eigenaar aan te wijzen. Een
-  begin hiervan is te vinden in de identificatie van de regels waar de letters
-  aan het begin een indicatie zijn van de eigenaar. Dit wordt verder uitgewerkt
-  in volgende versies van dit document.
 - Waar mogelijk is de formulering van de regel in de standaard gelijk aan die in
   de validatiematrix.

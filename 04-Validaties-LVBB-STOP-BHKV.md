@@ -1,7 +1,8 @@
 
-# Validaties geïmplementeerd door de de LVBB
+# LVBB- STOP- en BHKV-validaties
 
-De LVBB heeft de volgende validaties geïmplementeerd:
+De volgende validaties zijn in de LVBB geïmplementeerd.
+
 
 | Identificatie | Ernst | Omschrijving|
 |:--------------|:------|:------------|

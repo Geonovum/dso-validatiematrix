@@ -12,17 +12,18 @@ from datetime import datetime
 import openpyxl
 import sys
 
-outfile = open('ValidatiesLVBB.md','w')
+outfile = open('04-Validaties-LVBB-STOP-BHKV.md','w')
 
 print("""
-# Validaties geïmplementeerd door de de LVBB
+# LVBB- STOP- en BHKV-validaties
 
-De LVBB heeft de volgende validaties geïmplementeerd:
+De volgende validaties zijn in de LVBB geïmplementeerd.
+
 
 | Identificatie | Ernst | Omschrijving|
 |:--------------|:------|:------------|""",file=outfile)
 
-wb = openpyxl.load_workbook('ValidatiesLVBB.xlsx')
+wb = openpyxl.load_workbook('Validaties-LVBB-STOP-BHKV.xlsx')
 sheet = wb['1.5.1 validaties']
 for row in sheet.iter_rows():
     if not (row[2].value):
