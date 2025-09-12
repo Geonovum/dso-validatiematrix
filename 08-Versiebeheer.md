@@ -1,7 +1,7 @@
 # Wijzigingsoverzicht
 
 
-## Wensen en Eisen List (WELT)
+## Wensen en Eisen Lijst (WELT)
 
 In dit wijzigingsoverzicht wordt met WELT verwezen naar de Wensen en Eisen Lijst
 voor de TPOD-standaard. Deze lijst bevat meldingen en wijzigingsverzoeken die
@@ -24,7 +24,6 @@ In versie 6.0 is de opzet van de validatiematrix grondig gewijzigd:
 
 Door het grote aantal wijzingen zijn de individueel gewijzigd validaties niet
 meer gemarkeerd in het overzicht.
-
 
 ## Wijzigingen in versie 5.0
 

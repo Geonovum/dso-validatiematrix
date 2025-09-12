@@ -5,13 +5,7 @@ De volgende uitgangspunten gelden bij het samenstellen van de matrix:
 - De regels in dit document gaan over documenten die worden aangeboden in de
   ‘Van plan to publicatie’ keten.  Vereisten aan deze document die nodig zijn
   voor correcte verwerking zijn hier wel in meegenomen.
-- De regels in dit document zijn over verschillende manieren tot stand gekomen:
-  hoofdstuk TODO waarin de validaties van de TPOD standaarden beschreven staan
-  bevat de regels die in de TPOD standaarden beschreven zonder informatie over
-  de vraag of in het stelsel de regel ook daadwerkelijk controleert. De andere
-  hoofdstukken bevatten regels over validaties die daarwerkelijk geïmplementeerd
-  zijn. Bij de OZON validaties die een TPOD regel implementeren staat een
-  verwijzing naar de TPOD regel die geïmplementeerd is.
+- De regels in dit document is een verzameling van de regels uit verschillende systemen. In [hoofdstuk 4](#lvbb-stop-en-bhkv-validaties) staan de LVBB-, STOP- en BHKV validaidaties. [Hoofdstuk 5](#ozon-validaties) bevat de OZON validaties. [Hoofdstuk 6](#tpod-validaties) bevat de TPOD validaties.[Hoofdstuk 7](#rtr-validaties) bevat de RTR validaties.
 - De regels in dit document zijn altijd herleidbaar tot (1) een standaard, (2)
   een koppelvlakafspraak of (3) en interne verwerkingsregel. Dit document is
   zelf dus geen bron van nieuwe regels.
@@ -23,8 +17,6 @@ De volgende uitgangspunten gelden bij het samenstellen van de matrix:
   dat niet te wijten aan een fout in het aangeleverde bestand, maar op een
   ketenprobleem. Dit soort fouten wordt zoveel mogelijk afgevangen voordat ze
   bij de gebruiker terechtkomen.
-- Wijzigingen in dit document zijn altijd te herleiden tot wijzigingen in de
-  standaard, of het expliciet maken van een regel die al in de standaard stond.
 - Niet alle validatiesregels in dit document zijn geïmplementeerd. En hoewel dit
   niet de bedoeling is, is het mogelijk on niet valide documenten de keten in te
   krijgen. Welke validatieregels geïmplementeerd zijn is geen onderdeel van dit
