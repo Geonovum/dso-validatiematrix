@@ -24,25 +24,25 @@ De volgende validaties zijn in de LVBB geïmplementeerd.
 |:--------------|:------|:------------|""",file=outfile)
 
 wb = openpyxl.load_workbook('Validaties-LVBB-STOP-BHKV.xlsx')
-sheet = wb['1.5.1 validaties']
+sheet = wb['Input PR34-tool']
 for row in sheet.iter_rows():
-    if not (row[2].value):
+    if not (row[1].value):
         print("LOG: skipping empty row: ", file=sys.stderr)
         continue
 
-    id = str(row[2].value) 
+    id = str(row[1].value) 
     
     if not (id.startswith('LVBB') or id.startswith('BHKV') or id.startswith('STOP') or id.startswith('TPOD')):
-        print("LOG: skipping row: " + str(row[2].row) + " with id = " + row[2].value, file=sys.stderr)
+        print("LOG: skipping rule with id = " + id, file=sys.stderr)
         continue
     if not (row[3].value):
         print("LOG: skipping rule with empty value : " + id , file=sys.stderr)
         continue
 
-    ernst = str(row[7].value)
+    ernst = str(row[2].value)
     herkomst = str(row[5].value)
-    if ernst != 'Blokkerend' and ernst != 'Waarschuwing':
-        print("ERROR: ernst moet 'Blokkerend' of 'Waarschuwing' zijn voor: " + id, file=sys.stderr)
-    regel = row[3].value.replace('\n',' ').replace('<','&lt;').replace('>','&gt;')
+    if ernst != 'fout' and ernst != 'fout':
+        print("ERROR: ernst moet 'fout' zijn voor: " + id + " en niet: " + ernst , file=sys.stderr)
+    regel = row[3].value.replace('\n',' ').replace('<','&lt;').replace('>','&gt;').replace('{p}','').replace('{/p}','')
     print('|' + id + '|' + ernst + '|' + regel + '|',file=outfile)
 outfile.close()
