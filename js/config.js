@@ -50,12 +50,7 @@ let respecConfig = {
   github: "https://github.com/Geonovum/dso-validatiematrix",
   // Create PDF and link to file in header (optional):
   // TODO: Change the filename as preferred.
-  alternateFormats: [
-      {
-          label: "pdf",
-          uri: "static/template.pdf",
-      },
-  ],
+  alternateFormats: [],
   // Lokale lijst voor bibliografie
   // - Kijk eerst naar de beschikbare www.specref.org .
   // - Kijk daarna in de organisatieconfig.
